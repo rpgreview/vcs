@@ -1,0 +1,3401 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0106 
+header_name {.h} 
+code_name {.cxx}
+Function {} {open
+} {
+  Fl_Window a_Exit {
+    label {ADMP: Exit}
+    xywh {94 809 407 97} type Double hide modal
+  } {
+    Fl_Button a_EBExit {
+      label {Yes, Exit}
+      xywh {57 60 66 25} labelsize 12
+    }
+    Fl_Button a_EBCancel {
+      label Cancel
+      xywh {141 60 66 25} labelsize 12
+    }
+    Fl_Button a_EBSaveExit {
+      label {Save && Exit}
+      xywh {235 60 90 25} labelsize 12
+    }
+    Fl_Input a_EText {
+      xywh {19 8 324 33} box NO_BOX selection_color 26 labelsize 16 textsize 16 textcolor 1
+      code1 {o->value("Are you sure you want to Exit ?");}
+    }
+  }
+  Fl_Window a_Copyright {
+    label {ADMP - Copyright Display}
+    xywh {299 403 405 140} type Double hide modal
+  } {
+    Fl_Button a_CAccept {
+      label {I Accept}
+      callback {a_Copyright->hide();}
+      xywh {65 105 75 25} labelsize 12
+    }
+    Fl_Button a_CDontAccept {
+      label {I Dont Accept}
+      callback {exit(0);}
+      xywh {160 105 95 25} labelsize 12
+    }
+    Fl_Output a_CMessage {
+      xywh {10 10 380 80} type Multiline color 17 labelsize 12 textsize 12
+    }
+  }
+  Fl_Window a_HelpWindow {
+    label {ADMP - Help Display}
+    xywh {208 154 900 575} type Double hide resizable modal
+  } {
+    Fl_Browser a_HelpList {
+      xywh {5 5 890 520} labelsize 10 textsize 10
+    }
+    Fl_Button a_HelpClose {
+      label Close
+      callback {a_HelpWindow->hide();}
+      xywh {430 535 85 25} color 2 labelsize 12
+    }
+  }
+  Fl_Window a_WeaponWindow {
+    label {ADMP - Weapon Search}
+    xywh {341 334 490 300} type Double hide resizable modal
+  } {
+    Fl_Browser a_WSearchList {
+      callback {doWeaponSearchAction(0);}
+      tooltip {The list of weapons you can choose from} xywh {13 14 174 273} type Select labelsize 12 textsize 12
+    }
+    Fl_Browser a_WSearchDetails {
+      label {Weapon Details}
+      xywh {201 169 227 126} labelsize 12 align 5 textsize 12
+    }
+    Fl_Button a_WSAccept {
+      label Accept
+      callback {doWeaponSearchAction(1);}
+      xywh {248 17 72 25} labelsize 12
+    }
+    Fl_Button a_WSCancel {
+      label Cancel
+      callback {doWeaponSearchAction(2);}
+      xywh {338 17 72 25} labelsize 12
+    }
+  }
+  Fl_Window a_DetailsWindow {
+    label {Expanded Detail Area}
+    xywh {777 204 400 580} type Double labelsize 12 hide
+  } {
+    Fl_Browser a_EDInitiatorDetails1 {
+      label {Initiator Details}
+      xywh {9 17 383 86} color 2 labelsize 12 align 5 textsize 12
+    }
+    Fl_Text_Display a_EDInitiatorDetails2 {
+      label Notes
+      xywh {10 121 383 162} color 2 labelsize 12 align 5 textsize 10
+    }
+    Fl_Browser a_EDDefenderDetails1 {
+      label {Defender Details}
+      xywh {9 306 383 86} color 3 labelsize 12 align 5 textsize 12
+    }
+    Fl_Text_Display a_EDDefenderDetails2 {
+      label Notes
+      xywh {10 408 383 162} color 3 labelsize 12 align 5 textsize 10
+    }
+  }
+  Fl_Window a_QkMonsterAdd {
+    label {Quick Monster Add}
+    tooltip {How much damage of this type they ignore per round} xywh {83 242 725 485} type Double labelsize 12 hide modal
+  } {
+    Fl_Input aQkAdd_Name {
+      label {Name:}
+      xywh {72 24 125 25} color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_CRating {
+      label {Chal Rating:}
+      xywh {275 24 32 25} type Float labelsize 12 textsize 12
+    }
+    Fl_Counter aQkAdd_Count {
+      label {How Many}
+      xywh {385 25 35 25} type Simple labelsize 12 align 4 minimum 1 maximum 40 step 1 value 1 textsize 12
+    }
+    Fl_Input aQkAdd_Icon {
+      label {Icon:}
+      xywh {465 25 165 25} color 2 labelsize 12 textsize 12
+    }
+    Fl_Button aQkAdd_MonstIconLoad {
+      label {Load ...}
+      callback {doSpecialMapAction(103);}
+      xywh {650 25 50 25} labelsize 12
+    }
+    Fl_Input aQkAdd_HPMax {
+      label {HP: Max:}
+      xywh {72 54 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_Regeneration {
+      label {Regen:}
+      tooltip {How much they regenerate each round} xywh {159 54 32 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ACNormal {
+      label {AC: Norm:}
+      xywh {72 83 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ACTouch {
+      label {Touch:}
+      xywh {159 83 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ACFlatFoot {
+      label {FlatFooted:}
+      xywh {277 83 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_InitBonus {
+      label {Init: Bonus}
+      xywh {72 113 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_Speed {
+      label {Speed:}
+      xywh {226 113 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ResistFire {
+      label {Resistances: Fire:}
+      xywh {405 113 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ResistAcid {
+      label {Acid:}
+      xywh {471 112 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ResistCold {
+      label {Cold:}
+      xywh {538 113 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ResistElec {
+      label {Elec:}
+      xywh {603 113 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_ResistSonic {
+      label {Sonic:}
+      xywh {674 113 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_SaveFort {
+      label {Save: Fort:}
+      xywh {72 142 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_SaveReflex {
+      label {Ref:}
+      xywh {147 142 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_SaveWill {
+      label {Will:}
+      xywh {226 142 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_NoAttacks {
+      label {\# Attks}
+      xywh {72 171 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_SpellResistance {
+      label {Spell Resistance:}
+      xywh {226 171 32 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_DamReductionHP {
+      label {Dam Reduction:}
+      tooltip {Damage amount they have to surpass} xywh {364 171 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input aQkAdd_DamReductionWeapon {
+      label {/}
+      tooltip {Or have a weapon with a plus better than this} xywh {405 171 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Choice aQkAdd_DamReductionType {
+      label {Type:} open
+      xywh {475 170 80 25} down_box BORDER_BOX labelsize 12 textsize 12
+    } {}
+    Fl_Browser aQkAdd_WeaponSelector {
+      label Weapon
+      callback {selectQkAddEditWeapon(o->value()-1);}
+      xywh {70 206 169 160} type Select color 6 labelsize 12 align 4 textsize 12
+    }
+    Fl_Input aQkAdd_WeaponName {
+      label Name
+      xywh {325 210 145 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Button aQkAdd_WeaponSearch {
+      label {Search ...}
+      callback {if (aQkAdd_WeaponSelector->value() > 5) {
+   searchWeaponDetails(0, 1);
+} else {
+   searchWeaponDetails(0, 0);
+}}
+      xywh {483 210 65 25} labelsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponAttkBonus1 {
+      label {Attk Bonuses}
+      xywh {325 240 29 25} type Int color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponAttkBonus2 {
+      xywh {357 240 29 25} type Int labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponAttkBonus3 {
+      xywh {389 240 29 25} type Int labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponAttkBonus4 {
+      xywh {421 240 29 25} type Int labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponDamage {
+      label Damage
+      tooltip {Up to 10 characters describing the damage ie. 1d8+3} xywh {325 268 93 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponCritical {
+      label Critical
+      tooltip {Up to 10 characters describing the critical ie. 19-20/*3} xywh {325 295 78 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponMagicBonus {
+      label {Magic Bonus}
+      xywh {325 322 29 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponRange {
+      label Range
+      xywh {325 349 29 25} labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponReach {
+      label Reach
+      xywh {462 377 29 25} labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponNoAttacks {
+      label {\# Attacks}
+      xywh {325 377 29 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_WeaponSpecialMessage {
+      label {Special Message}
+      xywh {325 405 190 25} labelsize 12 textsize 12 deactivate
+    }
+    Fl_Button aQkAdd_Accept {
+      label Accept
+      callback {qkMonsterAdd(1);}
+      xywh {195 445 91 25} color 2 labelsize 12
+    }
+    Fl_Button aQkAdd_Cancel {
+      label Cancel
+      callback {qkMonsterAdd(2);}
+      xywh {295 445 91 25} color 1 labelsize 12
+    }
+    Fl_Input aQkAdd_WeaponFumble {
+      label Fumble
+      xywh {590 253 29 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Choice aQkAdd_WeaponCritAdjustment {
+      label {Crit Adjust}
+      xywh {590 280 60 25} down_box BORDER_BOX color 2 labelsize 12 when 6 textsize 12 deactivate
+      code0 {o->add("None"); o->add("-1"); o->add("-2");}
+      code1 {o->add("Large"); o->add("Super Large");}
+    } {}
+    Fl_Choice aQkAdd_WeaponSize {
+      label Size open
+      xywh {590 307 75 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+      code0 {o->add("Small");}
+      code1 {o->add("Medium");}
+    } {}
+    Fl_Input aQkAdd_WeaponAttackTable {
+      label {Attk Table}
+      xywh {590 335 29 25} color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_SavePoison {
+      label {Poison:}
+      xywh {315 142 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_SaveDisease {
+      label Disease
+      xywh {410 142 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input aQkAdd_NoInGroup {
+      label {No In Group:}
+      tooltip {Used for mass combats} xywh {385 54 31 25} type Int labelsize 12 textsize 12
+    }
+  }
+  Fl_Window a_ActionWindow {
+    label {VCS d20 Combat Window}
+    callback {if (Fl::event() == 10) { setCombatDisplay(0); o->hide(); }}
+    xywh {29 27 930 600} type Double labelsize 12 hide modal
+  } {
+    Fl_Tabs a_CTActions {open
+      xywh {7 202 923 398} box DOWN_BOX deactivate
+    } {
+      Fl_Tile a_CTMelee {
+        label Melee open
+        xywh {7 222 919 378} labelsize 12
+      } {
+        Fl_Input a_CTMeleeAC {
+          label {A/C}
+          xywh {424 274 30 25} type Int color 3 labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeBAB {
+          label BAB
+          xywh {424 305 30 25} type Int color 2 labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeRoll {
+          label Roll
+          xywh {484 305 30 25} type Int color 2 labelsize 12 textsize 12
+        }
+        Fl_Button a_CTCalc1 {
+          label Calc
+          callback {calcAction(0);}
+          xywh {534 305 35 25} labelsize 12
+        }
+        Fl_Input a_CTMeleeDamage {
+          label Damage
+          xywh {445 369 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeStun {
+          label Stunned
+          xywh {530 369 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeBleeding {
+          label Bleeding
+          xywh {445 396 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeInactive {
+          label Inactive
+          xywh {530 396 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Check_Browser a_CTCombatMods {
+          label {Combat Mods}
+          callback {calcCombatMods(0);}
+          xywh {610 389 210 203} type Multi color 3 labelsize 12 align 5 when 6 textsize 12
+        }
+        Fl_Browser a_CTWeaponUsed {
+          label {Weapon to use}
+          callback {if (o->value() > 0) {
+  setCombatDisplay(3);
+}}
+          tooltip {Which weapon to use} xywh {231 247 158 138} type Select color 2 labelsize 12 align 5 textsize 12
+        }
+        Fl_Browser a_CTDefender {
+          label {Defender/Receiver}
+          callback {if (o->value() > 0) {
+  setCombatDisplay(4);
+}}
+          tooltip {Who is defending against this attack} xywh {13 247 206 335} type Select color 3 labelsize 12 align 5 textsize 12
+        }
+        Fl_Button a_CTthisAttack {
+          label {Accept this Attack}
+          callback {acceptCombatAction(0);}
+          xywh {438 237 115 25} labelsize 12
+        }
+        Fl_Button a_CTallAttacksDone {
+          label {All Attacks done}
+          callback {acceptCombatAction(1);}
+          tooltip {Only select this once you've ACCEPTED all the attacks to be done. This will not adjust the defenders details.} xywh {583 237 115 25} labelsize 12
+        }
+        Fl_Check_Browser a_CTSpecialAttacks {
+          label {Special Actions/Attacks}
+          callback {doSpecialAttacks();}
+          xywh {665 314 155 61} type Multi color 2 labelsize 12 align 5 when 6 textsize 12
+          code0 {o->add("Opp. Action"); o->add("Subdual Damage");}
+          code1 {o->add("Touch Attack"); o->add("Ranged Touch Attack");}
+          code2 {o->has_scrollbar(0);}
+        }
+        Fl_Browser a_CTWeaponDetails {
+          label {Weapon Details}
+          tooltip {This shows the details of the weapon selected} xywh {231 450 199 132} labelsize 12 align 5 textsize 10
+        }
+        Fl_Output a_CTAttacksLeft {
+          label {Attks Left}
+          xywh {324 399 45 35} color 252 labelsize 12 textsize 24
+        }
+        Fl_Output a_CTACBreakdown {
+          xywh {472 274 348 25} color 247 labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeACAdjustments {
+          label {A/C Mods}
+          xywh {530 435 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeBABAdjustments {
+          label {BAB Mods}
+          xywh {530 461 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTMeleeDmgAdjustments {
+          label {Damage Mods}
+          xywh {530 487 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Button a_CTRollD20 {
+          label d20
+          callback {calcAction(2);}
+          tooltip {Roll another D20} xywh {582 305 35 25} color 1 labelsize 12
+        }
+        Fl_Button a_CTRollDamage {
+          label {Hit 'em}
+          callback {calcAction(3);}
+          tooltip {Roll damage on them as if they had been hit} xywh {582 335 48 25} color 1 labelsize 12
+        }
+      }
+      Fl_Tile a_CTSpell {
+        label Spell
+        xywh {7 222 918 378} labelsize 12 hide
+      } {
+        Fl_Check_Browser a_CTSpellEffects {
+          label {Whom it Effects}
+          callback {if (o->value() > 0) {
+  setCombatDisplay(6);
+}}
+          tooltip {Who is effected by the spell} xywh {13 247 206 335} color 3 labelsize 12 align 5 when 6 textsize 12
+        }
+        Fl_Counter a_CTSpellLevel {
+          label {Spell Level}
+          callback {setCombatDisplay(10);}
+          xywh {262 267 55 20} type Simple labelsize 12 align 5 minimum 0 maximum 9 step 1 value 1 textsize 12
+        }
+        Fl_Input a_CTSpellDC {
+          label {Spell DC}
+          xywh {298 298 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTSpellMods {
+          label {Spell Mods}
+          xywh {298 325 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Button a_CTSpellCalc {
+          label Calc
+          callback {calcAction(1);}
+          xywh {272 359 40 25} labelsize 12
+        }
+        Fl_Input a_CTSpellDamage {
+          label Damage
+          tooltip {This can either be a number or a dice setting ie. 2d4+4. If it is the later, it will roll that for each one effected.} xywh {625 281 40 25} labelsize 12 textsize 12
+        }
+        Fl_Input a_CTSpellStunned {
+          label Stunned
+          xywh {725 281 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTSpellBleeding {
+          label Bleeding
+          xywh {625 309 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTSpellInactive {
+          label Inactive
+          xywh {725 309 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTSpellDmgMods {
+          label {Damage Mods}
+          xywh {725 347 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Button a_CTSpellSAP {
+          label {Select All Players}
+          callback {for (int i=0; i<MAX_MEMBERS; i++) {
+  if (config.i_idList[ID_DEFD][i] < MAX_PLAYERS && config.i_idList[ID_DEFD][i] > -1) {
+if (config.flags.f_debug) { printf("sAM: %d\\n", i); }
+     a_CTSpellEffects->checked(i+1, 1);
+  }
+}}
+          xywh {230 493 115 25} labelsize 12
+        }
+        Fl_Button a_CTSpellSAM {
+          label {Select All Monsters}
+          callback {for (int i=0; i<MAX_MEMBERS; i++) {
+  if (config.i_idList[ID_DEFD][i] >= MAX_PLAYERS) {
+if (config.flags.f_debug) { printf("sAM: %d\\n", i); }
+     a_CTSpellEffects->checked(i+1, 1);
+  }
+}}
+          xywh {230 524 115 25} labelsize 12
+        }
+        Fl_Button a_CTSpellUSA {
+          label {UnSelect All}
+          callback {a_CTSpellEffects->check_none();}
+          xywh {230 554 115 25} labelsize 12
+        }
+        Fl_Button a_CTSpellAllDone {
+          label {All Spells Done}
+          callback {acceptCombatAction(3);}
+          tooltip {Only select this once you've ACCEPTED all the spell attacks to be done. This will not adjust the defenders details.} xywh {693 237 100 25} labelsize 12
+        }
+        Fl_Button a_CTSpellAcceptThis {
+          label {Accept this Spell}
+          callback {acceptCombatAction(2);}
+          xywh {580 237 100 25} labelsize 12
+        }
+        Fl_Check_Browser a_CTSpellModifiers {
+          label {Spell Modifiers}
+          callback {calcCombatMods(1);}
+          tooltip {These apply to all SELECTED who did not save} xywh {610 401 181 150} color 2 labelsize 12 align 5 when 6 textsize 12
+          code0 {o->add("Save = 50%"); o->add("Save = Nothing");}
+          code1 {o->add("NO Save"); o->add("Spell Resistance Applies");}
+          code2 {o->add("Subtract from Slot Count");}
+        }
+        Fl_Check_Browser a_CTSpellSaved {
+          label {Who DID NOT save}
+          tooltip {Who did not save against the spell} xywh {354 247 206 335} color 3 labelsize 12 align 5 when 6 textsize 12
+        }
+        Fl_Check_Browser a_CTSpellEnergyType {
+          label {Energy Type}
+          callback {doSpellEnergyType(0);}
+          tooltip {The spell energy type.} xywh {232 400 110 90} color 2 labelsize 12 align 5 when 6 textsize 12
+          code0 {o->add("None/Ignore");}
+          code1 {o->add("Fire"); o->add("Acid"); o->add("Cold");}
+          code2 {o->add("Elecricity"); o->add("Sonic");}
+        }
+      }
+      Fl_Tile a_CTOther {
+        label Other
+        xywh {7 222 921 378} labelsize 12 hide
+      } {
+        Fl_Check_Browser a_CTOtherActions {
+          label {Whom it Effects}
+          callback {setCombatDisplay(5);}
+          tooltip {Who is effected by the action} xywh {13 247 206 335} color 3 labelsize 12 align 5 when 6 textsize 12
+        }
+        Fl_Button a_CTAcceptOtherAction {
+          label {Accept Action}
+          callback {acceptCombatAction(4);}
+          xywh {492 237 90 25} labelsize 12
+        }
+        Fl_Input a_CTOtherHealHP {
+          label {Heal HP}
+          tooltip {This can either be a number or a dice setting ie. 2d4+4.} xywh {300 264 45 25} labelsize 12 textsize 12
+        }
+        Fl_Input a_CTOtherHealStun {
+          label Stunned
+          xywh {300 291 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTOtherHealBleeding {
+          label Bleeding
+          xywh {300 318 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTOtherHealInactive {
+          label Inactive
+          xywh {300 345 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Input a_CTOtherHealSkillMods {
+          label {Skill Mods}
+          tooltip {This is the total of any adjustments that apply to skill checks} xywh {300 397 30 25} type Int labelsize 12 textsize 12
+        }
+        Fl_Browser a_CTOtherMessages {
+          label Messages
+          xywh {365 321 431 259} color 6 labelsize 12 align 5 textsize 12
+        }
+        Fl_Check_Browser a_CTOtherFlags {
+          label {Modifiers/Options}
+          xywh {229 442 125 105} type Multi color 2 labelsize 12 align 5 textsize 12
+          code0 {o->add("Stabilize");}
+          code1 {o->add("Remove from Spell Slot");}
+        }
+        Fl_Counter a_CTOtherSpellLevel {
+          label {Spell Level}
+          xywh {420 265 55 20} type Simple labelsize 12 align 4 minimum 0 maximum 7 step 1 value 1 textsize 12
+        }
+      }
+      Fl_Tile a_CTSpellDetails {
+        label {Spell Details}
+        xywh {7 225 919 375} labelsize 12 hide
+      } {
+        Fl_Help_View a_CTSpellHTMLDetails {
+          xywh {210 231 716 362}
+        }
+        Fl_Input a_CTSpellDetailsSearch {
+          label Search
+          callback {showSRDspellEntries(0);}
+          xywh {78 236 67 25} labelsize 12 when 1 textsize 12
+        }
+        Fl_Browser a_CTSpellDetailsList {
+          callback {selectSRDspellEntries(0);}
+          xywh {19 269 186 324} type Select labelsize 10 textsize 10
+          code0 {o->type(2);}
+        }
+      }
+      Fl_Tile a_CTMonsterDetails {
+        label {Monster Details}
+        xywh {7 225 918 375} labelsize 12 hide
+      } {
+        Fl_Help_View a_CTMonsterHTMLDetails {
+          xywh {16 231 779 362}
+        }
+      }
+      Fl_Tile a_CTNotes {
+        label Notes
+        xywh {12 227 916 373} labelsize 12 hide
+      } {
+        Fl_Browser a_CTNotesDetails {
+          xywh {25 236 881 349} labelsize 12 textsize 12
+        }
+      }
+      Fl_Tile a_CTDiceRoller {
+        label {Dice Roller} open
+        xywh {10 225 920 375} labelsize 12 hide
+      } {
+        Fl_Browser a_CTDRList1 {
+          xywh {75 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList2 {
+          xywh {170 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList3 {
+          xywh {265 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList4 {
+          xywh {360 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList5 {
+          xywh {455 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList6 {
+          xywh {550 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList7 {
+          xywh {645 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser a_CTDRList8 {
+          xywh {740 285 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Button a_CTDRRefresh {
+          label {Reroll Dice}
+          callback {rollRNDDice();}
+          xywh {420 245 80 25} color 2 labelsize 12
+        }
+      }
+    }
+    Fl_Browser a_CTMessage {
+      tooltip {Any messages that you may need to action on} xywh {255 5 420 190} labelsize 12 align 5 textsize 12
+      code0 {o->has_scrollbar(0);}
+    }
+    Fl_Browser a_CTDefenderDetails {
+      label {Defender Details}
+      xywh {685 105 238 70} color 3 labelsize 12 align 5 textsize 12
+    }
+    Fl_Browser a_CTInitiatorDetails {
+      label {Initiator Details}
+      xywh {685 18 238 70} color 2 labelsize 12 align 5 textsize 12
+    }
+    Fl_Browser a_CBActionType {
+      label {Action Type}
+      callback {if (o->value() > 0) {
+  setCombatDisplay(2);
+}}
+      tooltip {Which action will they perform} xywh {10 18 160 171} type Select labelsize 12 align 5 textsize 13 deactivate
+    }
+    Fl_Button a_CTCancel {
+      label Cancel
+      callback {setCombatDisplay(0);
+a_ActionWindow->hide();}
+      xywh {177 5 70 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_WExternalGridMap {
+    label {VCS Player Grid Map}
+    xywh {40 123 1040 726} type Double labelsize 12 hide resizable
+    code0 {\#include "gridMap.h"}
+  } {
+    Fl_Group externalGridMap {
+      xywh {4 6 1034 713}
+      code0 {o->setGridType(1);}
+      class gridMap
+    } {}
+  }
+  Fl_Window a_notesWindow {
+    label {VCS Map Notes}
+    xywh {138 58 625 200} type Double labelsize 12 hide modal
+  } {
+    Fl_Input a_NotesDescription {
+      label Description
+      xywh {75 21 530 30} color 6 labelsize 12 textsize 12
+    }
+    Fl_Input a_ObjectIcon {
+      label Icon
+      tooltip {If you select an ICON it will treat it as an object and show it on the players map screen} xywh {75 65 255 30} labelsize 12 textsize 12
+    }
+    Fl_Button a_ObjectIconSelect {
+      label {Load ...}
+      callback {doSpecialMapAction(102);}
+      xywh {339 65 65 30} labelsize 12
+    }
+    Fl_Input a_ObjectWidth {
+      label {Icon Size}
+      tooltip {Icon Width} xywh {75 100 35 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input a_ObjectHeight {
+      tooltip {Icon Height} xywh {115 100 35 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Button a_NotesAccept {
+      label Accept
+      callback {doNotesAction(0);}
+      xywh {143 160 64 25} color 2 labelsize 12
+    }
+    Fl_Button a_NotesCancel {
+      label Cancel
+      callback {a_notesWindow->hide();}
+      xywh {243 160 64 25} color 1 labelsize 12
+    }
+    Fl_Button a_NotesDelete {
+      label Delete
+      callback {doNotesAction(1);}
+      xywh {343 160 64 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_IconWindow {open
+    xywh {116 79 990 630} type Double hide modal
+  } {
+    Fl_Tabs t_IconSelector {open
+      xywh {0 0 990 590}
+    } {
+      Fl_Tile t_PlayerIcons {
+        label Player open
+        xywh {0 25 990 565} labelsize 12 hide
+      } {
+        Fl_Scroll s_PlayerIcons {open
+          xywh {5 35 980 545} type VERTICAL labelsize 12
+        } {}
+      }
+      Fl_Tile t_MonsterIcons {
+        label Monster open
+        xywh {0 25 990 565} labelsize 12 when 6
+      } {
+        Fl_Scroll s_MonsterIcons {open
+          xywh {5 35 980 545} type VERTICAL labelsize 12
+        } {}
+      }
+      Fl_Tile t_AnimalIcons {
+        label Animals open
+        xywh {0 25 990 565} labelsize 12 hide
+      } {
+        Fl_Scroll s_AnimalIcons {open
+          xywh {5 35 980 545} type VERTICAL labelsize 12
+        } {}
+      }
+      Fl_Tile t_ObjectIcons {
+        label Objects open
+        xywh {0 25 990 565} labelsize 12 hide
+      } {
+        Fl_Scroll s_ObjectIcons {open
+          xywh {5 35 980 545} type VERTICAL labelsize 12
+        } {}
+      }
+      Fl_Tile t_Other {
+        label Other open
+        xywh {0 25 990 565} labelsize 12 hide
+      } {
+        Fl_Scroll s_OtherIcons {open
+          xywh {5 35 980 545} labelsize 12
+        } {}
+      }
+    }
+    Fl_Button b_ISCancel {
+      label Cancel
+      callback {a_IconWindow->hide();}
+      xywh {475 595 65 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_addToNewGroup {
+    label {Add new monsters and add to a group}
+    xywh {300 211 455 285} type Double hide modal
+  } {
+    Fl_Input a_addNewName {
+      label {Group Name:}
+      xywh {100 25 260 25} labelsize 12 textsize 12
+    }
+    Fl_Check_Button a_addNewDisabled {
+      label {Add them as Disabled}
+      xywh {100 65 25 25} down_box DOWN_BOX align 8
+    }
+    Fl_Button a_addNewAccept {
+      label Accept
+      callback {doOtherAction(30);}
+      xywh {130 230 75 25} color 2 labelsize 12
+    }
+    Fl_Button a_addNewCancel {
+      label Cancel
+      callback {a_addToNewGroup->hide();}
+      xywh {240 230 75 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_MassCombatWindow {
+    label {Mass Combat}
+    xywh {188 441 790 540} type Double labelsize 12 hide modal
+  } {
+    Fl_Browser a_MCAttackers {
+      callback {do_masscombat(2);}
+      tooltip {Attackers list} xywh {5 95 210 435} type Select color 6 labelsize 12 align 5 textsize 12
+      code0 {o->type(2);}
+    }
+    Fl_Browser a_MCDefenders {
+      callback {do_masscombat(3);}
+      tooltip {Defenders list} xywh {220 95 210 435} type Select color 3 labelsize 12 align 5 textsize 12
+      code0 {o->type(2);}
+    }
+    Fl_Group a_MCAttkGrp {
+      label Attackers open
+      xywh {5 20 210 70} box DOWN_BOX color 6 labelsize 12 align 5
+    } {
+      Fl_Input a_MCAttkGroups {
+        label {\# Groups}
+        tooltip {How many groups of attackers are there} xywh {65 25 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCAttkInGroups {
+        label {\# in Group}
+        tooltip {How many attackers are there in each group} xywh {165 25 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCAttkBAB {
+        label BAB
+        tooltip {Attackers base attack bonus} xywh {65 55 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCAttkDamage {
+        label Damage
+        tooltip {Attackers damage ie. 1d6+2} xywh {165 55 45 25} labelsize 12 textsize 12
+      }
+    }
+    Fl_Group a_MCDefdGrp {
+      label Defenders open
+      xywh {220 20 230 70} box DOWN_BOX color 3 labelsize 12 align 5
+    } {
+      Fl_Input a_MCDefdInGroups {
+        label {\# in Group}
+        tooltip {How many defenders are there in each group} xywh {290 25 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCDefdAC {
+        label AC
+        tooltip {Defender armor class} xywh {290 55 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCDied {
+        label {\#Died}
+        tooltip {How many have died} xywh {370 55 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCCurrentHP {
+        label HP
+        tooltip {Current HP} xywh {370 25 30 25} type Int labelsize 12 textsize 12
+      }
+      Fl_Input a_MCMaxHP {
+        label {/}
+        tooltip {Max HP} xywh {410 25 30 25} type Int labelsize 12 textsize 12 deactivate
+      }
+    }
+    Fl_Check_Button a_MCShowTotals {
+      label {Show only totals}
+      tooltip {Show only the total results} xywh {530 65 25 25} down_box DOWN_BOX
+    }
+    Fl_Browser a_MCResults {
+      label Results
+      xywh {438 110 345 420} labelsize 12 align 5 textsize 12
+    }
+    Fl_Button a_MCCalculate {
+      label Calculate
+      callback {do_masscombat(1);}
+      xywh {480 15 75 25} color 2 labelsize 12
+    }
+    Fl_Button a_MCAccept {
+      label Accept
+      callback {do_masscombat(4);}
+      xywh {593 15 75 25} color 2 labelsize 12
+    }
+    Fl_Button a_MCAllDone {
+      label {All Done}
+      callback {do_masscombat(5);}
+      xywh {705 15 75 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_d100CombatWindow {
+    label {VCS d100 Combat Window}
+    xywh {252 431 915 550} type Double labelsize 12 hide modal
+  } {
+    Fl_Browser d1_ActionType {
+      label {Action Type}
+      callback {doD100SelectAction(o->value());}
+      xywh {10 15 125 155} type Select labelsize 12 align 5 textsize 12
+      code0 {o->add("Melee Attack"); o->add("Spell Attack");}
+      code1 {o->add("Missile Attack"); o->add("Heal"); o->add("M & M");}
+      code2 {o->type(2);}
+    }
+    Fl_Browser d1_ActionMessages {
+      xywh {217 15 573 170} labelsize 12 textsize 12
+    }
+    Fl_Button d1_CancelAction {
+      label Cancel
+      callback {a_d100CombatWindow->hide();}
+      xywh {145 15 60 25} color 1 labelsize 12
+    }
+    Fl_Tabs d1_ActionTab {open
+      xywh {0 200 915 350} labelsize 12
+    } {
+      Fl_Tile d1_ActionMeleeTab {
+        label Melee
+        xywh {0 225 915 325} labelsize 12
+        code0 {int scrn=0;}
+        code1 {include "ADMPd100Melee.h"}
+      } {
+        Fl_Button d1_CombatSpecAttk1 {
+          label {Sp.Attk}
+          callback {doD100ActionOption(0,2);}
+          xywh {690 285 45 25} color 3 labelsize 12
+        }
+        Fl_Choice d1_CombatDefenderArmor {
+          label {Defd Armor}
+          callback {doD100ActionOption(0,5);} open
+          xywh {495 260 85 25} down_box BORDER_BOX color 6 labelsize 12 textsize 12
+        } {}
+        Fl_Output d1_CombatAttacksLeft {
+          label {Attks Left}
+          xywh {305 345 45 35} color 252 labelsize 12 textsize 24
+        }
+        Fl_Button d1_CombatHitThem {
+          label {Hit 'em}
+          callback {doD100ActionOption(0,4);}
+          xywh {820 285 50 25} color 1 labelsize 12
+        }
+      }
+      Fl_Tile d1_ActionSpellTab {
+        label Spells open
+        xywh {0 225 915 325} labelsize 12 hide
+        code0 {int scrn=1;}
+        code1 {include "ADMPd100Melee.h"}
+      } {}
+      Fl_Tile d1_ActionMissileTab {
+        label Missile open
+        xywh {0 225 915 325} labelsize 12 hide
+        code0 {int scrn=2;}
+        code1 {include "ADMPd100Melee.h"}
+      } {}
+      Fl_Tile d1_ActionHealTab {
+        label Heal open
+        xywh {0 225 915 325} labelsize 12 hide
+        code0 {int scrn=3;}
+        code1 {include "ADMPd100Melee.h"}
+      } {}
+      Fl_Tile d1_ActionMoveTab {
+        label {M&&M} open
+        xywh {0 225 915 325} labelsize 12 hide
+        code0 {int scrn=4;}
+        code1 {include "ADMPd100Melee.h"}
+        code2 {include "ADMPd100MeleeCB.h"}
+      } {
+        Fl_Choice d1_CombatMMDifficulty {
+          label Difficulty open
+          xywh {495 360 95 25} down_box BORDER_BOX labelsize 12 textsize 12
+          code0 {o->add("Easy"); o->add("Medium");}
+          code1 {o->add("V.Hard"); o->add("Folly");}
+        } {}
+      }
+      Fl_Tile d1_ActionSpellDetailsTab {
+        label {Spell Details} open
+        xywh {0 225 915 325} labelsize 12 hide
+      } {
+        Fl_Input d1_SpellSearchName {
+          label Search
+          callback {doD100SpellSearch(o->value());}
+          xywh {90 235 105 25} labelsize 12 when 3 textsize 12
+        }
+        Fl_Browser d1_SpellSearchFound {
+          callback {doD100SpellSearchAction(0, o->value());}
+          xywh {90 265 190 270} type Select labelsize 12 textsize 12
+        }
+        Fl_Browser d1_SpellSearchDetails {
+          xywh {290 265 290 270} color 6 labelsize 12 textsize 12
+        }
+      }
+      Fl_Tile d1_ActionDiceRoller {
+        label {Dice Roller}
+        xywh {0 225 915 325} labelsize 12 hide
+      } {
+        Fl_Browser d1_CTDRList1 {
+          xywh {85 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList2 {
+          xywh {180 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList3 {
+          xywh {275 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList4 {
+          xywh {370 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList5 {
+          xywh {465 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList6 {
+          xywh {560 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList7 {
+          xywh {655 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Browser d1_CTDRList8 {
+          xywh {750 295 90 220} labelsize 12 textfont 4 textsize 12
+        }
+        Fl_Button d1_DRRefresh {
+          label {Reroll Dice}
+          callback {rollRNDDice();}
+          xywh {430 250 80 25} color 2 labelsize 12
+        }
+      }
+    }
+  }
+  Fl_Window qkEdit_Window {
+    label {Quick Edit Window}
+    xywh {288 418 515 295} type Double color 6 labelsize 12 hide modal
+  } {
+    Fl_Input qkEdit_Name {
+      label Name
+      xywh {65 10 235 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_HPCurrent {
+      label {HP: Cur}
+      xywh {65 40 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_HPMax {
+      label Max
+      xywh {140 40 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_DBNormal {
+      label {AC: Norm}
+      xywh {65 70 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_ACTouch {
+      label {Touch:}
+      xywh {140 70 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_ACFlatFoot {
+      label {F/Footed:}
+      xywh {241 70 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_NoInGroup {
+      label {\#In Group}
+      xywh {360 70 31 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_SaveFort {
+      label {Save: Fort:}
+      xywh {65 100 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_SaveReflex {
+      label {Ref:}
+      xywh {140 100 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_SaveWill {
+      label {Will:}
+      xywh {220 100 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_SavePoison {
+      label Poison
+      tooltip {d100 RR for Poison} xywh {296 100 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input qkEdit_SaveDisease {
+      label Disease
+      tooltip {d100 RR for Disease} xywh {380 100 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input qkEdit_W1Id {
+      xywh {4 128 20 25} type Int labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input qkEdit_W1Name {
+      label Weap
+      xywh {65 130 180 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1AB1 {
+      label AB
+      xywh {84 157 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1AB2 {
+      xywh {119 157 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1AB3 {
+      xywh {154 157 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1AB4 {
+      xywh {189 157 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1Damage {
+      label Dam
+      xywh {254 157 85 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W1Critical {
+      label Crit
+      xywh {369 157 80 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2Id {
+      xywh {4 187 20 25} type Int labelsize 12 textsize 12 deactivate
+    }
+    Fl_Input qkEdit_W2Name {
+      label Weap
+      xywh {65 187 180 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2AB1 {
+      label AB
+      xywh {84 215 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2AB2 {
+      xywh {119 215 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2AB3 {
+      xywh {154 215 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2AB4 {
+      xywh {189 215 30 25} type Int labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2Damage {
+      label Dam
+      xywh {254 215 85 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_W2Critical {
+      label Crit
+      xywh {369 215 80 25} labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_Space {
+      label Space
+      xywh {65 250 31 25} type Int color 2 labelsize 12 textsize 12
+    }
+    Fl_Input qkEdit_Icon {
+      label Icon
+      xywh {140 250 235 25} labelsize 12 textsize 12
+    }
+    Fl_Button qkEdit_IconLoad {
+      label {Load ...}
+      callback {doSpecialMapAction(104);}
+      xywh {385 250 55 25} labelsize 12
+    }
+    Fl_Button qkEdit_Accept {
+      label Accept
+      callback {doQuickEdit(1);}
+      xywh {350 10 65 25} color 2 labelsize 12
+    }
+    Fl_Button qkEdit_Cancel {
+      label Cancel
+      callback {doQuickEdit(2);}
+      xywh {440 10 65 25} color 1 labelsize 12
+    }
+  }
+  Fl_Window a_MainWindow {
+    label {VCS Main Window - v2.00 by Torquil Gault, copyright 2005+}
+    callback {if (Fl::event() == 10) { doSystemExit(); }}
+    xywh {111 132 1010 700} type Double labelsize 12 hide resizable
+    code0 {\#include "gridMap.h"}
+  } {
+    Fl_Tabs a_TMain {
+      callback {//printf("a_TMain: event %d\\n", Fl::event());} open
+      xywh {0 0 1055 725} labelsize 12 align 5 resizable
+      code0 {\#include "ADMPdata.h"}
+      code1 {\#include "ADMPdefines.h"}
+      code2 {\#include "ADMPd100MeleeCBSetup.h"}
+      code3 {\#include <FL/Fl_Select_Browser.H>}
+    } {
+      Fl_Tile a_TCombat {
+        label Combat
+        callback {//printf("a_TCombat: event %d\\n", Fl::event());}
+        xywh {0 25 1005 675} labelsize 12 hide resizable
+      } {
+        Fl_Browser a_CBInitiators {
+          label {Action Initiator Sequence}
+          callback {if (o->value() > 0) { setCombatDisplay(9); }}
+          xywh {2 40 203 360} type Select color 2 labelsize 10 align 1 textsize 10
+        }
+        Fl_Button a_CTEndOfRound {
+          label {End Of Round}
+          callback {endOfRound();
+setCombatDisplay(0);}
+          tooltip {Do all the end of round actions. Shows any finished alerts or adjustments} xywh {212 32 90 25} color 211 labelsize 12
+        }
+        Fl_Button a_CTHelp {
+          label HELP
+          callback {a_HelpWindow->show();}
+          xywh {885 32 74 25} color 6 labelsize 20
+        }
+        Fl_Button aCB_MoreDetails {
+          label {>>}
+          callback {if (a_DetailsWindow->shown() != 0) { a_DetailsWindow->hide(); } else { a_DetailsWindow->show(); }}
+          tooltip {Show more details about the Initiators and Defenders} xywh {966 31 38 27} deactivate
+        }
+        Fl_Browser a_CombatMessages {
+          label {Combat/Map Messages}
+          xywh {2 600 200 92} color 6 labelsize 12 align 1 textsize 10
+          code0 {for (int i=0; i<8; i++) { o->add(""); }}
+          code1 {o->has_scrollbar(Fl_Browser_::HORIZONTAL);}
+          code2 {o->has_scrollbar(0);}
+        }
+        Fl_Button a_CombatZoomIn {
+          label {Z++}
+          callback {doMapMode(-13);}
+          tooltip {Zoom in on the DM map} xywh {312 32 46 25} color 6 labelsize 12
+        }
+        Fl_Button a_CombatZoomOut {
+          label {Z--}
+          callback {doMapMode(-12);}
+          tooltip {Zoom out on the DM map} xywh {367 32 46 25} color 6 labelsize 12
+        }
+        Fl_Button a_CombatXZoomIn {
+          label {xZ++}
+          callback {doMapMode(-11);}
+          tooltip {Zoom in on the external map} xywh {426 32 46 25} color 2 labelsize 12
+        }
+        Fl_Button a_CombatXZoomOut {
+          label {xZ--}
+          callback {doMapMode(-10);}
+          tooltip {Zoom out on the external map} xywh {481 32 46 25} color 2 labelsize 12
+        }
+        Fl_Button a_CombatEnableXWindow {
+          label {Show Xm}
+          callback {if (a_WExternalGridMap->visible()) { a_WExternalGridMap->hide(); o->label("Show Xm"); }
+else { a_WExternalGridMap->show(); o->label("Hide Xm"); }
+
+setWindowTitles();}
+          tooltip {Enable/Disable External Player Grid Map} xywh {540 32 58 25} color 5 labelsize 12
+        }
+        Fl_Choice a_CombatDrawMode {
+          label {Map Mode}
+          callback {doMapMode(o->value());} open
+          tooltip {The map mode - select combat or drawing modes} xywh {95 405 106 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+          code0 {o->add("Combat"); o->add("Freestyle"); o->add("Lines");}
+          code1 {o->add("Shapes"); o->add("10' Corridors"); o->add("20' Corridors");}
+          code2 {o->add("Copy Object");}
+          code3 {o->value(0);}
+        } {}
+        Fl_Group a_CombatColorGroup {open
+          xywh {1 433 204 59} box DOWN_BOX color 0 labelsize 12
+        } {}
+        Fl_Choice a_CombatShapes {
+          label Shapes
+          callback {doMapMode(-1);} open
+          tooltip {Select a shape to place onto the map} xywh {96 496 106 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 deactivate
+          code0 {o->add("Circle"); o->add("Rectangle");}
+        } {}
+        Fl_Choice a_CombatVisibility {
+          label Visibility
+          callback {combatGridMap->setGridVisibility(o->value());} open
+          tooltip {How far can the players see. If you select 'Fog of War' it becomes very important} xywh {656 33 51 25} down_box BORDER_BOX labelsize 12 textsize 12
+          code0 {o->add("30'"); o->add("60'");}
+          code1 {o->add("90'"); o->add("120'");}
+          code2 {o->add("200'");}
+          code3 {o->value(1);}
+        } {}
+        Fl_Choice a_CombatLayer {
+          label Layer
+          callback {combatGridMap->setGridLayer(o->value());} open
+          tooltip {Map Layer - to have tunnels or the like going under/over each other} xywh {130 555 72 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 deactivate
+          code0 {o->add("Layer 0"); o->add("Layer 1"); o->add("Both");}
+          code1 {o->value(0);}
+        } {}
+        Fl_Choice a_CombatShapesFill {
+          label { Fill}
+          callback {doMapMode(-2);} open
+          tooltip {How to draw the shape, is it filled with the color selected or not} xywh {25 555 66 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 deactivate
+          code0 {o->add("Outline"); o->add("Fill");}
+          code1 {o->value(0);}
+        } {}
+        Fl_Choice a_CombatSpecialAction {
+          label {Sp. Action}
+          callback {doSpecialMapAction(o->value());} open
+          tooltip {Do a special action on the map} xywh {773 33 99 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+        } {}
+        Fl_Counter a_CombatShapeWidth {
+          label Width
+          callback {doMapMode(-3);}
+          tooltip {The width of the space you're drawing. In the case of a circle it'll be its radius} xywh {60 525 35 25} type Simple labelsize 12 align 4 minimum 0 maximum 100 step 5 value 20 textsize 12 deactivate
+        }
+        Fl_Counter a_CombatShapeHeight {
+          label Height
+          callback {doMapMode(-3);}
+          tooltip {The height of the space you're drawing.} xywh {140 525 35 25} type Simple labelsize 12 align 4 minimum 0 maximum 100 step 5 value 20 textsize 12 deactivate
+        }
+        Fl_Group combatGridMap {open
+          xywh {209 64 795 631} box DOWN_BOX labelsize 12 resizable
+          code0 {o->setGridText(a_CombatMessages);}
+          code1 {o->setExternalGrid(externalGridMap);}
+          code2 {o->setGridTile(externalGridMap->getGridTile());}
+          code3 {o->setActionWindow(a_ActionWindow);}
+          class gridMap
+        } {}
+      }
+      Fl_Tile a_TInitiatives {
+        label Initiatives
+        xywh {0 25 1002 675} labelsize 12 hide
+      } {
+        Fl_Browser a_IActions {
+          label {Select Action}
+          callback {if (o->value() > 0) {
+   doInitiativeAction(o->value());
+}}
+          xywh {15 50 205 145} type Select labelsize 12 align 5 textsize 13
+          code0 {o->add("New Combat/Initiatives");}
+          code1 {o->add("Show new Monsters/Refresh");}
+          code2 {o->add("Accept Initiatives");}
+          code3 {o->type(2);}
+        }
+        Fl_Group a_IPlayers {
+          label {Player Initiatives} open
+          xywh {15 224 175 445} box UP_BOX color 2 selection_color 2 labelsize 12 align 5
+        } {}
+        Fl_Group a_IMonsters {
+          label {Monster Initiatives} open
+          xywh {200 224 798 445} box UP_BOX color 3 labelsize 12 align 5
+        } {}
+      }
+      Fl_Tile a_TGroup {
+        label Groups
+        xywh {1 25 1004 674} labelsize 12 hide
+      } {
+        Fl_Browser a_GroupList {
+          callback {doGroupAction(0);}
+          tooltip {A list of all the groups available} xywh {10 45 220 490} type Select labelsize 12 textsize 12
+          code0 {o->type(2);}
+        }
+        Fl_Group a_GroupGroup {open
+          xywh {241 45 654 641} box DOWN_BOX color 2 labelsize 12 deactivate
+        } {
+          Fl_Input a_GroupDescription {
+            label Description
+            tooltip {The title of the group} xywh {342 64 262 25} labelsize 12 textsize 12
+          }
+          Fl_Check_Button a_GroupActive {
+            label Active
+            xywh {342 94 64 20} down_box DOWN_BOX labelsize 12 align 4
+          }
+          Fl_Check_Browser a_GroupMembers {
+            label {Group Members}
+            tooltip {Which are members of the group selected} xywh {342 122 263 551} type Multi labelsize 12 align 4 textsize 12
+          }
+          Fl_Button a_GroupAccept {
+            label Accept
+            callback {doGroupAction(2);}
+            xywh {717 86 64 25} labelsize 12
+          }
+          Fl_Button a_GroupCancel {
+            label Cancel
+            callback {doGroupAction(1);}
+            xywh {717 120 64 25} color 1 labelsize 12
+          }
+          Fl_Button a_GroupDisableAll {
+            label {Disable all except these}
+            callback {doGroupAction(4);}
+            tooltip {Disable all monsters except these in this group which are enabled} xywh {679 205 146 25} color 3 labelsize 12
+          }
+          Fl_Button a_GroupEnableAll {
+            label {Enable all in this Group}
+            callback {doGroupAction(3);}
+            tooltip {Enable all the monsters in this group} xywh {679 238 146 25} color 3 labelsize 12
+          }
+          Fl_Button a_GroupClear {
+            label {Clear Group Details}
+            callback {// doGroupAction(5);
+a_GroupMembers->check_none();}
+            tooltip {Clear all the group details} xywh {687 357 130 25} labelsize 12
+          }
+          Fl_Button a_GroupDeleteAll {
+            label {Delete all selected}
+            callback {doGroupAction(6);}
+            tooltip {Delete all the selected monsters} xywh {679 271 146 25} color 3 labelsize 12
+          }
+          Fl_Button a_GroupRemoveAll {
+            label {Remove from Map}
+            callback {doGroupAction(7);}
+            tooltip {Remove all selected from the MAP. Sometimes it becomes confused and you need to remove them from the map first before adding them} xywh {679 303 146 25} color 3 labelsize 12
+          }
+          Fl_Button a_GroupDisableSelected {
+            label {Disable all selected}
+            callback {doGroupAction(8);}
+            tooltip {Disable all monsters selected} xywh {679 171 146 25} color 3 labelsize 12
+          }
+          Fl_Button a_GroupSelectAll {
+            label {Select All}
+            callback {// doGroupAction(5);
+a_GroupMembers->check_all();}
+            tooltip {Select all as in the group} xywh {687 390 130 25} labelsize 12
+          }
+        }
+        Fl_Button a_GroupResetAll {
+          label {Reset ALL Group Details}
+          callback {doOtherAction(12);}
+          tooltip {Reset/clear all details on all groups} xywh {40 565 146 25} color 1 labelsize 12
+        }
+      }
+      Fl_Tile a_TEdit {
+        label {Edit/Add} open
+        xywh {0 25 1010 675} labelsize 12 hide
+      } {
+        Fl_Browser aEdit_players {
+          callback {editPlayer(o->value() - 1);}
+          tooltip {The list of players} xywh {8 35 202 145} type Select color 2 labelsize 12 textsize 12
+          code0 {o->add(" New Player");}
+        }
+        Fl_Browser aEdit_monsters {
+          callback {editPlayer(MAX_PLAYERS + o->value() -1);}
+          tooltip {The list of monsters} xywh {8 200 202 490} type Select color 3 labelsize 12 textsize 12
+          code0 {o->add(" New Monster");}
+        }
+        Fl_Tabs aEdt_Tabs {open
+          xywh {224 78 786 342} labelsize 12 deactivate
+        } {
+          Fl_Tile aEdt_Main {
+            label Main open
+            xywh {224 103 786 317} color 239 labelsize 12 hide
+          } {
+            Fl_Input aEdit_Name {
+              label {Name:}
+              xywh {292 109 125 25} color 2 labelsize 12 textsize 12
+            }
+            Fl_Choice aEdit_Race {
+              label {Race:} open
+              xywh {456 109 66 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item races[];}
+              code1 {o->menu(races);}
+            } {}
+            Fl_Choice aEdit_Alignment {
+              label {Alignment:} open
+              xywh {587 109 47 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item alignment[];}
+              code1 {o->menu(alignment);}
+            } {}
+            Fl_Choice aEdit_Class1 {
+              label {Class:} open
+              xywh {292 136 74 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item classes[];}
+              code1 {o->menu(classes);}
+            } {}
+            Fl_Choice aEdit_Class2 {open
+              xywh {373 136 74 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item classes[];}
+              code1 {o->menu(classes);}
+            } {}
+            Fl_Choice aEdit_Class3 {open
+              xywh {455 136 74 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item classes[];}
+              code1 {o->menu(classes);}
+            } {}
+            Fl_Choice aEdit_Class4 {open
+              xywh {537 136 74 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {extern Fl_Menu_Item classes[];}
+              code1 {o->menu(classes);}
+            } {}
+            Fl_Input aEdit_Level1 {
+              label {Level:}
+              xywh {292 163 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Level2 {
+              xywh {373 163 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Level3 {
+              xywh {455 163 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Level4 {
+              xywh {537 163 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_HPMax {
+              label {HP: Max:}
+              tooltip {Max HP} xywh {292 190 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_HPCurrent {
+              label {/}
+              tooltip {Current HPs} xywh {330 190 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_NonLethal {
+              label {Non-Lethal:}
+              xywh {480 190 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Inactive {
+              label {Inactive:}
+              xywh {569 190 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Stun {
+              label {Stun:}
+              xywh {641 190 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_TempHP {
+              label {Temp HPs:}
+              xywh {292 217 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Bleeding {
+              label Bleeding
+              xywh {379 217 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Disabled {
+              label {Disabled at}
+              xywh {480 217 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Unconcious {
+              label {Uncon at}
+              xywh {569 217 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Regeneration {
+              label Regen
+              tooltip {How many HP's to regenerate at the end of the round} xywh {641 217 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_EnhHP {
+              label {+Enh}
+              tooltip {How many HP's gained from Enhancement Items. Used for Spell Adjustment calculations} xywh {710 217 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACNormal {
+              label {AC: Norm:}
+              xywh {292 244 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACTouch {
+              label {Touch:}
+              xywh {379 244 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACFlatFoot {
+              label {FlatFooted:}
+              xywh {480 244 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_NegateCritical {
+              label {Neg. Crit}
+              tooltip {Percentage chance of negating a critical} xywh {710 244 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecDex {
+              label {AC Split: Dex:}
+              xywh {307 272 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecSize {
+              label {Size:}
+              xywh {370 272 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecDeflection {
+              label Defl
+              tooltip {Used in Spell Adjustment calculations if the type match} xywh {429 272 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecNatural {
+              label {Natural:}
+              tooltip {Used in Spell Adjustment calculations if the type match} xywh {508 272 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecArmor {
+              label {Armor:}
+              tooltip {Used in Spell Adjustment calculations if the type match} xywh {580 272 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecShield {
+              label {Shld:}
+              tooltip {Used in Spell Adjustment calculations if the type match} xywh {645 272 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACSecDodge {
+              label {Dodge:}
+              tooltip {Used in Spell Adjustment calculations if the type match} xywh {722 272 31 25} type Int color 212 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABMelee1 {
+              label {BAB: Melee:}
+              xywh {307 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABMelee2 {
+              label {/}
+              xywh {344 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABMelee3 {
+              label {/}
+              xywh {381 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABRanged1 {
+              label {Ranged:}
+              xywh {472 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABRanged2 {
+              label {/}
+              xywh {510 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABRanged3 {
+              label {/}
+              xywh {547 300 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABGrapple1 {
+              label {Grapple:}
+              xywh {307 326 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABGrapple2 {
+              label {/}
+              xywh {344 326 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BABGrapple3 {
+              label {/}
+              xywh {382 326 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_InitBonus {
+              label {Init: Bonus}
+              xywh {306 355 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_InitRoll {
+              label {Roll:}
+              xywh {382 355 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Speed {
+              label {Speed:}
+              xywh {461 355 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SaveFort {
+              label {Save: Fort:}
+              xywh {306 385 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SaveReflex {
+              label {Ref:}
+              xywh {382 385 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SaveWill {
+              label {Will:}
+              xywh {450 385 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_IconFilename {
+              label {Icon:}
+              xywh {750 385 255 25} labelsize 12 textsize 12
+            }
+            Fl_Button aEdit_LoadIcon {
+              label {Load ...}
+              callback {doSpecialMapAction(100);}
+              xywh {665 385 50 25} labelsize 12
+            }
+            Fl_Input aEdit_MapX {
+              label {Map Loc:}
+              tooltip {Edit this with care. Set to -1 if it doesnt appear on the map correctly then add NEW monsters} xywh {900 272 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_MapY {
+              label {:}
+              tooltip {Edit this with care. Set to -1 if it doesnt appear on the map correctly then add NEW monsters} xywh {938 272 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Reach {
+              label {Reach:}
+              tooltip {The reach of the character in feet.} xywh {815 300 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Space {
+              label {Space:}
+              tooltip {The space taken up by the character in feet.} xywh {735 300 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_InGroup {
+              label {In Group:}
+              tooltip {Edit this with care.} xywh {938 300 30 25} type Int labelsize 12 textsize 12 deactivate
+            }
+            Fl_Check_Browser aEdit_Flags {
+              label {Flags/Options:}
+              xywh {850 120 132 140} type Multi labelsize 12 align 5 textsize 12
+            }
+            Fl_Input aEdit_HitDice {
+              label {HD:}
+              tooltip {Hit Dice, can be used in HP calculations} xywh {710 190 100 25} labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_Items {
+              label {Items:}
+              tooltip {Any special items they may be carrying} xywh {540 355 450 25} color 3 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_ACNoParry {
+              label {No Parry}
+              tooltip {d100: No Parry} xywh {569 245 31 25} type Int labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_SavePoison {
+              label Poison
+              tooltip {d100 RR for Poison} xywh {525 385 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_SaveDisease {
+              label Disease
+              tooltip {d100 RR for Disease} xywh {610 385 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_RoundsDeathIn {
+              label {Death in}
+              tooltip {Rounds until death occurs} xywh {710 163 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_BaseSpells {
+              label {Base Spells}
+              tooltip {Base Spell Attack} xywh {740 110 31 25} type Int color 3 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_DirectedSpells {
+              label {Dir. Spells}
+              tooltip {Directed Spell Attack} xywh {740 136 31 25} type Int color 3 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Choice aEdit_ArmorWorn {
+              label {Armor Worn} open
+              xywh {820 110 25 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 hide
+              code0 {o->add("None"); o->add("Soft Lthr");}
+              code1 {o->add("Rigid Lthr"); o->add("Chain");}
+              code2 {o->add("Plate");}
+            } {}
+            Fl_Choice aEdit_ArmorLegWorn {
+              label Leg open
+              xywh {820 135 25 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 hide
+              code0 {o->add("None");}
+              code1 {o->add("Leather");}
+              code2 {o->add("Metal");}
+            } {}
+            Fl_Choice aEdit_ArmorArmWorn {
+              label Arm open
+              xywh {820 160 25 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 hide
+              code0 {o->add("None");}
+              code1 {o->add("Leather");}
+              code2 {o->add("Metal");}
+            } {}
+            Fl_Choice aEdit_ArmorHelmWorn {
+              label Helm open
+              xywh {820 185 25 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 hide
+              code0 {o->add("None");}
+              code1 {o->add("Leather");}
+              code2 {o->add("Metal");}
+            } {}
+            Fl_Input aEdit_NoInGroup {
+              label {\#In Group}
+              tooltip {Used for mass combats. How many in this group} xywh {938 328 31 25} type Int color 2 labelsize 12 textsize 12
+            }
+          }
+          Fl_Tile aEdt_Weapons {
+            label Weapons open
+            xywh {224 103 761 317} color 239 labelsize 12
+          } {
+            Fl_Input aEdit_NoAttacks {
+              label {\# Attks}
+              xywh {386 115 29 25} type Int color 2 labelsize 12 textsize 12
+            }
+            Fl_Browser aEdit_WeaponSelector {
+              label Weapon
+              callback {selectEditWeapon(o->value()-1);}
+              xywh {235 156 185 160} type Select color 6 labelsize 12 align 5 textsize 12
+            }
+            Fl_Check_Button aEdit_WeaponAvailable {
+              label Available
+              xywh {500 140 25 20} down_box DOWN_BOX labelsize 12 align 4 deactivate
+            }
+            Fl_Input aEdit_WeaponName {
+              label Name
+              xywh {503 160 202 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Button aEdit_WeaponSearch {
+              label {Search ...}
+              callback {if (aEdit_WeaponSelector->value() > 5) {
+   searchWeaponDetails(0, 1);
+} else {
+   searchWeaponDetails(0, 0);
+}}
+              xywh {715 159 65 25} labelsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponAttkBonus1 {
+              label {Attk Bonuses}
+              xywh {503 190 29 25} type Int color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponAttkBonus2 {
+              xywh {535 190 29 25} type Int labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponAttkBonus3 {
+              xywh {567 190 29 25} type Int labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponAttkBonus4 {
+              xywh {599 190 29 25} type Int labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponDamage {
+              label Damage
+              tooltip {Up to 10 characters describing the damage ie. 1d8+3} xywh {503 218 93 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponCritical {
+              label Critical
+              tooltip {Up to 10 characters describing the critical ie. 19-20/*3} xywh {503 245 78 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponMagicBonus {
+              label {Magic Bonus}
+              xywh {503 272 29 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponRange {
+              label Range
+              xywh {503 299 29 25} labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponReach {
+              label Reach
+              xywh {640 327 29 25} labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponNoAttacks {
+              label {\# Attacks}
+              xywh {503 327 29 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_WeaponSpecialMessage {
+              label {Special Message}
+              xywh {503 355 212 25} labelsize 12 textsize 12 deactivate
+            }
+            Fl_Choice aEdit_WeaponType {
+              label Type open
+              xywh {640 272 75 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {o->add("Melee");}
+              code1 {o->add("Ranged");}
+            } {}
+            Fl_Button aEdit_WeaponClear {
+              label {Clear Details}
+              callback {aEdit_WeaponName->value("Empty Slot");
+aEdit_WeaponAttkBonus1->value("0"); aEdit_WeaponAttkBonus2->value("0"); aEdit_WeaponAttkBonus3->value("0"); aEdit_WeaponAttkBonus4->value("0");
+aEdit_WeaponDamage->value(""); aEdit_WeaponCritical->value(""); aEdit_WeaponMagicBonus->value("");
+aEdit_WeaponRange->value(""); aEdit_WeaponReach->value(""); aEdit_WeaponNoAttacks->value("");
+aEdit_WeaponSpecialMessage->value(""); aEdit_WeaponFumble->value(""); aEdit_WeaponCritAdjustment->value(0);
+aEdit_WeaponSize->value(0); aEdit_WeaponAttackTable->value("");}
+              tooltip {Clears all the current weapon details} xywh {805 160 80 25} color 1 labelsize 12
+            }
+            Fl_Input aEdit_WeaponFumble {
+              label Fumble
+              xywh {805 218 29 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Choice aEdit_WeaponCritAdjustment {
+              label {Crit Adjust}
+              xywh {805 245 60 25} down_box BORDER_BOX color 2 labelsize 12 when 6 textsize 12 deactivate
+              code0 {o->add("None"); o->add("-1"); o->add("-2");}
+              code1 {o->add("Large"); o->add("Super Large");}
+            } {}
+            Fl_Choice aEdit_WeaponSize {
+              label Size open
+              xywh {805 272 75 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+              code0 {o->add("Small");}
+              code1 {o->add("Medium");}
+              code2 {o->add("Large");}
+              code3 {o->add("Huge");}
+            } {}
+            Fl_Input aEdit_WeaponAttackTable {
+              label {Attk Table}
+              xywh {805 300 29 25} color 2 labelsize 12 textsize 12 deactivate
+            }
+          }
+          Fl_Tile aEdt_Other {
+            label Other open
+            xywh {224 103 766 317} color 239 labelsize 12 hide
+          } {
+            Fl_Input aEdit_CRating {
+              label {Chal Rating:}
+              xywh {329 114 32 25} type Float labelsize 12 textsize 12
+            }
+            Fl_Choice aEdit_Size {
+              label {Size:} open
+              xywh {399 114 56 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {o->add("");}
+              code1 {o->add("Tiny"); o->add("Small"); o->add("Medium");}
+              code2 {o->add("Large"); o->add("Huge"); o->add("Colossal");}
+              code3 {o->add("Gargantuan");}
+            } {}
+            Fl_Input aEdit_XPCurr {
+              label {XP: Curr:}
+              xywh {527 114 55 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_XPTemp {
+              label {/}
+              xywh {592 114 55 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d201 {
+              label {d20 Rolls:}
+              tooltip {Prerolled d20's. For special DM use} xywh {329 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d202 {
+              tooltip {Prerolled d20's. For special DM use} xywh {358 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d203 {
+              xywh {387 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d204 {
+              tooltip {Prerolled d20's. For special DM use} xywh {416 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d205 {
+              xywh {445 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d206 {
+              tooltip {Prerolled d20's. For special DM use} xywh {474 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_d207 {
+              xywh {503 142 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC0 {
+              label {Spell DC:}
+              tooltip {The Spell DC for a Level 1 spell} xywh {329 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC1 {
+              tooltip {The Spell DC for a Level 2 Spell} xywh {358 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC2 {
+              tooltip {The Spell DC for a Level 3 Spell} xywh {387 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC3 {
+              tooltip {The Spell DC for a Level 4 Spell} xywh {416 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC4 {
+              tooltip {The Spell DC for a Level 5 Spell} xywh {445 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC5 {
+              tooltip {The Spell DC for a Level 6 Spell} xywh {474 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC6 {
+              tooltip {The Spell DC for a Level 7 Spell} xywh {503 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC7 {
+              tooltip {The Spell DC for a Level 8 Spell} xywh {532 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellDC8 {
+              tooltip {The Spell DC for a Level 9 Spell} xywh {561 170 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellFailure {
+              label {Spell: Failure %:}
+              xywh {329 197 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistance {
+              label {Resistance:}
+              xywh {446 197 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsSTR0 {
+              label {Stats: STR:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {329 227 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsSTR1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {360 227 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsDEX0 {
+              label {DEX:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {421 227 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsDEX1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {452 227 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsCON0 {
+              label {CON:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {515 226 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsCON1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {546 226 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsINT0 {
+              label {INT:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {330 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsINT1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {361 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsWIS0 {
+              label {WIS:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {422 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsWIS1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {453 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsCHA0 {
+              label {CHA:}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {516 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_StatsCHA1 {
+              label {/}
+              tooltip {These are for your information only. Changing these do not effect BAB etc} xywh {547 254 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_DamReductionHP {
+              label {Dam Reduction:}
+              tooltip {Damage amount they have to surpass} xywh {329 282 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_DamReductionWeapon {
+              label {/}
+              tooltip {Or have a weapon with a plus better than this} xywh {370 282 31 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Choice aEdit_DamReductionType {
+              label {Type:} open
+              xywh {453 282 80 25} down_box BORDER_BOX labelsize 12 textsize 12
+            } {}
+            Fl_Input aEdit_SkillSearch {
+              label {Skills: Search}
+              xywh {329 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillSOH {
+              label {SofH:}
+              xywh {390 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillSpot {
+              label {Spot:}
+              xywh {449 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillOLocks {
+              label {OLocks:}
+              xywh {525 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillMoveSilently {
+              label {MoveS:}
+              xywh {599 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillConcentration {
+              label {Concentration:}
+              xywh {714 309 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillListen {
+              label {Listen:}
+              xywh {329 336 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SkillHide {
+              label {Hide:}
+              xywh {389 336 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax0 {
+              label {Spell Slots: 0:}
+              tooltip {The Max no. of spells they can cast for Level 0} xywh {329 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur0 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 0} xywh {364 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax1 {
+              label 1
+              tooltip {The Max no. of spells they can cast for Level 1} xywh {405 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur1 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 1} xywh {440 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax2 {
+              label 2
+              tooltip {The Max no. of spells they can cast for Level 2} xywh {479 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur2 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 2} xywh {514 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax3 {
+              label 3
+              tooltip {The Max no. of spells they can cast for Level 3} xywh {553 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur3 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 3} xywh {588 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax4 {
+              label 4
+              tooltip {The Max no. of spells they can cast for Level 4} xywh {626 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur4 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 4} xywh {661 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax5 {
+              label 5
+              tooltip {The Max no. of spells they can cast for Level 5} xywh {702 364 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur5 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 5} xywh {737 364 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax6 {
+              label {6:}
+              tooltip {The Max no. of spells they can cast for Level 6} xywh {329 391 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur6 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 6} xywh {364 391 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax7 {
+              label 7
+              tooltip {The Max no. of spells they can cast for Level 7} xywh {406 391 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur7 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 7} xywh {441 391 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax8 {
+              label 8
+              tooltip {The Max no. of spells they can cast for Level 8} xywh {479 391 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur8 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 8} xywh {514 391 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotMax9 {
+              label 9
+              tooltip {The Max no. of spells they can cast for Level 9} xywh {553 391 25 25} type Int color 6 labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellSlotCur9 {
+              label {/}
+              tooltip {The Current no. of spells they can cast for Level 9} xywh {588 391 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceFire1 {
+              label {Fire Resist:}
+              tooltip {Resistance to Fire - how many HP per round they ignore} xywh {670 145 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceFire2 {
+              label {/ }
+              tooltip {How much has been used this Round} xywh {710 145 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceAcid1 {
+              label {Acid Resist:}
+              tooltip {Resistance to Acid - how many HP per round they ignore} xywh {670 172 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceAcid2 {
+              label {/ }
+              tooltip {How much has been used this Round} xywh {710 172 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceCold1 {
+              label {Cold Resist:}
+              tooltip {Resistance to Cold - how many HP per round they ignore} xywh {670 199 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceCold2 {
+              label {/ }
+              tooltip {How much has been used this Round} xywh {710 199 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceElec1 {
+              label {Elec Resist:}
+              tooltip {Resistance to Elecricity- how many HP per round they ignore} xywh {670 226 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceElec2 {
+              label {/ }
+              tooltip {How much has been used this Round} xywh {710 226 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceSonic1 {
+              label {Sonic Resist:}
+              tooltip {Resistance to Sonic- how many HP per round they ignore} xywh {670 253 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_SpellResistanceSonic2 {
+              label {/ }
+              tooltip {How much has been used this Round} xywh {710 253 25 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input aEdit_RoundsSpellChg {
+              label {Round: Spell Chg}
+              tooltip {d100 Rounds spent Spell Charging} xywh {885 115 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input aEdit_RoundsMissileChg {
+              label {Missile Loading}
+              tooltip {d100 Rounds spent Missile Loading} xywh {885 142 31 25} type Int color 2 labelsize 12 textsize 12 deactivate
+            }
+          }
+          Fl_Tile aEdit_TNotes {
+            label Notes open
+            xywh {224 103 784 317} labelsize 12 hide
+          } {
+            Fl_Text_Editor aEdit_Notes {
+              xywh {237 121 738 274} color 6 labelsize 12 align 5 textsize 10
+            }
+          }
+        }
+        Fl_Button aEdt_Accept {
+          label Accept
+          callback {savePlayer(config.i_editID);}
+          xywh {461 37 70 25} color 2 labelsize 12 deactivate
+        }
+        Fl_Button aEdt_Cancel {
+          label Cancel
+          callback {cancelEdit();}
+          xywh {545 37 70 25} color 1 labelsize 12 deactivate
+        }
+        Fl_Choice aEdit_SpecialActions {
+          label {Special Actions:}
+          callback {doEditSpecialActions(o->value());} open
+          xywh {336 37 90 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 deactivate
+        } {}
+        Fl_Input a_EdtQkMonstSearch {
+          label {Qk Monst Search}
+          callback {searchQkMonsters(o->value());}
+          tooltip {Type in the first part of the monsters name. Use -- to find empty slots to use for your own monsters} xywh {471 445 140 25} labelsize 12 align 5 when 3 textsize 12
+        }
+        Fl_Browser a_EdtQkMonList {
+          callback {qkMonsterAction(1);}
+          tooltip {This is the list of STANDARD monsters. Use the SEARCH field to find upto 100 specific monsters} xywh {225 435 232 255} type Select color 6 labelsize 12 align 4 textsize 12
+        }
+        Fl_Counter a_EdtQkMonAddCtr {
+          label {\# to Add}
+          tooltip {How many of these monsters to add. Up to 40} xywh {471 484 45 20} type Simple labelsize 12 align 8 minimum 1 maximum 40 step 1 value 1 textsize 12
+        }
+        Fl_Button aEdit_AddQkMonsters {
+          label {Add them}
+          callback {actionQkMonsters(0);}
+          tooltip {Add the standard monster to the list of active monsters} xywh {496 517 75 25} labelsize 12
+        }
+        Fl_Button aEdit_EditQkMonsters {
+          label {Edit them}
+          callback {actionQkMonsters(1);}
+          tooltip {Edit the selected Standard Monster. Accept the changes when done.} xywh {496 552 75 25} labelsize 12
+        }
+        Fl_Button aEdit_QkMonstersWildSearch {
+          label {Advanced Search}
+          callback {actionQkMonsters(3);}
+          tooltip {Display any containing the search text} xywh {637 444 115 25} labelsize 12
+        }
+        Fl_Counter a_EdtQkMonCRSearch {
+          label {CR Only}
+          callback {// actionQkMonsters(3);}
+          tooltip {Only show monsters with this CR value. ZERO means all monsters.} xywh {636 518 45 20} type Simple labelsize 12 align 8 minimum 0 maximum 30 step 1 textsize 12
+        }
+        Fl_Button aEdit_Dump {
+          label Dump
+          callback {dump_player_details();}
+          tooltip {Dump a list of players and monsters to the screen (stdout) for a header (.h) file} xywh {945 37 50 25} labelsize 12
+        }
+        Fl_Group aEL_CalculatorGroup {
+          label {EL Calculator} open
+          xywh {795 543 200 147} box DOWN_BOX labelsize 12 align 5
+        } {
+          Fl_Counter aELC_ELLevel {
+            label {Enc. Level}
+            callback {calcELLevel();}
+            xywh {952 551 36 25} type Simple labelsize 12 align 4 minimum 0 maximum 20 step 1 value 1 textsize 12
+          }
+          Fl_Browser aELC_Results {
+            xywh {815 580 176 102} color 6 labelsize 12 textsize 12
+          }
+        }
+        Fl_Choice a_EdtQkMonCREnvironment {
+          label {Environment:} open
+          tooltip {In what type of environment are the monsters found. Limits the search} xywh {860 444 130 25} down_box BORDER_BOX labelsize 12 textsize 12
+        } {}
+        Fl_Button aEdit_SaveQkMonsters {
+          label {Save as Std}
+          callback {actionQkMonsters(-1);}
+          tooltip {Add the current monster being editted as a Standard Monster. If a Std Monster is selected it'll update it instead} xywh {496 587 75 25} labelsize 12
+        }
+        Fl_Button aEdt_QkMonsterAdd {
+          label {Qk Monster Add}
+          callback {qkMonsterAdd(0);}
+          tooltip {A quick way of adding monsters ... it just asks for the basic details} xywh {629 37 102 25} color 3 labelsize 12
+        }
+        Fl_Input a_EdtQkMonstIconFilename {
+          label {Icon to use}
+          tooltip {The icon to use for the monsters when you Add them} xywh {540 625 175 25} labelsize 12 textsize 12
+        }
+        Fl_Button a_EdtQkMonstIconLoad {
+          label {Load ...}
+          callback {doSpecialMapAction(101);}
+          xywh {726 625 50 25} labelsize 12
+        }
+        Fl_Check_Button aEdit_showEnabled {
+          label {Show only Enabled}
+          callback {reloadNames(0);}
+          tooltip {Show only monster that are enabled} xywh {75 180 25 20} down_box DOWN_BOX labelsize 12
+        }
+      }
+      Fl_Tile a_TOther {
+        label Other
+        xywh {0 25 1014 680} labelsize 12 hide
+      } {
+        Fl_Tabs a_OTabs {open
+          xywh {0 40 1010 660}
+        } {
+          Fl_Tile a_OTAutoDamage {
+            label {Auto Damage}
+            xywh {5 65 990 627} labelsize 12 hide
+          } {
+            Fl_Check_Browser a_OTADList {
+              label {Auto Damage List}
+              callback {doAutoDamageAction(1);}
+              tooltip {This shows all the available auto-damage items to use} xywh {30 90 150 164} labelsize 12 align 5 when 6 textsize 12
+            }
+            Fl_Button a_OTADAccept {
+              label Accept
+              callback {doAutoDamageAction(2);}
+              xywh {361 87 60 25} color 2 labelsize 12
+            }
+            Fl_Button a_OTADCancel {
+              label Cancel
+              callback {doAutoDamageAction(3);}
+              xywh {446 87 60 25} color 1 labelsize 12
+            }
+            Fl_Check_Browser a_OTADInitiateList {
+              label {Who Initiates it}
+              callback {int i = o->value();
+o->check_none();
+o->checked(i, 1);}
+              xywh {30 279 230 401} color 2 labelsize 12 align 5 when 6 textsize 12
+            }
+            Fl_Check_Browser a_OTADReceiveList {
+              label {Who Receives it}
+              xywh {275 279 230 401} type Multi color 3 labelsize 12 align 5 when 6 textsize 12
+            }
+            Fl_Input a_OTADDescription {
+              label {Description:}
+              tooltip {What to 'call' this auto-damage} xywh {610 277 154 25} labelsize 12 textsize 12
+            }
+            Fl_Input a_OTADDamage {
+              label {Damage:}
+              tooltip {This can either be a dice roll or a value. If you preroll them, separate then with a SPACE} xywh {610 308 262 25} labelsize 12 textsize 12
+            }
+            Fl_Input a_OTADRounds {
+              label {Duration:}
+              tooltip {How many rounds to last. If this follows someone's INITIATIVE, add 1 to this} xywh {610 338 38 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input a_OTADRoundsDone {
+              label {Rounds Done:}
+              tooltip {How many rounds done} xywh {610 369 38 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Check_Browser a_OTADFlags {
+              label {Flags/Options:}
+              callback {doAutoDamageAction(4);}
+              tooltip {Any special flags/options to apply to this auto-damage} xywh {610 400 146 67} type Multi labelsize 12 align 4 when 6 textsize 12
+              code0 {o->add("Do on their Initiative");}
+              code1 {o->add("Done this Round");}
+              code2 {o->add("Re-roll for each Recvr");}
+            }
+            Fl_Choice a_OTADType {
+              label {Type:} open
+              tooltip {What type of damage this does} xywh {610 473 87 25} down_box BORDER_BOX labelsize 12 textsize 12 deactivate
+              code0 {o->add("HP Damage");}
+            } {}
+          }
+          Fl_Tile a_TMassSkillCheck {
+            label {Mass Skill Check}
+            xywh {4 65 991 627} labelsize 12 hide
+          } {
+            Fl_Check_Browser aMSC_DoingList {
+              label {Who's doing the Check}
+              xywh {29 137 236 543} type Multi color 6 labelsize 12 align 5 textsize 12
+            }
+            Fl_Button aMSC_refresh {
+              label {Refresh List}
+              callback {doMassSkillCheck(0);}
+              tooltip {Refresh the list of names. It will only show enabled creatures.} xywh {63 81 91 25} color 2 labelsize 12
+            }
+            Fl_Button aMSC_DisableAllPlayers {
+              label {Set All Players}
+              callback {extern ADMPsystem config;
+
+int i;
+
+for (i=aMSC_DoingList->nitems(); i>=0; i--) {
+   if (config.i_idList[ID_MSKILLCHK][i] < MAX_PLAYERS && config.i_idList[ID_MSKILLCHK][i] > -1) {
+      aMSC_DoingList->checked(i+1, 1);
+   }
+}}
+              xywh {295 353 105 25} labelsize 12
+            }
+            Fl_Button aMSC_DisableAllMonsters {
+              label {Set All Monsters}
+              callback {extern ADMPsystem config;
+
+int i;
+
+for (i=aMSC_DoingList->nitems(); i>=0; i--) {
+   if (config.i_idList[ID_MSKILLCHK][i] >= MAX_PLAYERS && config.i_idList[ID_MSKILLCHK][i] < MAX_MEMBERS) {
+      aMSC_DoingList->checked(i+1, 1);
+   }
+}}
+              xywh {295 388 105 25} labelsize 12
+            }
+            Fl_Button aMSC_DisableUnsetAll {
+              label {Unset All}
+              callback {aMSC_DoingList->check_none();}
+              xywh {295 420 105 25} labelsize 12
+            }
+            Fl_Input aMSC_DCValue {
+              label {DC of Check}
+              xywh {353 231 31 25} type Int color 3 labelsize 12 textsize 12
+            }
+            Fl_Choice aMSC_flags {
+              label {Flags/Options} open
+              tooltip {If it uses all the pre-rolled d20 it will roll a random roll for you.} xywh {353 142 135 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {o->add(" ");}
+              code1 {o->add("Roll a d20");}
+              code2 {o->add("Use prerolled d20");}
+              code3 {o->value(0);}
+            } {}
+            Fl_Choice aMSC_SkillList {
+              label {Skill Used} open
+              xywh {353 188 135 25} down_box BORDER_BOX labelsize 12 textsize 12
+              code0 {o->add("Search"); o->add("Slight of Hand"); o->add("Spot");}
+              code1 {o->add("Open Locks"); o->add("Move Silently"); o->add("Listen");}
+              code2 {o->add("Hide"); o->add("Concentration");}
+              code3 {o->value(0);}
+            } {}
+            Fl_Button aMSC_Calculate {
+              label {Do Skill Check}
+              callback {doMassSkillCheck(2);}
+              xywh {353 275 102 25} color 2 labelsize 12
+            }
+            Fl_Browser aMSC_ResultList {
+              label {Skill Check Results (RED = failed)}
+              tooltip {The result of the skill check. RED means they failed.} xywh {522 137 308 495} labelsize 12 align 5 textsize 12
+            }
+          }
+          Fl_Tile a_TLogFile {
+            label {Log File}
+            xywh {6 65 989 627} labelsize 12 hide
+          } {
+            Fl_Browser aLF_Logfile {
+              xywh {14 113 806 562} labelsize 12 textsize 12
+            }
+            Fl_Button aFL_Refresh {
+              label Refresh
+              callback {aLF_Logfile->load("logfile.txt");
+
+aLF_Logfile->bottomline(aLF_Logfile->size());}
+              xywh {336 79 68 25} color 2 labelsize 12
+            }
+          }
+          Fl_Tile a_TQkIcon {
+            label {Qk Icon}
+            xywh {6 65 987 625} labelsize 12 hide
+          } {
+            Fl_Button a_qkIconRefresh {
+              label {Refresh List}
+              callback {doQkIcon(0);}
+              xywh {78 80 110 25} color 2 labelsize 12
+            }
+            Fl_Check_Browser a_qkIconList {
+              tooltip {The list of available monsters to change} xywh {28 119 262 556} type Multi color 6 labelsize 12 textsize 12
+            }
+            Fl_Button a_qkIconLoad {
+              label {Load ...}
+              callback {doQkIcon(1);}
+              xywh {315 127 50 25} labelsize 12
+            }
+            Fl_Input a_qkIconIcon {
+              label {Icon to Use}
+              xywh {445 127 330 25} labelsize 12 textsize 12
+            }
+            Fl_Input a_qkIconSpace {
+              label Space
+              xywh {445 167 35 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input a_qkIconReach {
+              label Reach
+              xywh {445 197 35 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Button a_qkIconDoit {
+              label {Do it}
+              callback {doQkIcon(2);}
+              tooltip {Make these changes to the selected Monsters} xywh {445 252 60 25} color 1
+            }
+          }
+          Fl_Tile T_massWeaponCopy {
+            label {Mass Copy} open
+            xywh {5 65 1000 630} labelsize 12 hide
+          } {
+            Fl_Check_Browser mWC_FromList {
+              label {Copy From}
+              callback {o->deactivate();}
+              xywh {190 110 235 535} color 2 labelsize 12 align 5 when 1 textsize 12
+            }
+            Fl_Check_Browser mWC_ToList {
+              label {Copy To}
+              xywh {470 110 235 535} type Multi color 3 labelsize 12 align 5 textsize 12
+            }
+            Fl_Button mWC_Refresh {
+              label {Refresh Lists}
+              callback {doCopyWeaponDetails(0);}
+              xywh {40 110 115 30} color 2 labelsize 12
+            }
+            Fl_Button mWC_WeaponCopy {
+              label {Copy Weapons}
+              callback {doCopyWeaponDetails(1);}
+              xywh {740 110 115 30} color 1 labelsize 12
+            }
+            Fl_Button mWC_AllCopy {
+              label {Copy All Details}
+              callback {doCopyWeaponDetails(2);}
+              tooltip {Except name, map location and icon} xywh {740 155 115 30} color 1 labelsize 12
+            }
+          }
+          Fl_Tile t_QkSpelllists {
+            label {Qk Spells} open
+            xywh {0 65 1000 630} color 2 labelsize 12 hide
+          } {
+            Fl_Choice qsl_castertype {
+              label Type
+              callback {doSpellLists(0);} open
+              xywh {50 85 110 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+            } {}
+            Fl_Counter qsl_casterlevel {
+              label Level
+              callback {doSpellLists(0);}
+              xywh {215 85 45 25} type Simple labelsize 12 align 4 minimum 1 maximum 20 step 1 value 1 textsize 12
+            }
+            Fl_Input qsl_spellsLevel1 {
+              label {Spells:}
+              tooltip {Number of spells available for Level 1} xywh {325 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel2 {
+              tooltip {Spells Level 2} xywh {360 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel3 {
+              tooltip {Spells Level 3} xywh {395 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel4 {
+              tooltip {Spells Level 4} xywh {430 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel5 {
+              tooltip {Spells Level 5} xywh {465 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel6 {
+              tooltip {Spells Level 6} xywh {500 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel7 {
+              tooltip {Spells Level 7} xywh {535 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel8 {
+              tooltip {Spells Level 8} xywh {570 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_spellsLevel9 {
+              tooltip {Spells Level 9} xywh {605 85 30 25} type Int labelsize 12 textsize 12
+            }
+            Fl_Input qsl_AttackRating {
+              label {Attack Rating}
+              tooltip {Percentage of Attack Spells} xywh {160 126 30 25} type Int labelsize 12 textsize 12
+              code0 {o->value("50");}
+            }
+            Fl_Input qsl_DefenceRating {
+              label {Defence Rating}
+              tooltip {Percentage of Defensive Spells} xywh {310 126 30 25} type Int labelsize 12 textsize 12
+              code0 {o->value("50");}
+            }
+            Fl_Button qsl_DoIt {
+              label Generate
+              callback {doSpellLists(1);}
+              tooltip {Generate a random spell list} xywh {400 126 70 25} labelsize 12
+            }
+            Fl_Input qsl_spellLists {
+              xywh {25 161 560 523} type Multiline labelsize 12 textsize 12
+            }
+          }
+          Fl_Tile t_HealMonsters {
+            label {Heal Monsters} open
+            xywh {0 65 1010 635} labelsize 12
+          } {
+            Fl_Group gHM_Monsters {open
+              xywh {20 115 970 560} box DOWN_BOX color 6 labelsize 12 align 5
+            } {}
+            Fl_Button bHM_Refresh {
+              label {Refresh List}
+              callback {doHealMonsters(0);}
+              xywh {220 80 90 25} color 2 labelsize 12
+            }
+            Fl_Button bHM_Accept {
+              label Accept
+              callback {doHealMonsters(1);}
+              xywh {335 80 90 25} color 1 labelsize 12
+            }
+            Fl_Input iHM_allMonsters {
+              label {Heal All}
+              tooltip {Heal all of these monsters shown this amount of HPs} xywh {530 80 35 25} type Int labelsize 12 textsize 12
+            }
+          }
+        }
+      }
+      Fl_Tile a_TSystem {
+        label System
+        xywh {0 25 1002 675} labelsize 12
+      } {
+        Fl_Input aSys_Rounds {
+          label {\# Round}
+          callback {int i=atoi(o->value());
+config.i_roundCount = i;
+if (config.flags.f_debug) {printf("Set to %d\\n", i); }}
+          xywh {105 50 33 25} type Int labelsize 12 when 1 textsize 12
+          code0 {o->value("1");}
+        }
+        Fl_Choice aSys_Bleeding {
+          label Bleeding
+          callback {config.i_whenBleed = o->value();
+if (config.flags.f_debug) { printf("Set to %d\\n", o->value()); }} open
+          xywh {105 84 87 25} down_box BORDER_BOX labelsize 12 textsize 12
+          code0 {o->add("On their INIT roll");}
+          code1 {o->add("At End of Round");}
+          code2 {o->value(0);}
+        } {}
+        Fl_Choice aSys_XPAllocation {
+          label {XP Allocation}
+          callback {config.i_xpAllocate = o->value();} open
+          xywh {105 119 87 25} down_box BORDER_BOX labelsize 12 textsize 12 deactivate
+          code0 {o->add("As a group");}
+          code1 {o->add("Individually");}
+          code2 {o->value(0);}
+        } {}
+        Fl_Choice aSys_GroupInitiatives {
+          label {Group Initiatives}
+          callback {config.i_doGroupInitiatives = o->value();} open
+          xywh {105 154 87 25} down_box BORDER_BOX labelsize 12 textsize 12 deactivate
+          code0 {o->add("As a group");}
+          code1 {o->add("Individually");}
+          code2 {o->value(0);}
+        } {}
+        Fl_Choice aSys_MultipleAttacks {
+          label {Multiple Attacks}
+          callback {config.i_attackGroup = o->value();} open
+          xywh {105 186 112 25} down_box BORDER_BOX labelsize 12 textsize 12 deactivate
+          code0 {o->add("Do ALL attacks on their roll");}
+          code1 {o->add("Separate them out");}
+          code2 {o->value(0);}
+        } {}
+        Fl_Input aSys_AttkSep1 {
+          label {Init Modifiers: 1st}
+          callback {config.i_attackSeparation[0] = atoi(o->value());}
+          xywh {105 220 36 25} labelsize 12 textsize 12 deactivate
+          code0 {o->value("0");}
+        }
+        Fl_Input aSys_AttkSep2 {
+          label {/}
+          callback {config.i_attackSeparation[1] = atoi(o->value());}
+          xywh {152 220 36 25} labelsize 12 textsize 12 deactivate
+          code0 {o->value("0");}
+        }
+        Fl_Input aSys_AttkSep3 {
+          label {/}
+          callback {config.i_attackSeparation[2] = atoi(o->value());}
+          xywh {198 220 36 25} labelsize 12 textsize 12 deactivate
+          code0 {o->value("0");}
+        }
+        Fl_Input aSys_AttkSep4 {
+          label {/}
+          callback {config.i_attackSeparation[3] = atoi(o->value());}
+          xywh {245 220 36 25} labelsize 12 textsize 12 deactivate
+          code0 {o->value("0");}
+        }
+        Fl_Input aSys_saveRounds {
+          label {Save Every \#Rounds}
+          callback {int i=atoi(o->value());
+config.i_roundsSave = i;
+if (config.flags.f_debug) {printf("Set to %d\\n", i); }}
+          xywh {400 50 33 25} type Int labelsize 12 when 1 textsize 12
+          code0 {o->value("1");}
+        }
+        Fl_Input aSys_playerFilename {
+          label {Player File}
+          callback {strncpy(config.c_partyFilename, o->value(), 29);}
+          xywh {105 302 155 25} labelsize 12 when 1 textsize 12
+          code0 {o->value("player.dat");}
+          code1 {strcpy(config.c_partyFilename, "player.dat");}
+        }
+        Fl_Input aSys_monsterFilename {
+          label {Monster File}
+          callback {strncpy(config.c_monstFilename, o->value(), 29);}
+          xywh {105 334 154 25} labelsize 12 when 1 textsize 12
+          code0 {o->value("monst.dat");}
+          code1 {strcpy(config.c_monstFilename, "monst.dat");}
+        }
+        Fl_Button aSys_SaveAll {
+          label {Save All}
+          callback {saveAllData();}
+          tooltip {This will save all the player & monster data. It WILL NOT save any notes.} xywh {464 386 66 25} color 6 labelsize 12
+        }
+        Fl_Button aSys_LoadAll {
+          label {Load All}
+          callback {loadAllData();}
+          xywh {541 386 66 25} color 3 labelsize 12
+        }
+        Fl_Button aSys_LoadMonster {
+          label {Load ...}
+          callback {loadMonsterFile();}
+          xywh {277 334 57 25} labelsize 12
+        }
+        Fl_Button aSys_SaveMonster {
+          label {Save ...}
+          callback {saveMonsterFile();}
+          xywh {344 334 57 25} color 6 labelsize 12
+        }
+        Fl_Button aSys_Reset4NewCombat {
+          label {Reset all for a new Combat}
+          callback {doOtherAction(8);}
+          tooltip {This will reset the players and monsters to full health and remove any triggers, adjustments or auto-damages.} xywh {451 316 170 25} color 79 labelsize 12
+        }
+        Fl_Check_Browser aSys_flags {
+          label {System Flags/Options}
+          callback {setSystemFlag(1);}
+          xywh {450 85 270 165} type Multi labelsize 12 align 4 when 6 textsize 12
+        }
+        Fl_Button aSys_LoadPlayer {
+          label {Load ...}
+          callback {loadPlayerFile();}
+          xywh {277 302 57 26} labelsize 12
+        }
+        Fl_Button aSys_Reset4NewDay {
+          label {Reset all for a new Day}
+          callback {doOtherAction(11);}
+          tooltip {This will heal the players by LEVEL and reset their spell slots} xywh {451 348 170 25} color 79 labelsize 12
+        }
+        Fl_Input aSys_Version {
+          label {Version \#}
+          xywh {675 50 42 25} labelsize 12 textsize 12 deactivate
+        }
+        Fl_Input aSys_mapFilename {
+          label {Map File}
+          callback {strncpy(config.c_mapFilename, o->value(), 29);}
+          xywh {105 365 154 25} labelsize 12 when 1 textsize 12
+          code0 {o->value("mymap.map");}
+          code1 {strcpy(config.c_mapFilename, "mymap.map");}
+        }
+        Fl_Button aSys_LoadMap {
+          label {Load ...}
+          callback {doMapFileAction(0);}
+          xywh {277 365 57 25} labelsize 12
+        }
+        Fl_Button aSys_SaveMap {
+          label {Save ...}
+          callback {doMapFileAction(1);}
+          xywh {344 365 57 25} color 6 labelsize 12
+        }
+        Fl_Input aSys_MapWidth {
+          label {Map Size}
+          tooltip {Map width} xywh {105 403 33 25} type Int labelsize 12 when 1 textsize 12
+          code0 {o->value("200");}
+        }
+        Fl_Input aSys_MapHeight {
+          label {x }
+          tooltip {Map height} xywh {155 403 33 25} type Int labelsize 12 when 1 textsize 12
+          code0 {o->value("200");}
+        }
+        Fl_Button aSys_ClearMap {
+          label New
+          callback {doMapFileAction(2);}
+          tooltip {Make a new empty map} xywh {277 401 57 25} labelsize 12
+        }
+        Fl_Button aSys_ResizeMap {
+          label Resize
+          callback {doMapFileAction(3);}
+          tooltip {Resize the existing map to a new size} xywh {344 400 57 25} labelsize 12
+        }
+        Fl_Slider aSys_ScreenWidth {
+          label {Screen Width}
+          callback {setScreenSize();}
+          tooltip {Width of the window} xywh {105 440 157 25} type Horizontal labelsize 12 align 4 minimum 1010 maximum 1478 step 1 value 1010
+        }
+        Fl_Slider aSys_ScreenHeight {
+          label {Screen Height}
+          callback {setScreenSize();}
+          tooltip {Height of the window} xywh {105 470 157 25} type Horizontal labelsize 12 align 4 minimum 700 maximum 1400 step 1 value 700
+        }
+        Fl_Button aSys_ResetTrigAdjustments {
+          label {Clear Adjustments and Alerts}
+          callback {doOtherAction(6);
+doOtherAction(7);
+doOtherAction(10);}
+          tooltip {This will remove any alerts, adjustments or auto-damages.} xywh {451 285 170 25} color 79 labelsize 12
+        }
+        Fl_Counter aSys_MapColorFrom {
+          label {Swap Map Color: From ID:}
+          xywh {155 508 35 25} type Simple labelsize 12 align 4 minimum 0 maximum 15 step 1 textsize 12
+        }
+        Fl_Counter aSys_MapColorTo {
+          label {To ID:}
+          xywh {230 508 35 25} type Simple labelsize 12 align 4 minimum 0 maximum 15 step 1 textsize 12
+        }
+        Fl_Button aSys_DoMapColor {
+          label Swap
+          callback {doMapFileAction(4);}
+          tooltip {Swap map colors. You would do this to change a solid into a transparent color or visa versa.} xywh {285 508 57 25} color 2 labelsize 12
+        }
+        Fl_Counter aSys_DecRnds {
+          label {Rnd Decrementor}
+          tooltip {This will decrement the number of rounds left to adjustments, alerts etc} xywh {140 549 56 20} type Simple labelsize 12 align 4 minimum 0 maximum 30 step 1 textsize 12
+        }
+        Fl_Button aSys_DecRndAction {
+          label {Do it}
+          callback {doRndsDecrement((int) aSys_DecRnds->value());
+aSys_DecRnds->value(0);}
+          tooltip {Decrement the adjustments etc by the number of rounds specified} xywh {225 550 64 20} color 1 labelsize 12
+        }
+        Fl_Choice aSys_diceSystem {
+          label {Dice System}
+          callback {doDiceSystem(o->value());} open
+          tooltip {What dice system to use} xywh {105 253 105 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12
+          code0 {o->add("d20 v3.5");}
+          code1 {o->add("MERP d100");}
+          code2 {o->add("RMS d100");}
+          code3 {o->value(0);}
+        } {}
+        Fl_Choice aSys_initSystem {
+          label {Init. System}
+          callback {doDiceSystem(o->value()+20);} open
+          tooltip {What dice system to use} xywh {295 255 105 25} down_box BORDER_BOX labelsize 12 when 6 textsize 12 deactivate
+          code0 {o->add("Standard");}
+          code1 {o->add("d12, d8, d6");}
+          code3 {o->value(0);}
+        } {}
+        Fl_Button aSys_BackupFiles {
+          label {Backup Files}
+          callback {doOtherAction(13);}
+          tooltip {Backs up all data files into a file called vcs-YYMMDD-HHMM.zip} xywh {465 440 145 35} color 1 labelsize 12
+        }
+      }
+      Fl_Tile a_TNotes {
+        label Notes
+        xywh {1 25 1002 675} labelsize 12 hide
+      } {
+        Fl_Text_Editor a_NotesArea {
+          xywh {10 87 983 597} labelsize 12 textsize 12
+        }
+        Fl_Button a_NotesLoad {
+          label Load
+          callback {extern Fl_Text_Buffer *notes_buffer;
+notes_buffer->loadfile("notes.txt");}
+          tooltip {Load or Reload the notes} xywh {181 45 50 25} labelsize 12
+        }
+        Fl_Button a_NotesSave {
+          label Save
+          callback {extern Fl_Text_Buffer *notes_buffer;
+extern char systemDir[], mybuf2[];
+
+sprintf(mybuf2, "%snotes.txt", systemDir);
+// notes_buffer->savefile("notes.txt");
+printf("NS: %s\\n", mybuf2);
+notes_buffer->savefile(mybuf2);}
+          tooltip {Save the notes to the notes.txt file} xywh {290 45 50 25} labelsize 12
+        }
+      }
+      Fl_Tile a_OTDiceRoller {
+        label {Dice Roller/Spells}
+        xywh {0 25 1005 675} labelsize 12 hide
+      } {
+        Fl_Browser a_ODRList1 {
+          label {Dice Rolling Results}
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {130 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Counter a_ODRCount {
+          label {\# to Roll}
+          xywh {55 48 50 22} type Simple labelsize 12 align 4 minimum 1 maximum 20 step 1 value 20 textsize 12
+        }
+        Fl_Button a_ODRReroll {
+          label {Reroll Dice}
+          callback {rollRNDDice();}
+          xywh {15 85 99 25} color 2 labelsize 12
+        }
+        Fl_Browser a_ODRList2 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {225 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList3 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {320 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList4 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {415 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList5 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {511 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList6 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {607 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList7 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {703 47 90 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Browser a_ODRList8 {
+          tooltip {The results of the dice rolls. The values in brackets is the running total of all the previous rolls.} xywh {799 47 100 268} labelsize 12 align 5 textfont 4 textsize 12
+        }
+        Fl_Group a_SpellListGroup {open
+          xywh {10 325 990 365} box DOWN_BOX color 6
+        } {
+          Fl_Input a_SLSpellSearch {
+            label Search
+            callback {showSRDspellEntries(1);}
+            tooltip {Search for spells starting with this} xywh {110 335 100 25} labelsize 12 when 1 textsize 12
+          }
+          Fl_Browser a_SLSpellSearchList {
+            callback {selectSRDspellEntries(1);}
+            tooltip {The list of spells} xywh {25 365 186 310} type Select labelsize 10 textsize 10
+            code0 {o->type(2);}
+          }
+          Fl_Help_View a_SLSpellSearchDetails {
+            xywh {225 340 760 335} labelsize 12
+          }
+        }
+      }
+      Fl_Tile a_OTStatus {
+        label Status
+        xywh {0 25 1000 669} labelsize 12 hide
+      } {
+        Fl_Button a_OStatusRefresh {
+          label Refresh
+          callback {doOtherAction(20);}
+          xywh {111 43 93 25} color 2 labelsize 12
+        }
+        Fl_Browser a_OStatusList {
+          tooltip {This shows their total HPs and does include those from Adjustments etc} xywh {20 85 963 590} type Select labelsize 12 textfont 4 textsize 12
+        }
+      }
+      Fl_Tile a_TSRD {
+        label {SRD Text}
+        xywh {1 25 1004 675} labelsize 12 hide
+      } {
+        Fl_Help_View a_SRDText {
+          xywh {11 79 988 609} labelsize 10
+          code0 {o->link(&htmlLoadLink);}
+        }
+        Fl_Button a_SRDIndex {
+          label {Back to the Index}
+          callback {extern char systemDir[], mybuf2[];
+extern int htmlLevel;
+
+sprintf(mybuf2, "%s/srd/index.html", systemDir);
+// a_SRDText->load("srd/index.html");
+htmlLevel = -1;
+a_SRDText->load(mybuf2);}
+          xywh {270 40 118 25} labelsize 12
+        }
+        Fl_Button a_SRDPreviousPage {
+          label {@<-}
+          callback {extern char prevHtmlPage[5][256];
+extern int htmlLevel;
+
+if (prevHtmlPage[0][0] != '\\0') {
+//printf("hPP: %d %s\\n", htmlLevel, &prevHtmlPage[htmlLevel][0]);
+   a_SRDText->load(&prevHtmlPage[0][0]);
+   htmlLevel--;
+   if (htmlLevel < 0) { htmlLevel = 0; }
+//printf("hPP: %d %s\\n", htmlLevel, &prevHtmlPage[0][0]);
+}}
+          tooltip {Previous Page} xywh {468 40 53 25} labelsize 12
+        }
+      }
+      Fl_Tile a_TQkHeal {
+        label {Qk Heal/XP/Enable}
+        xywh {0 25 1005 700} labelsize 12 hide
+      } {
+        Fl_Group g_QuickHeal {
+          label {Quick Heal} open
+          xywh {10 50 290 270} box DOWN_BOX color 3 labelsize 12 align 5
+        } {
+          Fl_Button a_qkheal_refresh {
+            label {Refresh Details}
+            callback {qkHealAction(0);}
+            tooltip {Refresh the player details} xywh {25 60 96 25} color 2 labelsize 12
+          }
+          Fl_Button a_qkheal_accept {
+            label Accept
+            callback {qkHealAction(1);}
+            tooltip {Heal the players} xywh {138 60 76 25} color 6 labelsize 12
+          }
+          Fl_Input a_qkheal_ln00 {
+            xywh {20 95 200 20} labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln01 {
+            xywh {240 95 37 20} type Int labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln10 {
+            xywh {20 116 200 20} color 6 labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln11 {
+            xywh {240 116 37 20} type Int color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln20 {
+            xywh {20 137 200 20} labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln21 {
+            xywh {240 137 37 20} type Int labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln30 {
+            xywh {20 158 200 20} color 6 labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln31 {
+            xywh {240 158 37 20} type Int color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln40 {
+            xywh {20 179 200 20} labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln41 {
+            xywh {240 179 37 20} type Int labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln50 {
+            xywh {20 200 200 20} color 6 labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln51 {
+            xywh {240 200 37 20} type Int color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln60 {
+            xywh {20 221 200 20} labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln61 {
+            xywh {240 221 37 20} type Int labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln70 {
+            xywh {20 242 200 20} color 6 labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln71 {
+            xywh {240 242 37 20} type Int color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln80 {
+            xywh {20 263 200 20} labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln81 {
+            xywh {240 263 37 20} type Int labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_ln90 {
+            xywh {20 284 200 20} color 6 labelsize 12 align 5 textfont 4 textsize 12 deactivate
+          }
+          Fl_Input a_qkheal_ln91 {
+            xywh {240 284 37 20} type Int color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Input a_qkheal_all {
+            tooltip {Heal all of these players this amount of HPs} xywh {240 60 40 25} type Int labelsize 12 align 5 textsize 12
+          }
+        }
+        Fl_Group aMisc_Enable {
+          label {Enable/Disable/Hide etc} open
+          xywh {625 50 370 632} box DOWN_BOX color 3 labelsize 12 align 5
+        } {
+          Fl_Check_Browser a_OTDisableList {
+            label {Whom to effect}
+            tooltip {This shows the list available to be disabled or enabled. You should REFRESH this if you've added monsters or players.} xywh {640 68 210 601} color 6 labelsize 12 align 5 textsize 12
+          }
+          Fl_Button a_OTDisableRefresh {
+            label {Refresh List}
+            callback {doDisableAction(-1);}
+            xywh {876 66 80 25} color 2 labelsize 12
+          }
+          Fl_Button a_OTDisableAllPlayers {
+            label {Set All Players}
+            callback {extern ADMPsystem config;
+
+int i;
+
+for (i=a_OTDisableList->nitems(); i>=0; i--) {
+   if (config.i_idList[ID_DISA][i] < MAX_PLAYERS && config.i_idList[ID_DISA][i] > -1) {
+      a_OTDisableList->checked(i+1, 1);
+   }
+}}
+            xywh {870 316 105 25} labelsize 12
+          }
+          Fl_Button a_OTDisableAllMonsters {
+            label {Set All Monsters}
+            callback {extern ADMPsystem config;
+
+int i;
+
+for (i=a_OTDisableList->nitems(); i>=0; i--) {
+   if (config.i_idList[ID_DISA][i] >= MAX_PLAYERS && config.i_idList[ID_DISA][i] < MAX_MEMBERS) {
+      a_OTDisableList->checked(i+1, 1);
+   }
+}}
+            xywh {870 348 105 25} labelsize 12
+          }
+          Fl_Button a_OTDisableUnsetAll {
+            label {Unset All}
+            callback {a_OTDisableList->check_none();}
+            xywh {870 380 105 25} labelsize 12
+          }
+          Fl_Check_Browser a_OTDisableActionList {
+            callback {doDisableAction(0);}
+            xywh {860 100 125 155} box DOWN_BOX color 6 labelsize 12 when 1 textsize 12
+          }
+          Fl_Button a_OTDisableDoAction {
+            label {Do Action}
+            callback {doDisableAction(1);}
+            tooltip {Do the above action} xywh {870 265 105 25} color 1 labelsize 12
+          }
+        }
+        Fl_Group aMisc_XPCalc {
+          label {XP Calc} open
+          xywh {10 344 290 338} box DOWN_BOX color 3 labelsize 12 align 5
+        } {
+          Fl_Input a_OXPPartyLevel {
+            label {Party Level}
+            xywh {90 354 35 25} type Int labelsize 12 textsize 12
+          }
+          Fl_Check_Button a_OXPCalcIncAll {
+            label {Include ALL monsters}
+            tooltip {By selecting, you will include all monsters even those marked not to be shown (see Dis/Enable tab).} xywh {265 354 25 25} down_box DOWN_BOX labelsize 12 align 4
+          }
+          Fl_Button a_OXPCalcRefresh {
+            label {Calculate XP}
+            callback {doCalcXP();}
+            xywh {25 389 90 25} color 2 labelsize 12
+          }
+          Fl_Input a_OXPValue {
+            label XP
+            xywh {140 389 48 25} type Int labelsize 12 textsize 12
+            code0 {o->value("0");}
+          }
+          Fl_Button a_OXPAdd {
+            label {+ XP}
+            callback {doAddPlayerXP();}
+            tooltip {Add the XP value to Players XP total} xywh {205 389 38 25} color 6 labelsize 12
+          }
+          Fl_Browser a_OXPCalcList {
+            xywh {20 434 270 236} labelsize 12 textsize 12
+          }
+        }
+        Fl_Button aMisc_Reset4NewCombat {
+          label {Reset all for a new Combat}
+          callback {doOtherAction(8);}
+          tooltip {This will reset the players and monsters to full health and remove any triggers, adjustments or auto-damages.} xywh {370 78 170 25} color 79 labelsize 12
+        }
+        Fl_Button aMisc_Reset4NewDay {
+          label {Reset all for a new Day}
+          callback {doOtherAction(11);}
+          tooltip {This will heal the players by LEVEL and reset their spell slots} xywh {370 110 170 25} color 79 labelsize 12
+        }
+        Fl_Button aMisc_ResetTrigAdjustments {
+          label {Clear Adjustments and Alerts}
+          callback {doOtherAction(6);
+doOtherAction(7);
+doOtherAction(10);}
+          tooltip {This will remove any alerts, adjustments or auto-damages.} xywh {370 47 170 25} color 79 labelsize 12
+        }
+        Fl_Counter aMisc_DecRnds {
+          label {Rnd Decrementor}
+          tooltip {This will decrement the number of rounds left to adjustments, alerts etc} xywh {425 150 56 23} type Simple labelsize 12 align 4 minimum 0 maximum 30 step 1 textsize 12
+        }
+        Fl_Button aMisc_DecRndAction {
+          label {Do it}
+          callback {doRndsDecrement((int) aMisc_DecRnds->value());
+aMisc_DecRnds->value(0);}
+          tooltip {Decrement the adjustments etc by the number of rounds specified} xywh {500 150 64 25} color 1 labelsize 12
+        }
+        Fl_Group aMisc_SpecialActions {
+          label {Special Actions} open
+          xywh {310 205 305 477} box DOWN_BOX color 3 labelsize 12 align 5
+        } {
+          Fl_Browser a_OOActionList {
+            label {Select action}
+            callback {setOtherActionDescription(o->value()-1);}
+            xywh {319 230 190 265} type Select labelsize 12 align 5 textsize 12
+            code0 {o->type(2);}
+          }
+          Fl_Button a_OOtherAction {
+            label {Do action}
+            callback {doOtherAction(a_OOActionList->value()-1);}
+            xywh {520 340 80 25} color 2 labelsize 12
+          }
+          Fl_Output a_OOtherActionDescription {
+            label {What this action does}
+            xywh {318 515 290 75} type Multiline color 25 labelsize 12 align 5 textsize 12
+          }
+        }
+      }
+      Fl_Tile T_AlertName {
+        label {Alerts/Name/Treasure/NPC}
+        xywh {0 25 1055 700} labelsize 12 hide
+      } {
+        Fl_Group ant_Grp1 {open
+          xywh {5 35 510 230} box DOWN_BOX color 6 selection_color 2 labelsize 12
+        } {
+          Fl_Check_Browser a_OTTriggerList {
+            label Alerts
+            callback {doTriggerAction(0);}
+            xywh {24 62 151 182} labelsize 12 align 5 when 6 textsize 12
+          }
+          Fl_Input a_OTTriggerRounds {
+            label Duration
+            xywh {235 90 32 25} type Int labelsize 12 textsize 12 deactivate
+          }
+          Fl_Input a_OTTriggerMessage {
+            label Message
+            tooltip {What does this alert pertain to} xywh {235 122 275 25} labelsize 12 textsize 12 deactivate
+          }
+          Fl_Check_Button a_OTTriggerEveryRound {
+            label {Display every Rnd}
+            tooltip {If marked, it will display the message every round} xywh {294 155 25 25} down_box DOWN_BOX labelsize 12 align 4 deactivate
+          }
+          Fl_Input a_OTTriggerEvery {
+            label Every
+            tooltip {Show this message every X (or d?) rounds.} xywh {235 185 62 25} labelsize 12 textsize 12 deactivate
+          }
+          Fl_Button a_OTTriggerAccept {
+            label Accept
+            callback {doTriggerAction(1);}
+            xywh {300 50 79 25} color 2 labelsize 12 deactivate
+          }
+          Fl_Button a_OTTriggerCancel {
+            label Cancel
+            callback {doTriggerAction(2);}
+            xywh {399 50 79 25} color 1 labelsize 12 deactivate
+          }
+        }
+        Fl_Group ant_Grp2 {open
+          xywh {525 35 480 230} box DOWN_BOX color 6 labelsize 12
+        } {
+          Fl_Browser aGN_NameList1 {
+            xywh {540 100 141 150} labelsize 12 textsize 12
+          }
+          Fl_Button aGN_Refresh {
+            label {Generate Names}
+            callback {generateRndNames();}
+            xywh {707 55 110 25} labelsize 12
+          }
+          Fl_Browser aGN_NameList2 {
+            xywh {693 100 141 150} labelsize 12 textsize 12
+          }
+          Fl_Browser aGN_NameList3 {
+            xywh {849 100 141 150} labelsize 12 textsize 12
+          }
+        }
+        Fl_Group ant_Grp3 {open
+          xywh {5 275 410 420} box DOWN_BOX color 6 labelsize 12
+        } {
+          Fl_Counter aRT_ELLevel {
+            label {EL Level}
+            xywh {90 285 60 25} type Simple labelsize 12 align 4 minimum 1 maximum 20 step 1 value 1 textsize 12
+          }
+          Fl_Button aRT_Generate {
+            label {Generate Rnd Treasure}
+            callback {generateRndTreasure();}
+            xywh {170 285 155 25} color 2 labelsize 12
+          }
+          Fl_Counter aRT_ItemCount {
+            label {\#}
+            xywh {45 520 60 25} type Simple labelsize 12 align 8 minimum 0 maximum 10 step 1 textsize 12
+          }
+          Fl_Choice aRT_ItemType {
+            label Item open
+            xywh {145 520 100 25} down_box BORDER_BOX labelsize 12 textsize 12
+            code0 {o->add("None"); o->add("Potion"); o->add("Wand"); o->add("Staff");}
+            code1 {o->add("Weapon"); o->add("Armour"); o->add("Rings");}
+            code2 {o->add("Scroll"); o->add("Wonderous");}
+          } {}
+          Fl_Button aRT_ItemGenerate {
+            label {Gen Magic Item}
+            callback {doMagicItemGeneration();}
+            tooltip {Generate a specific type of magic item} xywh {270 520 100 25} color 2 labelsize 12
+          }
+          Fl_Text_Editor aRT_Treasure {
+            xywh {15 315 390 190} labelsize 12 textsize 12
+          }
+          Fl_Text_Editor aRT_ItemList {
+            xywh {15 550 390 140} labelsize 12 textsize 12
+          }
+        }
+        Fl_Group ant_NPC {open
+          xywh {425 275 580 420} box DOWN_BOX color 6
+        } {
+          Fl_Choice a_NPCClass {
+            label Class open
+            xywh {470 285 74 25} down_box BORDER_BOX labelsize 12 textsize 12
+            code0 {extern Fl_Menu_Item classes[];}
+            code1 {o->menu(classes);}
+          } {}
+          Fl_Choice a_NPCRace {
+            label Race open
+            xywh {585 285 66 25} down_box BORDER_BOX labelsize 12 textsize 12
+            code0 {extern Fl_Menu_Item races[];}
+            code1 {o->menu(races);}
+          } {}
+          Fl_Choice a_NPCAlignment {
+            label AL open
+            xywh {680 285 47 25} down_box BORDER_BOX labelsize 12 textsize 12
+            code0 {extern Fl_Menu_Item alignment[];}
+            code1 {o->menu(alignment);}
+          } {}
+          Fl_Counter a_NPCLevel {
+            label Lvl
+            xywh {760 285 40 25} type Simple labelsize 12 align 4 minimum 1 maximum 20 step 1 value 1 textsize 12
+          }
+          Fl_Button a_NPCGenerate {
+            label {Create NPC}
+            callback {npc_action(0);}
+            xywh {815 285 75 25} labelsize 12
+          }
+          Fl_Button a_NPCSave {
+            label {Save NPC}
+            callback {npc_action(1);}
+            tooltip {This will save it as a monster, ready for use} xywh {910 285 75 25} labelsize 12 deactivate
+          }
+          Fl_Browser a_NPCText {
+            xywh {435 320 555 365} type Multi labelsize 12 textfont 4 textsize 12
+            code0 {//int w[] = {80,140,50,50,50, 0};}
+            code1 {//o->column_widths(w);}
+            code2 {//o->column_char(':');}
+          }
+        }
+      }
+      Fl_Tile t_SpellAdjustments {
+        label {Spell Adjustments} open
+        xywh {0 30 1005 665} box DOWN_BOX color 6 labelsize 12 hide
+      } {
+        Fl_Tabs t_SpellAdjustmentsAll {open
+          xywh {5 35 1000 660}
+        } {
+          Fl_Tile t_SpellAdjustmentsSystem {
+            label {Complex/System Adjustments} open
+            xywh {5 60 1000 635} labelsize 12
+          } {
+            Fl_Check_Browser a_OTAdjustList {
+              label {Current Adjustments}
+              callback {doAdjustmentAction(0);}
+              xywh {25 75 222 265} labelsize 12 align 5 when 6 textsize 12
+              code0 {o->type(2);}
+            }
+            Fl_Check_Browser a_OTAdjustSystemList {
+              label {Predefined System Adjustments}
+              callback {doAdjustmentAction(-1);}
+              xywh {25 362 222 328} color 111 labelsize 12 align 5 when 6 textsize 12
+            }
+            Fl_Check_Browser a_OTAdjustEffects {
+              label {Whom it effects}
+              tooltip {Who is effected by the adjustment} xywh {262 74 222 482} color 6 labelsize 12 align 5 when 6 textsize 12 deactivate
+            }
+            Fl_Button a_OTAdjustAccept {
+              label Accept
+              callback {doAdjustmentAction(1);}
+              tooltip {Save the adjustment} xywh {570 70 72 25} color 2 labelsize 12 deactivate
+            }
+            Fl_Button a_OTAdjustCancel {
+              label Cancel
+              callback {doAdjustmentAction(2);}
+              tooltip {Cancel any changes to the adjustment} xywh {659 70 72 25} color 1 labelsize 12 deactivate
+            }
+            Fl_Input a_OTAdjustRounds {
+              label Duration
+              tooltip {How long will it last} xywh {568 325 32 25} labelsize 12 textsize 12 deactivate
+            }
+            Fl_Input a_OTAdjustMessage {
+              label Title
+              tooltip {The title of the adjustment} xywh {568 355 256 25} labelsize 12 textsize 12 deactivate
+            }
+            Fl_Button a_OTAdjustSystemSave {
+              label {Save as System}
+              callback {doAdjustmentAction(7);}
+              tooltip {Save the current adjustment as a pre-defined one} xywh {280 575 119 25} color 6 labelsize 12 deactivate
+            }
+            Fl_Check_Browser a_OTAdjustIDEnds {
+              label {Initiative to Follow/Caster}
+              callback {doAdjustmentAction(8);}
+              tooltip {If it is a spell that ends on someones INITIATIVE, select them. Add ONE to the Round count as well.} xywh {515 124 200 191} color 3 labelsize 12 align 5 when 6 textsize 12 deactivate
+            }
+            Fl_Button a_OTAdjustDump {
+              label Dump
+              callback {dumpAdjustments();}
+              tooltip {Dump the current list of adjustments to the screen (stdout) for a header (.h) file} xywh {900 75 57 25} labelsize 12
+            }
+            Fl_Counter a_OTAdjustDecRnds {
+              label {Rnd Decrementor}
+              tooltip {This will decrement the number of rounds left to adjustments, alerts etc} xywh {899 125 56 20} type Simple labelsize 12 align 4 minimum 0 maximum 30 step 1 textsize 12
+            }
+            Fl_Button a_OTAdjustDecRndAction {
+              label {Do it}
+              callback {doRndsDecrement((int) a_OTAdjustDecRnds->value());
+a_OTAdjustDecRnds->value(0);}
+              tooltip {Decrement the adjustments etc by the number of rounds specified} xywh {895 155 64 25} color 1 labelsize 12
+            }
+            Fl_Button a_OTAdjustPredef {
+              label {Reset Predefined}
+              callback {loadStdModifiers();}
+              tooltip {This will reset the predefined adjustments to a certain standard} xywh {280 610 119 25} color 3 labelsize 12
+            }
+            Fl_Group a_OTAdjustGroup {open
+              xywh {538 400 380 195} box DOWN_BOX color 135 deactivate
+            } {
+              Fl_Input a_OTAdjustValue1 {
+                label Value
+                tooltip {The value of this part of the adjustment} xywh {598 430 32 25} type Int labelsize 12 align 5 textsize 12
+              }
+              Fl_Choice a_OTAdjustType1 {
+                label {What it Effects} open
+                tooltip {What will it effect} xywh {648 430 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Choice a_OTAdjustEffectsType1 {
+                label {Effects Type} open
+                tooltip {What type of adjustment is this ie. Bless is +1 BAB (Morale). Ones of the same type will not stack.} xywh {778 430 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Input a_OTAdjustValue2 {
+                label {Part 2}
+                xywh {598 460 32 25} type Int labelsize 12 textsize 12
+              }
+              Fl_Choice a_OTAdjustType2 {open
+                tooltip {What will it effect} xywh {648 460 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Choice a_OTAdjustEffectsType2 {open
+                tooltip {What type of adjustment is this ie. Bless is +1 BAB (Morale). Ones of the same type will not stack.} xywh {778 460 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Input a_OTAdjustValue3 {
+                label {Part 3}
+                xywh {598 490 32 25} type Int labelsize 12 textsize 12
+              }
+              Fl_Choice a_OTAdjustType3 {open
+                tooltip {What will it effect} xywh {648 490 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Choice a_OTAdjustEffectsType3 {open
+                tooltip {What type of adjustment is this ie. Bless is +1 BAB (Morale). Ones of the same type will not stack.} xywh {778 490 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Input a_OTAdjustValue4 {
+                label {Part 4}
+                xywh {598 520 32 25} type Int labelsize 12 textsize 12
+              }
+              Fl_Choice a_OTAdjustType4 {open
+                tooltip {What will it effect} xywh {648 520 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Choice a_OTAdjustEffectsType4 {open
+                tooltip {What type of adjustment is this ie. Bless is +1 BAB (Morale). Ones of the same type will not stack.} xywh {778 520 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Input a_OTAdjustValue5 {
+                label {Part 5}
+                xywh {598 550 32 25} type Int labelsize 12 textsize 12
+              }
+              Fl_Choice a_OTAdjustType5 {open
+                tooltip {What will it effect} xywh {648 550 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+              Fl_Choice a_OTAdjustEffectsType5 {open
+                tooltip {What type of adjustment is this ie. Bless is +1 BAB (Morale). Ones of the same type will not stack.} xywh {778 550 110 25} down_box BORDER_BOX labelsize 12 align 5 textsize 12
+              } {}
+            }
+          }
+          Fl_Tile t_SpellAdjustmentsQuick {
+            label {Quick Adjustments}
+            xywh {5 60 1000 635} labelsize 12 hide
+          } {
+            Fl_Button b_quickModsRefresh {
+              label Refresh
+              callback {doQuickMods(0,0,0);}
+              xywh {350 66 95 25} color 1 labelsize 12
+            }
+            Fl_Button b_quickModsAccept {
+              label Accept
+              callback {doQuickMods(1,0,0);}
+              xywh {465 66 95 25} color 2 labelsize 12
+            }
+            Fl_Button b_quickModsClear {
+              label Clear
+              callback {doQuickMods(2,0,0);}
+              xywh {580 66 95 25} color 3 labelsize 12
+            }
+          }
+        }
+      }
+    }
+  }
+} 

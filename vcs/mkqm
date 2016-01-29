@@ -1,0 +1,9 @@
+g++ -Wall -c pDBlibrary.cxx
+g++ -g dm-parse.c -o dm-parse pDBlibrary.o 2>&1 | grep -v deprecated
+#./dm-parse ../Download/datamonster/monsters.xml
+#./dm-parse /tmp/srd35-db-v1.3/monster.xml
+
+cat monster.xml monster-cf.xml > /tmp/$$.xml
+./dm-parse /tmp/$$.xml
+
+rm dm-parse /tmp/$$.xml

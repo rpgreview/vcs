@@ -1,0 +1,232 @@
+	To-do
+map layers ? to do under/over tunnels ?
+LOS - creep along walls ?
+how to do secret doors ?
+where to get the other monsters not in SRD ?
+object on wall, shows as empty square on player map if they can't see it
+what about a descriptive language (admp-lang.txt admp-lang.h) to do spells/feats/items etc
+player spell slot decrementing
+add in d100 integration
+icons - press a letter to scroll to that area
+
+	Done
+how to draw x' wide corridors
+why is it using so much CPU
+moving monsters/players onto the map
+icons for players/monsters
+player/monster buttons - how to ID them
+scrollbars
+grid column/row headers
+monster size - take more than 1 grid
+edit monst - icon selector
+crashes when you change the icon or refresh too quickly
+move in marching order
+overlay monster ID on icon
+center icons
+icons change & center correctly
+if dead .. match the monster size
+spell damage - show the results
+new day - clear the map
+draw players/monsters last so that big monsters show correctly
+show player/monster speed
+group stuff
+notes stuff - how to save in map. add/upd/del from map
+check crit code !!!!
+map loading/saving from Sys tab
+color selector
+distance b/n clicks
+map shapes - circle/squares
+load std monsters - set icon for all that you add
+external map -- zoom in/out ... does weird things with the main window (15-08-07)
+add std monster - check the icon list and use that - NO
+qk monst add - not setting map/group correctly
+setting map colors - repaints correctly & tooltips
+repaint all screens after an action
+make the dead monster X bigger
+remove an object from map
+X map wrapping around when displaying grid
+map scrolling/centering ... doesnt seem to do the right thing
+NPC saving - setting notes incorrectly (29-08-07)
+map shapes - a more generic sizing
+shapes - fill/outline ?
+mark all on screen as viewed option
+monster move - upd LOS
+save all - saves notes
+random fixes/changes (19/09/07)
+move monsters/player to a screen location - check that there aint something there 1st (26/09/07)
+clear all group details
+hide/unhide toggle on popup menu (03/10/07)
+added a "hit 'em" button on the melee screen ... calc's weapon damage
+load map - set external map colors
+auto centre external map (15-11-07)
+resizing map
+more players - 20
+monst ID on icon - BOLD
+dice roller window .. with sounds ?
+play random sounds or have a selection area
+external map ... row/col no's dont match (14/12/08)
+check adjustment code (08/01/08)
+qk icon/size tab to set monster icons/size quickly (08/01/08)
+map actions - remove ALL/DEAD monsters from map (09/01/08)
+cancel action/close window - does weird stuff to the Init List (09/01/08)
+resize icon - use copy(w,h) (17/1/08)
+resize height - add scroll widget (17/1/08)
+remove dead monsters off map ? or allow players to occupy their space ??
+resize DM grid map when the window resizes
+how to handle diagonal corridors ? if at all
+when you drag an icon ... show it moving ?
+icon resizing - keep aspect ratio : H2 = (W2 * H1) / W1; W2 = (H2 * W1) / H1; (21/01/08)
+Invisible DM walls ... only show on DM map (21/01/08)
+Map color changer (21/01/08)
+misc bug fixes (21/01/08)
+added Dice Roller to combat action screen (23/1/08)
+Fog of War (29/01/08)
+mark all currently on screen as unviewed (29/01/08)
+undo last drawing - save to a series of tmp files, then just restore them (31/1/08)
+Adjustment/Alerts - mass rnd decrement (02/02/08)
+Delete monsters & Resequence ID - map fixes (02/02/08)
+move players - check to if there's a wall there first (11/02/08)
+when you move players along with the Move all players - it leaves the old color there (11/02/08)
+player icon filename - inc size (27/02/08)
+icon selector - do a better one (27/02/08)
+show background color
+sqlite integration
+rotate marching order 90/180/270 ?
+qk monster add - change the weapon edit/selector (12/3/08)
+new/clear map - not clearing notes (12/3/08)
+new/clear map/monsters - not clearing icons
+misc bug fixes - 02/04/08
+make the notes a generic object that has icons etc - 18/4/08
+remove true dead from defender lists - 18/4/08
+add a popup menu the action initiator list - 22/4/08
+add grid highlight lines to DM map every 10 squares - 23/4/08
+hide monster, shows blank dot on player screen - 29/4/08
+centre the map when zooming in/out - 30/4/08
+misc bugs fixes
+duplicate an object - 15/4/08
+resizing window messes up scrollbars - 19/5/08
+after resizing/zoom map, redo calc the H/V bars
+allow more monsters. enable or disable via the popup menu - 22/05/08
+add enable/disable into Init popup menu - 23/5/08
+add predefined adjustment reset action - 23/5/08
+adding Qk Monsters - not saving current weapon details - 28/5/08
+player icon size - use space value - 28/5/08
+edit lots of monsters - goes to top of list - 02/06/08
+add more ID lists - 03/06/08
+some kind of mass copy - weapons & other details - 05/06/08
+"Centre map" now does both maps - 11/06/08
+DM map zoom - auto centre map. prob with scroll bars thou ...
+changed Status to include how many HP's lost - 17/06/08
+map special actions - added a 'reload ALL icons' - 24/06/08
+generate spell-lists for mages/clerics/druids - in the Other tab - 1/7/08
+dead monsters now appear at the bottom of the Heal/Other/Defender lists - 09/07/08
+added an extra 230 icons & 150 SRD monsters - 10/07/08
+add resistances / rnd - standard & SRD - 17/7/08
+add spell energy type into spell casting area - 17/7/08
+spell damage - show who gets what - 17/7/08
+default 1st defender during an attack flag - 21/07/08
+celestial/fiendish monster data - 21/07/08
+SRD monsters gen'ing - note ID wrong - 21/07/08
+added Regen to Qk Monster Add screen - 21/07/08
+not clearing player/monster notes correctly - 21/07/08
+added more System Adjustments - 31/7/08
+groups - remove from map, delete buttons 08-08-08
+edit - checkbox to only show enabled monsters 08-08-08
+moved some fields around in the Edit tab 11-08-08
+Reseting players/monsters no longer removes them from the map 18-08-08
+Bug with Status refresh, crashed pgm 20-08-08
+A more readable Adjustments screen 27/08/08
+default defender to previous defender system flag 01/09/08
+fixed HP percentages on the combat map etc due to issues with adjustments 03/09/08
+added a miss chance % into adjustments. shows in combat messages 04/09/08
+added a system flag to confirm mass map movements 04/09/08
+default standard monster critical fixed to *2 not *3 04/09/08
+allow jpeg images for icons 06/09/08
+combat popup menu - add new monsters into a group 10/09/08
+moved group info to be in the map file and not in system.sys 11/09/08
+do all HP checks/displays using adjustments etc 01/10/08
+dont show dead monsters in the display lists flag 01/10/08
+use memory leak checkers to see if/where it's loosing memory 09/10/08 (valgrind --leak-check=full --show-reachable=yes ./admpnew)
+allow negative modifier values. check HP modifier totals 12/11/08
+joined alerts/rnd treasure/names/npc into one screen 14/11/08
+minor UI changes 17/11/08
+load Map - get last X/Y, zoom etc and set them 03/12/08
+add an ID to the map datafile to enable easier extensions 08/12/08
+generate random magic items of a specific type - issues with Weapons/Armor 19/12/08
+	****************************
+qk monster add - didnt have Icon section 07/01/09
+map load - ignored size 07/01/09
+redo the help files to be current 09/01/09
+add higher level fighters/clerics etc 12/01/09
+added an character item field to put magic item descriptions in 12/01/09
+fix possible data file load issue 14/01/09
+SRD monsters - melee attack parser revamp 22/01/09
+minor screen layout changes 22/01/09
+set monsters as not on the map (in group area & enable/disable) 05/02/09
+turn the treasure display text areas into ones that can copy/paste 17/02/09
+added a monster mass heal section in the Other tab 25/02/09
+added heal all players by X in the Qk Heal section 25/02/09
+change system data file to use ID's 06/03/09
+change the map grid X/Y to be A-z and so on 06/03/09
+death at -10 or neg. CON system flag added 16/03/09
+added extra fields to the Qk Monst Add screen 19/03/09
+spell desc - better search 20/03/09
+clear all group details option 20/03/09
+added an "Other" icon tab 03/04/09
+added a spell search & display in the Dice Roller tab (24/04/09)
+added 'Remove & disable dead monsters" in Sp. Map actions (08/05/09)
+add player crit negate % (14/05/09)
+changed the combat screen pop-up menu to "Remove & disable" monsters (20/05/09)
+fixed some minor display bugs (20/05/09)
+save/restore the DM screen resolution (02/06/09)
+add shield/dodge AC display (03/06/09)
+screen resize, messes up edit tab (05/06/09)
+combat - not showing attack results in message area (05/06/09)
+not selecting a defender in the combat tab (05/06/09)
+melee defender - auto highlight defaulted (09/06/09)
+combat adjustment messages - redo how these are done (09/06/09)
+moving icons into a shadowed area doesnt work (23/6/09)
+how to handle monster size on the map (23/6/09)
+click name in init list, show where they are on the map (23/6/09)
+make the dm/external map grid x/y match (23/6/09)
+move all monsters does odd stuff (25/06/09)
+new LOS ignoring invisible flag (25/06/09)
+add Spell DC slots for lvl 8&9. check to see if they have a valid spell DC (26/06/09)
+action - spell touch/ranged touch - enable spell lvl field (26/06/09)
+undo drawing re-centres players map (30/06/09)
+hide/unhide a large creature, doesnt work correctly on player map until a move (30/06/09)
+special map actions - remove dead monsters from map not working (02/07/09)
+found some more issues caused by the monster size LOS update (02/07/09)
+change how the combat map pop-up menues work .. make it easier to change (06/07/09)
+increased the max groups/rooms to 70 (06/07/09)
+added HP status on the Edit/Add tab lists (06/07/09)
+added a better enable/disable etc action menu area (08/07/09)
+you can now mark someone as having done an action (08/07/09)
+getAdjustment - if it's an AC then check the AC split and reduce the bonus (16/7/09)
+record any HP's gained from enhancement items so that getAdjustment wont double add (16/7/09)
+if you saved/exited within a round it wouldn't retain who'd done actions (22/07/09)
+change the row ID's to be different to that column ID's ie. Ax = aX or something (29/07/09)
+if they have not entered a Spell DC for that level, adjust via the DC for a 1st level spell if it's there (03/08/09)
+weapon special message - not saving all 40 chars (06/08/09)
+you can now have up to 30 (from 20) active/system spell adjustments (08/09/09)
+logs Spell Slot changes (08/09/09)
+do a quick & dirty player mod area - BAB, AC etc (21/09/09)
+fog of war - not showing monster icons on player screen - due to player position color (29/09/09)
+fog of war - moving a wall piece made it not display the monsters (29/09/09)
+icons disappearing when moved onto a wall etc (06/10/09)
+added Spell-Resistances to both the spell adjustment areas (09/10/09)
+do a mass combat section (in the combat pop-menu area) (02/11/09)
+quick mods - HP - not adding correctly (11-11-09)
+dice roller - 3d6+26+d6 not working correctly (11-11-09)
+max monsters to 256 (23/11/09)
+add upto 40 standard monsters at a go (23/11/09)
+mass combat changes. the "#In Group" field in the Edit screen, it's used in the mass-combat section and displayed in the combat map (16/12/09)
+added a quick edit into the combat screen popup menu's (18/12/09)
+some minor fixes to mass combat (21/12/09)
+check merge monster file load - OK
+on the combat init list popup menu - a new option to centre DM on this creature. good if you can't see them on the screen (16/3/10)
+move a monster(s) into the players area
+added a Backup Data file for linux/unix users (09/09/10)
+changed player melee Defender listing sequence - now goes active monsters, uncon monsters, players, dead ones (15/09/10)
+the time on the window's will be updated whenever the DM right clicks on the map (15/10/10)
+it didnt refresh the group names on a map load (02/02/11)

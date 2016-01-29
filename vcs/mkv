@@ -1,0 +1,6 @@
+#g++ -c Fl_gridMap.cxx -I/usr/local/include
+#g++ gadmp.cxx -o gadmp Fl_gridMap.o -I/usr/local/include -L/usr/local/lib -lfltk  -L/usr/X11R6/lib -lX11 -lm
+
+g++ -c gridTile.cxx -I/usr/local/include
+g++ -c gridMap.cxx -I/usr/local/include
+g++ vcs.cxx -o vcs gridMap.o gridTile.o -I/usr/local/include -L/usr/local/lib -lfltk  -L/usr/X11R6/lib -lX11 -lm

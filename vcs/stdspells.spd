@@ -1,0 +1,735 @@
+=000736
++1|1|1|Alarm Wards an area for 2 hours/lvl|0|90|
++2|1|1|Animate Rope Makes a rope move at your command|50|0|
++3|1|1|Burning Hands 1d4/lvl fire dmg (max 5d4)|90|0|
++4|1|1|Cause Fear One creature of 5 HD or less flees for 1d4 rounds|30|30|
++5|1|1|Charm Person Makes one person your friend|30|30|
++6|1|1|Chill Touch One touch/lvl deals 1d6 dmg and possibly 1 Str dmg|80|0|
++7|1|1|Color Spray Knocks unconscious, blinds, and/or stuns weak creatures|60|0|
++8|1|1|Comprehend Languages You understand all spoken and written languages|0|10|
++9|1|1|Detect Secret Doors Reveals hidden doors within 60 ft|0|40|
++10|1|1|Detect Undead Reveals undead within 60 ft|0|40|
++11|1|1|Disguise Self Changes your appearance|0|40|
++12|1|1|Endure Elements Exist comfortably in hot or cold environments|0|40|
++13|1|1|Enlarge Person Humanoid creature doubles in size|0|3|
++14|1|1|Erase Mundane or magical writing vanishes|0|10|
++15|1|1|Expeditious Retreat Your speed increases by 30 ft|0|60|
++16|1|1|Feather Fall Objects or creatures fall slowly|0|60|
++17|1|1|Floating Disk Creates 3-ft.-diameter horizontal disk that holds 100 lb./lvl|0|20|
++18|1|1|Grease Makes 10-ft. square or one object slippery|0|40|
++19|1|1|Hold Portal Holds door shut|0|30|
++20|1|1|Hypnotism Fascinates 2d4 HD of creatures|30|0|
++21|1|1|Identify Determines properties of magic item|0|10|
++22|1|1|Jump Subject gets bonus on Jump checks|0|10|
++23|1|1|Mage Armor Gives subject +4 armor bonus|0|90|
++24|1|1|Magic Aura Alters object's magic aura|0|10|
++25|1|1|Magic Missile 1d4+1 dmg; +1 missile per two lvls above 1st (max 5)|90|0|
++26|1|1|Magic Weapon Weapon gains +1 bonus|70|0|
++27|1|1|Mount Summons riding horse for 2 hours/lvl|0|70|
++28|1|1|Obscuring Mist Fog surrounds you|0|70|
++29|1|1|Protection From Chaos +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|80|
++30|1|1|Protection From Evil +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|80|
++31|1|1|Protection From Good +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|80|
++32|1|1|Protection From Law +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|80|
++33|1|1|Ray Of Enfeeblement Ray deals 1d6 +1 per two lvls Str dmg|70|0|
++34|1|1|Reduce Person Humanoid creature halves in size|0|30|
++35|1|1|Shield Invisible disc gives +4 to AC, blocks magic missiles|0|80|
++36|1|1|Shocking Grasp Touch delivers 1d6/lvl electricity dmg (max 5d6)|80|0|
++37|1|1|Silent Image Creates minor illusion of your design|0|50|
++38|1|1|Sleep Puts 4 HD of creatures into magical slumber|60|0|
++39|1|1|Summon Monster I Calls extraplanar creature to fight for you|60|0|
++40|1|1|True Strike +20 on your next attack roll|90|0|
++41|1|1|Unseen Servant Invisible force obeys your commands|0|20|
++42|1|1|Ventriloquism Throws voice for 1 min./lvl|0|20|
++43|1|2|Acid Arrow Ranged touch attack; 2d4 dmg for 1 round +1 round/three lvls|70|0|
++44|1|2|Alter Self Assume form of a similar creature|0|70|
++45|1|2|Arcane Lock Magically locks a portal or chest|0|30|
++46|1|2|Bear's Endurance Subject gains +4 to Con for 1 min./lvl|0|80|
++47|1|2|Blindness/Deafness Makes subject blinded or deafened|80|0|
++48|1|2|Blur Attacks miss subject 20% of the time|80|0|
++49|1|2|Bull's Strength Subject gains +4 to Str for 1 min./lvl|80|0|
++50|1|2|Cat's Grace Subject gains +4 to Dex for 1 min./lvl|80|0|
++51|1|2|Command Undead Undead creature obeys your commands|0|80|
++52|1|2|Continual Flame Makes a permanent, heatless torch|0|10|
++53|1|2|Darkness 20-ft. radius of supernatural shadow|0|40|
++54|1|2|Darkvision See 60 ft. in total darkness|0|10|
++55|1|2|Daze Monster Living creature of 6 HD or less loses next action|50|0|
++56|1|2|Detect Thoughts Allows "listening" to surface thoughts|0|50|
++57|1|2|Eagle's Splendor Subject gains +4 to Cha for 1 min./lvl|0|50|
++58|1|2|False Life Gain 1d10 temp hp +1/lvl (max +10)|50|0|
++59|1|2|Flaming Sphere Creates rolling ball of fire, 2d6 dmg, lasts 1 round/lvl|50|0|
++60|1|2|Fog Cloud Fog obscures vision|0|50|
++61|1|2|Fox's Cunning Subject gains +4 Int for 1 min./lvl|0|10|
++62|1|2|Ghoul Touch Paralyzes one subject, which exudes stench|30|0|
++63|1|2|Glitterdust Blinds creatures, outlines invisible creatures|30|0|
++64|1|2|Gust Of Wind Blows away or knocks down smaller creatures|0|30|
++65|1|2|Hideous Laughter Subject loses actions for 1 round/ lvl|30|0|
++66|1|2|Hypnotic Pattern Fascinates (2d4 + lvl) HD of creatures|30|0|
++67|1|2|Invisibility Subject is invisible for 1 min./lvl or until it attacks|30|0|
++68|1|2|Knock Opens locked or magically sealed door|0|30|
++69|1|2|Levitate Subject moves up and down at your direction|0|30|
++70|1|2|Locate Object Senses direction toward object (specific or type)|0|10|
++71|1|2|Magic Mouth Speaks once when triggered|0|10|
++72|1|2|Minor Image As Silent Image, plus some sound|0|10|
++73|1|2|Mirror Image Creates decoy duplicates of you (1d4 +1 per three lvls, max 8)|0|80|
++74|1|2|Misdirection Misleads divinations for one creature or object|0|10|
++75|1|2|Obscure Object Masks object against scrying|0|10|
++76|1|2|Owl's Wisdom Subject gains +4 to Wis for 1 min./lvl|0|10|
++77|1|2|Phantom Trap Makes item seem trapped|0|10|
++78|1|2|Protection From Arrows Subject immune to most ranged attacks|0|60|
++79|1|2|Pyrotechnics Turns fire into blinding light or choking smoke|0|30|
++80|1|2|Resist Energy Ignores 10 (or more) points of dmg/attack from specified energy type|0|50|
++81|1|2|Rope Trick As many as eight creatures hide in extradimensional space|0|70|
++82|1|2|Scare Panics creatures of less than 6 HD|70|0|
++83|1|2|Scorching Ray Ranged touch attack deals 4d6 fire dmg, +1 ray/four lvls (max 3)|70|0|
++84|1|2|See Invisibility Reveals invisible creatures or objects|0|30|
++85|1|2|Shatter Sonic vibration dmgs objects or crystalline creatures|30|0|
++86|1|2|Spectral Hand Creates disembodied glowing hand to deliver touch attacks|30|0|
++87|1|2|Spider Climb Grants ability to walk on walls and ceilings|0|30|
++88|1|2|Summon Monster II Calls extraplanar creature to fight for you|30|0|
++89|1|2|Summon Swarm Summons swarm of bats, rats, or spiders|30|0|
++90|1|2|Touch Of Idiocy Subject takes 1d6 points of Int, Wis, and Cha dmg|50|0|
++91|1|2|Web Fills 20-ft.-radius spread with sticky spiderwebs|60|0|
++92|1|2|Whispering Wind Sends a short message 1 mile/lvl|0|20|
++93|1|3|Arcane Sight Magical auras become visible to you|0|20|
++94|1|3|Blink You randomly vanish and reappear for 1 round/lvl|50|0|
++95|1|3|Clairaudience/Clairvoyance Hear or see at a distance for 1 min./lvl|0|40|
++96|1|3|Daylight 60-ft. radius of bright light|0|40|
++97|1|3|Deep Slumber Puts 10 HD of creatures to sleep|40|0|
++98|1|3|Dispel Magic Cancels magical spells and effects|40|0|
++99|1|3|Displacement Attacks miss subject 50%|0|60|
++100|1|3|Explosive Runes Deals 6d6 dmg when read|0|20|
++101|1|3|Fireball 1d6 dmg per lvl, 20-ft. radius|90|0|
++102|1|3|Flame Arrow Arrows deal +1d6 fire dmg|60|0|
++103|1|3|Fly Subject flies at speed of 60 ft|0|60|
++104|1|3|Gaseous Form Subject becomes insubstantial and can fly slowly|0|40|
++105|1|3|Gentle Repose Preserves one corpse|0|40|
++106|1|3|Halt Undead Immobilizes undead for 1 round/lvl|0|50|
++107|1|3|Haste One creature/lvl moves faster, +1 on attack rolls, AC, and Reflex saves|0|90|
++108|1|3|Heroism Gives +2 on attack rolls, saves, skill checks|50|0|
++109|1|3|Hold Person Paralyzes one humanoid for 1 round/lvl|0|50|
++110|1|3|Illusory Script Only intended reader can decipher|0|10|
++111|1|3|Invisibility Sphere Makes everyone within 10 ft. invisible|0|50|
++112|1|3|Keen Edge Doubles normal weapon's threat range|0|30|
++113|1|3|Lightning Bolt Electricity deals 1d6/lvl dmg|00|0|
++114|1|3|Magic Circle Against Chaos As Protection From Chaos, but 10-ft. radius and 10 min./lvl|0|60|
++115|1|3|Magic Circle Against Evil As Protection From Evil, but 10-ft. radius and 10 min./lvl|0|60|
++116|1|3|Magic Circle Against Good As Protection From Good, but 10-ft. radius and 10 min./lvl|0|60|
++117|1|3|Magic Circle Against Law As Protection From Law, but 10-ft. radius and 10 min./lvl|0|60|
++118|1|3|Magic Weapon, Greater +1 bonus/four lvls (max +5)|0|60|
++119|1|3|Major Image As Silent Image, plus sound, smell and thermal effects|0|60|
++120|1|3|Nondetection Hides subject from divination, scrying|0|20|
++121|1|3|Phantom Steed Magic horse appears for 1 hour/lvl|0|20|
++122|1|3|Protection From Energy Absorb 12 points/lvl of dmg from one kind of energy|0|40|
++123|1|3|Rage Subjects gains +2 to Str and Con, +1 on Will saves, -2 to AC|0|40|
++124|1|3|Ray Of Exhaustion Ray makes subject exhausted|0|40|
++125|1|3|Secret Page Changes one page to hide its real content|0|10|
++126|1|3|Sepia Snake Sigil Creates text symbol that immobilizes reader|0|10|
++127|1|3|Shrink Item Object shrinks to one-sixteenth size|0|10|
++128|1|3|Sleet Storm Hampers vision and movement|0|30|
++129|1|3|Slow One subject/lvl takes only one action/round, -1 to AC, reflex saves, and attack rolls|0|50|
++130|1|3|Stinking Cloud Nauseating vapors, 1 round/lvl|0|50|
++131|1|3|Suggestion Compels subject to follow stated course of action|0|40|
++132|1|3|Summon Monster III Calls extraplanar creature to fight for you|40|0|
++133|1|3|Tiny Hut Creates shelter for ten creatures|0|20|
++134|1|3|Tongues Speak any language|0|10|
++135|1|3|Vampiric Touch Touch deals 1d6/two lvls dmg; caster gains dmg as hp|0|30|
++136|1|3|Water Breathing Subjects can breathe underwater|0|10|
++137|1|3|Wind Wall Deflects arrows, smaller creatures, and gases|0|10|
++138|1|4|Animate Dead Creates undead skeletons and zombies|0|10|
++139|1|4|Arcane Eye Invisible floating eye moves 30 ft./round|0|10|
++140|1|4|Bestow Curse -6 to an ability score; -4 on attack rolls/saves/checks; or 50% of losing each action|30|0|
++141|1|4|Black Tentacles Tentacles grapple all within 20 ft. spread|30|0|
++142|1|4|Charm Monster Makes monster believe it is your ally|30|0|
++143|1|4|Confusion Subjects behave oddly for 1 round/lvl|40|0|
++144|1|4|Contagion Infects subject with chosen disease|20|0|
++145|1|4|Crushing Despair Subjects take -2 on attack rolls, dmg rolls, saves, and checks|0|20|
++146|1|4|Detect Scrying Alerts you of magical eavesdropping|0|10|
++147|1|4|Dimensional Anchor Bars extradimensional movement|0|10|
++148|1|4|Dimension Door Teleports you short distance|0|20|
++149|1|4|Enervation Subject gains 1d4 negative lvls|0|20|
++150|1|4|Enlarge Person, Mass Enlarges several creatures|0|20|
++151|1|4|Fear Subjects within cone flee for 1 round/lvl|20|0|
++152|1|4|Fire Shield Creatures attacking you take fire dmg; you're protected from heat or cold|20|20|
++153|1|4|Fire Trap Opened object deals 1d4 dmg +1/lvl|0|20|
++154|1|4|Geas, Lesser Commands subject of 7 HD or less|0|10|
++155|1|4|Globe Of Invulnerability, Lesser Stops 1st- through 3rd-lvl spell effects|0|40|
++156|1|4|Hallucinatory Terrain Makes one type of terrain appear like another|0|20|
++157|1|4|Ice Storm Hail deals 5d6 dmg in cylinder 40 ft. across|70|0|
++158|1|4|Illusory Wall Wall, floor, or ceiling looks real, but anything can pass through|0|30|
++159|1|4|Invisibility, Greater As Invisibility, but subject can attack and stay invisible|60|0|
++160|1|4|Locate Creature Indicates direction to familiar creature|0|20|
++161|1|4|Minor Creation Creates one cloth or wood object|0|20|
++162|1|4|Mnemonic Enhancer Wizard only. Prepares extra spells or retains one just cast|0|20|
++163|1|4|Phantasmal Killer Fearsome illusion kills subject or deals 3d6 dmg|40|0|
++164|1|4|Polymorph Gives one willing subject a new form|0|30|
++165|1|4|Rainbow Pattern Lights fascinate 24 HD of creatures|50|0|
++166|1|4|Reduce Person, Mass Reduces several creatures|0|10|
++167|1|4|Remove Curse Frees object or person from curse|0|10|
++168|1|4|Resilient Sphere Force globe protects but traps one subject|0|30|
++169|1|4|Scrying Spies on subject from a distance|0|20|
++170|1|4|Secure Shelter Creates sturdy cottage|0|10|
++171|1|4|Shadow Conjuration Mimics conjuration below 4th lvl, but only 20% real|20|20|
++172|1|4|Shout Deafens all within cone and deals 5d6 sonic dmg|60|0|
++173|1|4|Solid Fog Blocks vision and slows movement|30|30|
++174|1|4|Stone Shape Sculpts stone into any shape|0|20|
++175|1|4|Stoneskin Ignore 10 points of dmg per attack|0|80|
++176|1|4|Summon Monster IV Calls extraplanar creature to fight for you|80|80|
++177|1|4|Wall Of Fire Deals 2d4 fire dmg to 10 ft. and 1d4 to 20 ft. Passing through deals 2d6+1/lvl|40|40|
++178|1|4|Wall Of Ice Ice plane creates wall with 15 hp +1/lvl, or hemisphere can trap creatures inside|40|40|
++179|1|5|Animal Growth One animal/two lvls doubles in size|0|40|
++180|1|5|Baleful Polymorph Transforms subject into harmless animal|0|40|
++181|1|5|Blight Withers one plant or deals 1d6/lvl dmg to plant creature|10|50|
++182|1|5|Break Enchantment Frees subjects from enchantments, alterations, curses, and petrification|0|60|
++183|1|5|Cloudkill Kills 3 HD or less; 4–6 HD save or die, 6+ HD take Con dmg|60|10|
++184|1|5|Cone Of Cold 1d6/lvl cold dmg|90|0|
++185|1|5|Contact Other Plane Lets you ask question of extraplanar entity|0|30|
++186|1|5|Dismissal Forces a creature to return to native plane|0|40|
++187|1|5|Dominate Person Controls humanoid telepathically|30|30|
++188|1|5|Dream Sends message to anyone sleeping|0|20|
++189|1|5|Fabricate Transforms raw materials into finished items|0|10|
++190|1|5|False Vision Fools scrying with an illusion|0|20|
++191|1|5|Feeblemind Subject's Int and Cha drop to 1|20|20|
++192|1|5|Hold Monster As Hold Person, but any creature|40|40|
++193|1|5|Interposing Hand Hand provides cover against one opponent|0|40|
++194|1|5|Mage's Faithful Hound Phantom dog can guard, attack|20|40|
++195|1|5|Mage's Private Sanctum Prevents anyone from viewing or scrying an area for 24 hours|0|30|
++196|1|5|Magic Jar Enables possession of another creature|0|30|
++197|1|5|Major Creation As Minor Creation, plus stone and metal|0|30|
++198|1|5|Mind Fog Subjects in fog get -10 to Wis and Will checks|0|30|
++199|1|5|Mirage Arcana As Hallucinatory Terrain, plus structures|0|20|
++200|1|5|Nightmare Sends vision dealing 1d10 dmg, fatigue|40|30|
++201|1|5|Overland Flight You fly at a speed of 40 ft. and can hustle over long distances|0|60|
++202|1|5|Passwall Creates passage through wood or stone wall|0|30|
++203|1|5|Permanency Makes certain spells permanent|0|20|
++204|1|5|Persistent Image As Major Image, but no concentration required|0|30|
++205|1|5|Planar Binding, Lesser Traps extraplanar creature of 6 HD or less until it performs a task|0|30|
++206|1|5|Prying Eyes 1d4 +1/lvl floating eyes scout for you|0|40|
++207|1|5|Secret Chest Hides expensive chest on Ethereal Plane; you retrieve it at will|0|20|
++208|1|5|Seeming Changes appearance of one person per two lvls|0|40|
++209|1|5|Sending Delivers short message anywhere, instantly|0|30|
++210|1|5|Shadow Evocation Mimics evocation below 5th lvl, but only 20% real|0|40|
++211|1|5|Summon Monster V Calls extraplanar creature to fight for you|20|40|
++212|1|5|Symbol Of Pain Triggered rune wracks nearby creatures with pain|60|0|
++213|1|5|Symbol Of Sleep Triggered rune puts nearby creatures into catatonic slumber|60|0|
++214|1|5|Telekinesis Moves object, attacks creature, or hurls object or creature|20|50|
++215|1|5|Telepathic Bond Link lets allies communicate|0|20|
++216|1|5|Teleport Instantly transports you as far as 100 miles/lvl|0|60|
++217|1|5|Transmute Mud To Rock Transforms two 10-ft. cubes per lvl|10|20|
++218|1|5|Transmute Rock To Mud Transforms two 10-ft. cubes per lvl|10|20|
++219|1|5|Wall Of Force Wall is immune to dmg|0|50|
++220|1|5|Wall Of Stone Creates a stone wall that can be shaped|0|50|
++221|1|5|Waves Of Fatigue Several targets become fatigued|40|10|
++222|1|6|Acid Fog Fog deals acid dmg|60|20|
++223|1|6|Analyze Dweomer Reveals magical aspects of subject|0|40|
++224|1|6|Antimagic Field Negates magic within 10 ft|30|70|
++225|1|6|Bear's Endurance, Mass As Bear's Endurance, affects one subject/ lvl|30|30|
++226|1|6|Bull's Strength, Mass As Bull's Strength, affects one subject/lvl|30|30|
++227|1|6|Cat's Grace, Mass As Cat's Grace, affects one subject/lvl|30|30|
++228|1|6|Chain Lightning 1d6/lvl dmg; 1 secondary bolt/lvl each deals half dmg|50|10|
++229|1|6|Circle Of Death Kills 1d4/lvl HD of creatures|80|0|
++230|1|6|Contingency Sets trigger condition for another spell|10|40|
++231|1|6|Control Water Raises or lowers bodies of water|0|30|
++232|1|6|Create Undead Create ghouls, ghasts, mummies, or mohrgs|0|20|
++233|1|6|Disintegrate Makes one creature or object vanish|50|0|
++234|1|6|Dispel Magic, Greater As Dispel Magic, but +20 on check|50|50|
++235|1|6|Eagle's Splendor, Mass As Eagle's Splendor, affects one subject/lvl|40|40|
++236|1|6|Eyebite Target becomes panicked, sickened, and comatose|40|0|
++237|1|6|Flesh To Stone Turns subject creature into statue|40|40|
++238|1|6|Forceful Hand Hand pushes creatures away|0|60|
++239|1|6|Fox's Cunning, Mass As Fox's Cunning, affects one subject/ lvl|30|30|
++240|1|6|Freezing Sphere Freezes water or deals cold dmg|40|30|
++241|1|6|Geas/Quest As Lesser Geas, plus it affects any creature|20|20|
++242|1|6|Globe Of Invulnerability As Lesser Globe of Invulnerability, plus 4th-lvl spell effects|20|70|
++243|1|6|Guards And Wards Array of magic effects protect area|20|20|
++244|1|6|Heroism, Greater Gives +4 bonus on attack rolls/saves/skill checks; immunity to fear; temp hp|40|20|
++245|1|6|Legend Lore Lets you learn tales about a person, place, or thing|0|60|
++246|1|6|Mage's Lucubration Wizard only. Recalls spell of 5th lvl or lower|0|60|
++247|1|6|Mislead Turns you invisible and creates illusory double|0|60|
++248|1|6|Move Earth Digs trenches and builds hills|0|60|
++249|1|6|Owl's Wisdom, Mass As Owl's Wisdom, affects one subject/lvl|30|30|
++250|1|6|Permanent Image Includes sight, sound, and smell|0|40|
++251|1|6|Planar Binding As Lesser Planar Binding, but up to 12 HD|0|30|
++252|1|6|Programmed Image As Major Image, plus triggered by event|0|30|
++253|1|6|Repulsion Creatures can't approach you|0|60|
++254|1|6|Shadow Walk Step into shadow to travel rapidly|0|60|
++255|1|6|Stone To Flesh Restores petrified creature|0|20|
++256|1|6|Suggestion, Mass As Suggestion, plus one subject/lvl|30|40|
++257|1|6|Summon Monster VI Calls extraplanar creature to fight for you|50|30|
++258|1|6|Symbol Of Fear Triggered rune panics nearby creatures|30|30|
++259|1|6|Symbol Of Persuasion Triggered rune charms nearby creatures|30|30|
++260|1|6|Transformation You gain combat bonuses|50|20|
++261|1|6|True Seeing Lets you see all things as they really are|0|0|
++262|1|6|Undeath To Death Destroys 1d4 HD/lvl undead (max 20d4)|0|0|
++263|1|6|Veil Changes appearance of group of creatures|0|0|
++264|1|6|Wall Of Iron 30 hp/four lvls; can topple onto foes|0|0|
++265|1|7|Arcane Sight, Greater As Arcane Sight, but also reveals magic effects on creatures and objects|0|0|
++266|1|7|Banishment Banishes 2 HD/lvl of extraplanar creatures|0|0|
++267|1|7|Control Undead Undead don't attack you while under your command|0|0|
++268|1|7|Control Weather Changes weather in local area|0|0|
++269|1|7|Delayed Blast Fireball 1d6/lvl fire dmg; you can postpone blast for 5 rounds|0|0|
++270|1|7|Ethereal Jaunt You become ethereal for 1 round/lvl|0|0|
++271|1|7|Finger Of Death Kills one subject|0|0|
++272|1|7|Forcecage Cube or cage of force imprisons all inside|0|0|
++273|1|7|Grasping Hand Hand provides cover, pushes, or grapples|0|0|
++274|1|7|Hold Person, Mass As Hold Person, but all within 30 ft|0|0|
++275|1|7|Insanity Subject suffers continuous Confusion|0|0|
++276|1|7|Instant Summons Prepared object appears in your hand|0|0|
++277|1|7|Invisibility, Mass As Invisibility, but affects all in range|0|0|
++278|1|7|Limited Wish Alters reality - within spell limits|0|0|
++279|1|7|Mage's Magnificent Mansion Door leads to extradimensional mansion|0|0|
++280|1|7|Mage's Sword Floating magic blade strikes opponents|0|0|
++281|1|7|Phase Door Creates an invisible passage through wood or stone|0|0|
++282|1|7|Plane Shift As many as eight subjects travel to another plane|0|0|
++283|1|7|Power Word Blind Blinds creature with 200 hp or less|0|0|
++284|1|7|Prismatic Spray Rays hit subjects with variety of effects|0|0|
++285|1|7|Project Image Illusory double can talk and cast spells|0|0|
++286|1|7|Reverse Gravity Objects and creatures fall upward|0|0|
++287|1|7|Scrying, Greater As Scrying, but faster and longer|0|0|
++288|1|7|Sequester Subject is invisible to sight and scrying; renders creature comatose|0|0|
++289|1|7|Shadow Conjuration, Greater As Shadow Conjuration, but up to 6th lvl and 60% real|0|0|
++290|1|7|Simulacrum Creates partially real double of a creature|0|0|
++291|1|7|Spell Turning Reflect 1d4+6 spell lvls back at caster|0|0|
++292|1|7|Statue Subject can become a statue at will|0|0|
++293|1|7|Summon Monster VII Calls extraplanar creature to fight for you|0|0|
++294|1|7|Symbol Of Stunning Triggered rune stuns nearby creatures|0|0|
++295|1|7|Symbol Of Weakness Triggered rune weakens nearby creatures|0|0|
++296|1|7|Teleport, Greater As Teleport, but no range limit and no off-target arrival|0|0|
++297|1|7|Teleport Object As Teleport, but affects a touched object|0|0|
++298|1|7|Vision As Legend Lore, but quicker and strenuous|0|0|
++299|1|7|Waves Of Exhaustion Several targets become exhausted|0|0|
++300|1|8|Antipathy Object or location affected by spell repels certain creatures|0|0|
++301|1|8|Binding Utilizes an array of techniques to imprison a creature|0|0|
++302|1|8|Charm Monster, Mass As Charm Monster, but all within 30 ft|0|0|
++303|1|8|Clenched Fist Large hand provides cover, pushes, or attacks your foes|0|0|
++304|1|8|Clone Duplicate awakens when original dies|0|0|
++305|1|8|Create Greater Undead Create shadows, wraiths, spectres, or devourers|0|0|
++306|1|8|Demand As Sending, plus you can send Suggestion|0|0|
++307|1|8|Dimensional Lock Teleportation and interplanar travel blocked for one day/lvl|0|0|
++308|1|8|Discern Location Reveals exact location of creature or object|0|0|
++309|1|8|Horrid Wilting Deals 1d6/lvl dmg within 30 ft|0|0|
++310|1|8|Incendiary Cloud Cloud deals 4d6 fire dmg/round|0|0|
++311|1|8|Iron Body Your body becomes living iron|0|0|
++312|1|8|Irresistible Dance Forces subject to dance|0|0|
++313|1|8|Maze Traps subject in extradimensional maze|0|0|
++314|1|8|Mind Blank Subject is immune to mental/emotional magic and scrying|0|0|
++315|1|8|Moment Of Prescience You gain insight bonus on single attack roll, check, or save|0|0|
++316|1|8|Planar Binding, Greater As Lesser Planar Binding, but up to 18 HD|0|0|
++317|1|8|Polar Ray Ranged touch attack deals 1d6/lvl cold dmg|0|0|
++318|1|8|Polymorph Any Object Changes any subject into anything else|0|0|
++319|1|8|Power Word Stun Stuns creature with 150 hp or less|0|0|
++320|1|8|Prismatic Wall Wall's colors have array of effects|0|0|
++321|1|8|Protection From Spells Confers +8 resistance bonus|0|0|
++322|1|8|Prying Eyes, Greater As Prying Eyes, but eyes have True Seeing|0|0|
++323|1|8|Scintillating Pattern Twisting colors confuse, stun, or render unconscious|0|0|
++324|1|8|Screen Illusion hides area from vision, scrying|0|0|
++325|1|8|Shadow Evocation, Greater As Shadow Evocation, but up to 7th lvl and 60% real|0|0|
++326|1|8|Shout, Greater Devastating yell deals 10d6 sonic dmg; stuns creatures, dmgs objects|0|0|
++327|1|8|Summon Monster VIII Calls extraplanar creature to fight for you|0|0|
++328|1|8|Sunburst Blinds all within 10 ft., deals 6d6 dmg|0|0|
++329|1|8|Symbol Of Death Triggered rune slays nearby creatures|0|0|
++330|1|8|Symbol Of Insanity Triggered rune renders nearby creatures insane|0|0|
++331|1|8|Sympathy Object or location attracts certain creatures|0|0|
++332|1|8|Telekinetic Sphere As Resilient Sphere, but you move sphere telekinetically|0|0|
++333|1|8|Temporal Stasis Puts subject into suspended animation|0|0|
++334|1|8|Trap The Soul Imprisons subject within gem|0|0|
++335|1|9|Astral Projection Projects you and companions onto Astral Plane|0|0|
++336|1|9|Crushing Hand Large hand provides cover, pushes, or crushes your foes|0|0|
++337|1|9|Dominate Monster As Dominate Person, but any creature|0|0|
++338|1|9|Energy Drain Subject gains 2d4 negative lvls|0|0|
++339|1|9|Etherealness Travel to Ethereal Plane with companions|0|0|
++340|1|9|Foresight "Sixth sense" warns of impending danger|0|0|
++341|1|9|Freedom Releases creature from Imprisonment|0|0|
++342|1|9|Gate Connects two planes for travel or summoning|0|0|
++343|1|9|Genesis Creates a small demiplane|0|0|
++344|1|9|Hold Monster, MassAs Hold Monster, but all within 30 ft|0|0|
++345|1|9|Imprisonment Entombs subject beneath the earth|0|0|
++346|1|9|Mage's Disjunction Dispels magic, disenchants magic items|0|0|
++347|1|9|Meteor Swarm Four exploding spheres each deal 6d6 fire dmg|0|0|
++348|1|9|Power Word Kill Kills one creature with 100 hp or less|0|0|
++349|1|9|Prismatic Sphere As Prismatic Wall, but surrounds on all sides|0|0|
++350|1|9|Refuge Alters item to transport its possessor to you|0|0|
++351|1|9|Shades As Shadow Conjuration, but up to 8th lvl and 80% real|0|0|
++352|1|9|Shapechange Transforms you into any creature, and change forms once per round|0|0|
++353|1|9|Soul Bind Traps newly dead soul to prevent Resurrection|0|0|
++354|1|9|Summon Monster IX Calls extraplanar creature to fight for you|0|0|
++355|1|9|Teleportation Circle Circle teleports any creature inside to designated spot|0|0|
++356|1|9|Time Stop You act freely for 1d4+1 rounds|0|0|
++357|1|9|Wail Of The Banshee Kills one creature/lvl|0|0|
++358|1|9|Weird As Phantasmal Killer, but affects all within 30 ft|0|0|
++359|1|9|Wish As Limited Wish, but with fewer limits|0|0|
++360|0|1|Bane Enemies take -1 on attack rolls and saves against fear|0|0|
++361|0|1|Bless Allies gain +1 on attack rolls and saves against fear|0|0|
++362|0|1|Bless Water Makes holy water|0|0|
++363|0|1|Cause Fear One creature of 5 HD or less flees for 1d4 rounds|0|0|
++364|0|1|Command One subject obeys selected command for 1 round|0|0|
++365|0|1|Comprehend Languages You understand all spoken and written languages|0|0|
++366|0|1|Cure Light Wounds Cures 1d8 dmg +1/lvl (max +5)|0|0|
++367|0|1|Curse Water Makes unholy water|0|0|
++368|0|1|Deathwatch Reveals how near death subjects within 30 ft. are|0|0|
++369|0|1|Detect Chaos Reveals creatures, spells, or objects with Chaotic alignment|0|0|
++370|0|1|Detect Evil Reveals creatures, spells, or objects with Evil alignment|0|0|
++371|0|1|Detect Good Reveals creatures, spells, or objects with Good alignment|0|0|
++372|0|1|Detect Law Reveals creatures, spells, or objects with Lawful alignment|0|0|
++373|0|1|Detect Undead Reveals undead within 60 ft|0|0|
++374|0|1|Divine Favor You gain +1 per three lvls on attack and dmg rolls|0|0|
++375|0|1|Doom One subject takes -2 on attack rolls, dmg rolls, saves, and checks|0|0|
++376|0|1|Endure Elements Exist comfortably in hot or cold environments|0|0|
++377|0|1|Entropic Shield Ranged attacks against you have 20% miss chance|0|0|
++378|0|1|Hide From Undead Undead can't perceive one subject/lvl|0|0|
++379|0|1|Inflict Light Wounds Touch attack, 1d8 dmg +1/lvl (max +5)|0|0|
++380|0|1|Magic Stone Three stones become +1 projectiles, 1d6 +1 dmg|0|0|
++381|0|1|Magic Weapon Weapon gains +1 bonus|0|0|
++382|0|1|Obscuring Mist Fog surrounds you|0|0|
++383|0|1|Protection From Chaos +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|0|
++384|0|1|Protection From Evil +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|0|
++385|0|1|Protection From Good +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|0|
++386|0|1|Protection From Law +2 to AC and saves, counter mind control, hedge out elementals/outsiders|0|0|
++387|0|1|Remove Fear Suppresses fear or gives +4 on saves against fear for one subject + one per four lvls|0|0|
++388|0|1|Sanctuary Opponents can't attack you, and you can't attack|0|0|
++389|0|1|Shield Of Faith Aura grants +2 or higher deflection bonus|0|0|
++390|0|1|Summon Monster I Calls extraplanar creature to fight for you|0|0|
++391|0|2|Aid +1 on attack rolls, +1 against fear, 1d8 temp hp +1/lvl (max +10)|0|0|
++392|0|2|Align Weapon Weapon becomes good, evil, lawful, or chaotic|0|0|
++393|0|2|Augury Learns whether an action will be good or bad|0|0|
++394|0|2|Bear's Endurance Subject gains +4 to Con for 1 min./lvl|0|0|
++395|0|2|Bull's Strength Subject gains +4 to Str for 1 min./lvl|0|0|
++396|0|2|Calm Emotions Calms creatures, negating emotion effects|0|0|
++397|0|2|Consecrate Fills area with positive energy, making undead weaker|0|0|
++398|0|2|Cure Moderate Wounds Cures 2d8 dmg +1/lvl (max +10)|0|0|
++399|0|2|Darkness 20-ft. radius of supernatural shadow|0|0|
++400|0|2|Death Knell Kill dying creature and gain 1d8 temp hp, +2 to Str, and +1 caster lvl|0|0|
++401|0|2|Delay Poison Stops poison from harming subject for 1 hour/ lvl|0|0|
++402|0|2|Desecrate Fills area with negative energy, making undead stronger|0|0|
++403|0|2|Eagle's Splendor Subject gains +4 to Cha for 1 min./lvl|0|0|
++404|0|2|Enthrall Captivates all within 100 ft. + 10 ft./lvl|0|0|
++405|0|2|Find Traps Notice traps as a rogue does|0|0|
++406|0|2|Gentle Repose Preserves one corpse|0|0|
++407|0|2|Hold Person Paralyzes one humanoid for 1 round/lvl|0|0|
++408|0|2|Inflict Moderate Wounds Touch attack, 2d8 dmg +1/lvl (max +10)|0|0|
++409|0|2|Make Whole Repairs an object|0|0|
++410|0|2|Owl's Wisdom Subject gains +4 to Wis for 1 min./lvl|0|0|
++411|0|2|Remove Paralysis Frees one or more creatures from paralysis or slow effect|0|0|
++412|0|2|Resist Energy Ignores 10 (or more) points of dmg/attack from specified energy type|0|0|
++413|0|2|Restoration, Lesser Dispels magical ability penalty or repairs 1d4 ability dmg|0|0|
++414|0|2|Shatter Sonic vibration dmgs objects or crystalline creatures|0|0|
++415|0|2|Shield Other You take half of subject's dmg|0|0|
++416|0|2|Silence Negates sound in 20–ft. radius|0|0|
++417|0|2|Sound Burst Deals 1d8 sonic dmg to subjects; may stun them|0|0|
++418|0|2|Spiritual Weapon Magic weapon attacks on its own|0|0|
++419|0|2|Status Monitors condition, position of allies|0|0|
++420|0|2|Summon Monster II Calls extraplanar creature to fight for you|0|0|
++421|0|2|Undetectable Alignment Conceals alignment for 24 hours|0|0|
++422|0|2|Zone Of Truth Subjects within range cannot lie|0|0|
++423|0|3|Animate Dead Creates undead skeletons and zombies|0|0|
++424|0|3|Bestow Curse -6 to an ability score; -4 on attack rolls,saves,checks; or 50% of losing each action|0|0|
++425|0|3|Blindness/Deafness Makes subject blinded or deafened|0|0|
++426|0|3|Contagion Infects subject with chosen disease|0|0|
++427|0|3|Continual Flame Makes a permanent, heatless torch|0|0|
++428|0|3|Create Food And Water Feeds three humans (or one horse)/lvl|0|0|
++429|0|3|Cure Serious Wounds Cures 3d8 dmg +1/lvl (max +15)|0|0|
++430|0|3|Daylight 60-ft. radius of bright light|0|0|
++431|0|3|Deeper Darkness Object sheds supernatural shadow in 60-ft. radius|0|0|
++432|0|3|Dispel Magic Cancels magical spells and effects|0|0|
++433|0|3|Glyph Of Warding Inscription harms those who pass it|0|0|
++434|0|3|Helping Hand Ghostly hand leads subject to you|0|0|
++435|0|3|Inflict Serious Wounds Touch attack, 3d8 dmg +1/lvl (max +15)|0|0|
++436|0|3|Invisibility Purge Dispels invisibility within 5 ft./lvl|0|0|
++437|0|3|Locate Object Senses direction toward object (specific or type)|0|0|
++438|0|3|Magic Circle Against Chaos As Protection From Chaos, but 10-ft. radius and 10 min./lvl|0|0|
++439|0|3|Magic Circle Against Evil As Protection From Evil, but 10-ft. radius and 10 min./lvl|0|0|
++440|0|3|Magic Circle Against Good As Protection From Good, but 10-ft. radius and 10 min./lvl|0|0|
++441|0|3|Magic Circle Against Law As Protection From Law, but 10-ft. radius and 10 min./lvl|0|0|
++442|0|3|Magic Vestment Armor or shield gains +1 enhancement per four lvls|0|0|
++443|0|3|Meld Into Stone You and your gear merge with stone|0|0|
++444|0|3|Obscure Object Masks object against scrying|0|0|
++445|0|3|Prayer Allies +1 bonus on most rolls, enemies -1 penalty|0|0|
++446|0|3|Protection From Energy Absorb 12 points/lvl of dmg from one kind of energy|0|0|
++447|0|3|Remove Blindness/Deafness Cures normal or magical conditions|0|0|
++448|0|3|Remove Curse Frees object or person from curse|0|0|
++449|0|3|Remove Disease Cures all diseases affecting subject|0|0|
++450|0|3|Searing Light Ray deals 1d8/two lvls dmg, more against undead|0|0|
++451|0|3|Speak With Dead Corpse answers one question/two lvls|0|0|
++452|0|3|Stone Shape Sculpts stone into any shape|0|0|
++453|0|3|Summon Monster III Calls extraplanar creature to fight for you|0|0|
++454|0|3|Water Breathing Subjects can breathe underwater|0|0|
++455|0|3|Water Walk Subject treads on water as if solid|0|0|
++456|0|3|Wind Wall Deflects arrows, smaller creatures, and gases|0|0|
++457|0|4|Air Walk Subject treads on air as if solid (climb at 45-degree angle)|0|0|
++458|0|4|Control Water Raises or lowers bodies of water|0|0|
++459|0|4|Cure Critical Wounds Cures 4d8 dmg +1/lvl (max +20)|0|0|
++460|0|4|Death Ward Grants immunity to death spells and negative energy effects|0|0|
++461|0|4|Dimensional Anchor Bars extradimensional movement|0|0|
++462|0|4|Discern Lies Reveals deliberate falsehoods|0|0|
++463|0|4|Dismissal Forces a creature to return to native plane|0|0|
++464|0|4|Divination Provides useful advice for specific proposed actions|0|0|
++465|0|4|Divine Power You gain attack bonus, +6 to Str, and 1 hp/lvl|0|0|
++466|0|4|Freedom Of Movement Subject moves normally despite impediments|0|0|
++467|0|4|Giant Vermin Turns centipedes, scorpions, or spiders into giant vermin|0|0|
++468|0|4|Imbue With Spell Ability Transfer spells to subject|0|0|
++469|0|4|Inflict Critical Wounds Touch attack, 4d8 dmg +1/lvl (max +20)|0|0|
++470|0|4|Magic Weapon, Greater +1 bonus/four lvls (max +5)|0|0|
++471|0|4|Neutralize Poison Immunizes subject against poison, detoxifies venom in or on subject|0|0|
++472|0|4|Planar Ally, Lesser Exchange services with a 6 HD extraplanar creature|0|0|
++473|0|4|Poison Touch deals 1d10 Con dmg, repeats in 1 min|0|0|
++474|0|4|Repel Vermin Insects, spiders, and other vermin stay 10 ft. away|0|0|
++475|0|4|Restoration Restores lvl and ability score drains|0|0|
++476|0|4|Sending Delivers short message anywhere, instantly|0|0|
++477|0|4|Spell Immunity Subject is immune to one spell per four lvls|0|0|
++478|0|4|Summon Monster IV Calls extraplanar creature to fight for you|0|0|
++479|0|4|Tongues Speak any language|0|0|
++480|0|5|Atonement Removes burden of misdeeds from subject|0|0|
++481|0|5|Break Enchantment Frees subjects from enchantments, alterations, curses, and petrification|0|0|
++482|0|5|Command, Greater As Command, but affects one subject/lvl|0|0|
++483|0|5|Commune Deity answers one yes-or-no question/lvl|0|0|
++484|0|5|Cure Light Wounds, Mass Cures 1d8 dmg +1/lvl for many creatures|0|0|
++485|0|5|Dispel Chaos +4 bonus against attacks by chaotic creatures|0|0|
++486|0|5|Dispel Evil +4 bonus against attacks by evil creatures|0|0|
++487|0|5|Dispel Good +4 bonus against attacks by good creatures|0|0|
++488|0|5|Dispel Law +4 bonus against attacks by lawful creatures|0|0|
++489|0|5|Disrupting Weapon Melee weapon destroys undead|0|0|
++490|0|5|Flame Strike Smite foes with divine fire (1d6/lvl dmg)|0|0|
++491|0|5|Hallow Designates location as holy|0|0|
++492|0|5|Inflict Light Wounds, Mass Deals 1d8 dmg +1/lvl to any creatures|0|0|
++493|0|5|Insect Plague Locust swarms attack creatures|0|0|
++494|0|5|Mark Of Justice Designates action that will trigger curse on subject|0|0|
++495|0|5|Plane Shift As many as eight subjects travel to another plane|0|0|
++496|0|5|Raise Dead Restores life to subject who died as long as one day/lvl ago|0|0|
++497|0|5|Righteous Might Your size increases, and you gain combat bonuses|0|0|
++498|0|5|Scrying Spies on subject from a distance|0|0|
++499|0|5|Slay Living Touch attack kills subject|0|0|
++500|0|5|Spell Resistance Subject gains SR 12 + lvl|0|0|
++501|0|5|Summon Monster V Calls extraplanar creature to fight for you|0|0|
++502|0|5|Symbol Of Pain Triggered rune wracks nearby creatures with pain|0|0|
++503|0|5|Symbol Of Sleep Triggered rune puts nearby creatures into catatonic slumber|0|0|
++504|0|5|True Seeing Lets you see all things as they really are|0|0|
++505|0|5|Unhallow Designates location as unholy|0|0|
++506|0|5|Wall Of Stone Creates a stone wall that can be shaped|0|0|
++507|0|6|Animate Objects Objects attack your foes|0|0|
++508|0|6|Antilife Shell 10-ft. field hedges out living creatures|0|0|
++509|0|6|Banishment Banishes 2 HD/lvl of extraplanar creatures|0|0|
++510|0|6|Bear's Endurance, Mass As Bear's Endurance, affects one subject/ lvl|0|0|
++511|0|6|Blade Barrier Touch attack deals 1d8 +1/two lvls dmg|0|0|
++512|0|6|Bull's Strength, Mass As Bull's Strength, affects one subject/lvl|0|0|
++513|0|6|Create Undead Create ghouls, ghasts, mummies, or mohrgs|0|0|
++514|0|6|Cure Moderate Wounds, Mass Cures 2d8 dmg +1/lvl for many creatures|0|0|
++515|0|6|Dispel Magic, Greater As Dispel Magic, but +20 on check|0|0|
++516|0|6|Eagle's Splendor, Mass As Eagle's Splendor, affects one subject/lvl|0|0|
++517|0|6|Find The Path Shows most direct way to a location|0|0|
++518|0|6|Forbiddance Blocks planar travel, dmgs creatures of different alignment|0|0|
++519|0|6|Geas/Quest As Lesser Geas, plus it affects any creature|0|0|
++520|0|6|Glyph Of Warding, Greater As Glyph Of Warding, but up to 10d8 dmg or 6th-lvl spell|0|0|
++521|0|6|Harm Deals 10 points/lvl dmg to target|0|0|
++522|0|6|Heal Cures 10 points/lvl of dmg, all diseases and mental conditions|0|0|
++523|0|6|Heroes' FeastFood for one creature/lvl cures and grants combat bonuses|0|0|
++524|0|6|Inflict Moderate Wounds, Mass Deals 2d8 dmg +1/lvl to many creatures|0|0|
++525|0|6|Owl's Wisdom, Mass As Owl's Wisdom, affects one subject/lvl|0|0|
++526|0|6|Planar Ally As Lesser Planar Ally, but up to 12 HD|0|0|
++527|0|6|Summon Monster VI Calls extraplanar creature to fight for you|0|0|
++528|0|6|Symbol Of Fear Triggered rune panics nearby creatures|0|0|
++529|0|6|Symbol Of Persuasion Triggered rune charms nearby creatures|0|0|
++530|0|6|Undeath To Death Destroys 1d4 HD/lvl undead (max 20d4)|0|0|
++531|0|6|Wind Walk You and your allies turn vaporous and travel fast|0|0|
++532|0|6|Word Of Recall Teleports you back to designated place|0|0|
++533|0|7|Blasphemy Kills, paralyzes, weakens, or dazes nonevil subjects|0|0|
++534|0|7|Control Weather Changes weather in local area|0|0|
++535|0|7|Cure Serious Wounds, Mass Cures 3d8 dmg +1/lvl for many creatures|0|0|
++536|0|7|Destruction Kills subject and destroys remains|0|0|
++537|0|7|Dictum Kills, paralyzes, slows, or deafens nonlawful subjects|0|0|
++538|0|7|Ethereal Jaunt You become ethereal for 1 round/lvl|0|0|
++539|0|7|Holy Word Kills, paralyzes, slows, or deafens nongood subjects|0|0|
++540|0|7|Inflict Serious Wounds, Mass Deals 3d8 dmg +1/lvl to many creatures|0|0|
++541|0|7|Refuge Alters item to transport its possessor to you|0|0|
++542|0|7|Regenerate Subject's severed limbs grow back, cures 4d8 dmg +1/lvl (max +35)|0|0|
++543|0|7|Repulsion Creatures can't approach you|0|0|
++544|0|7|Restoration, Greater As Restoration, plus restores all lvls and ability scores|0|0|
++545|0|7|Resurrection Fully restore dead subject|0|0|
++546|0|7|Scrying, Greater As Scrying, but faster and longer|0|0|
++547|0|7|Summon Monster VII Calls extraplanar creature to fight for you|0|0|
++548|0|7|Symbol Of Stunning Triggered rune stuns nearby creatures|0|0|
++549|0|7|Symbol Of Weakness Triggered rune weakens nearby creatures|0|0|
++550|0|7|Word Of Chaos Kills, confuses, stuns, or deafens nonchaotic subjects|0|0|
++551|0|8|Antimagic Field Negates magic within 10 ft|0|0|
++552|0|8|Cloak Of Chaos +4 to AC, +4 resistance, SR 25 against lawful spells|0|0|
++553|0|8|Create Greater Undead Create shadows, wraiths, spectres, or devourers|0|0|
++554|0|8|Cure Critical Wounds, Mass Cures 4d8 dmg +1/lvl for many creatures|0|0|
++555|0|8|Dimensional Lock Teleportation and interplanar travel blocked for one day/lvl|0|0|
++556|0|8|Discern Location Reveals exact location of creature or object|0|0|
++557|0|8|Earthquake Intense tremor shakes 80-ft.-radius|0|0|
++558|0|8|Fire Storm Deals 1d6/lvl fire dmg|0|0|
++559|0|8|Holy Aura +4 to AC, +4 resistance, and SR 25 against evil spells|0|0|
++560|0|8|Inflict Critical Wounds, Mass Deals 4d8 dmg +1/lvl to many creatures|0|0|
++561|0|8|Planar Ally, Greater As Lesser Planar Ally, but up to 18 HD|0|0|
++562|0|8|Shield Of Law +4 to AC, +4 resistance, and SR 25 against chaotic spells|0|0|
++563|0|8|Spell Immunity, Greater As Spell Immunity, but up to 8th-lvl spells|0|0|
++564|0|8|Summon Monster VIII Calls extraplanar creature to fight for you|0|0|
++565|0|8|Symbol Of Death Triggered rune slays nearby creatures|0|0|
++566|0|8|Symbol Of Insanity Triggered rune renders nearby creatures insane|0|0|
++567|0|8|Unholy Aura +4 to AC, +4 resistance, SR 25 against good spells|0|0|
++568|0|9|Astral Projection Projects you and companions onto Astral Plane|0|0|
++569|0|9|Energy Drain Subject gains 2d4 negative lvls|0|0|
++570|0|9|Etherealness Travel to Ethereal Plane with companions|0|0|
++571|0|9|Gate Connects two planes for travel or summoning|0|0|
++572|0|9|Heal, Mass As Heal, but with several subjects|0|0|
++573|0|9|Implosion Kills one creature/round|0|0|
++574|0|9|Miracle Requests a deity's intercession|0|0|
++575|0|9|Soul Bind Traps newly dead soul to prevent Resurrection|0|0|
++576|0|9|Storm Of Vengeance Storm rains acid, lightning, and hail|0|0|
++577|0|9|Summon Monster IX Calls extraplanar creature to fight for you|0|0|
++578|0|9|True Resurrection As Resurrection, plus remains aren't needed|0|0|
++579|2|1|Calm Animals Calms (2d4 + lvl) HD of animals|0|0|
++580|2|1|Charm Animal Makes one animal your friend|0|0|
++581|2|1|Cure Light Wounds Cures 1d8 dmg +1/lvl (max +5)|0|0|
++582|2|1|Detect Animals Or Plants |0|0|
++583|2|1|Detect Snares And Pits Reveals natural or primitive traps|0|0|
++584|2|1|Endure Elements Exist comfortably in hot or cold environments|0|0|
++585|2|1|Entangle Plants entangle everyone in 40-ft.-radius circle|0|0|
++586|2|1|Faerie Fire Outlines subjects with light, canceling Blur, concealment etc|0|0|
++587|2|1|Goodberry 2d4 berries each cure 1 hp (max 8 hp/24 hours)|0|0|
++588|2|1|Hide From Animals Animals can't perceive one subject/lvl|0|0|
++589|2|1|Jump Subject gets bonus on Jump checks|0|0|
++590|2|1|Longstrider Increases your speed|0|0|
++591|2|1|Magic Fang One natural weapon of subject gets +1 on attack and dmg rolls|0|0|
++592|2|1|Magic Stone Three stones become +1 projectiles, 1d6 +1 dmg|0|0|
++593|2|1|Obscuring Mist Fog surrnds you|0|0|
++594|2|1|Pass Without Trace One subject/lvl leaves no tracks|0|0|
++595|2|1|Produce Flame 1d6 dmg +1/lvl, touch or thrown|0|0|
++596|2|1|Shillelagh Cudgel or quarterstaff becomes +1 weapon (1d10 dmg) for 1 min./lvl|0|0|
++597|2|1|Speak With Animals You can communicate with animals|0|0|
++598|2|1|Summon Natures Ally I Calls animal to fight for you|0|0|
++599|2|2|Animal Messenger Sends a Tiny animal to a specific place|0|0|
++600|2|2|Animal Trance Fascinates 2d6 HD of animals|0|0|
++601|2|2|Barkskin Grants +2 (or higher) enhancement to natural armor|0|0|
++602|2|2|Bear's Endurance Subject gains +4 to Con for 1 min./lvl|0|0|
++603|2|2|Bull's Strength Subject gains +4 to Str for 1 min./lvl|0|0|
++604|2|2|Cat's Grace Subject gains +4 to Dex for 1 min./lvl|0|0|
++605|2|2|Chill Metal Cold metal dmgs those who touch it|0|0|
++606|2|2|Delay Poison Stops poison from harming subject for 1 hour/ lvl|0|0|
++607|2|2|Fire Trap Opened object deals 1d4 dmg +1/lvl|0|0|
++608|2|2|Flame Blade Touch attack deals 1d8 +1/two lvls dmg|0|0|
++609|2|2|Flaming Sphere Creates rolling ball of fire, 2d6 dmg, lasts 1 rnd/lvl|0|0|
++610|2|2|Fog Cloud Fog obscures vision|0|0|
++611|2|2|Gust Of Wind Blows away or knocks down smaller creatures|0|0|
++612|2|2|Heat Metal Make metal so hot it dmgs those who touch it|0|0|
++613|2|2|Hold Animal Paralyzes one animal for 1 rnd/lvl|0|0|
++614|2|2|Owl's Wisdom Subject gains +4 to Wis for 1 min./lvl|0|0|
++615|2|2|Reduce Animal Shrinks one willing animal|0|0|
++616|2|2|Resist Energy Ignores 10 (or more) points of dmg/attack from specified energy type|0|0|
++617|2|2|Restoration, Lesser Dispels magical ability penalty or repairs 1d4 ability dmg|0|0|
++618|2|2|Soften Earth And Stone Turns stone to clay or dirt to sand or mud|0|0|
++619|2|2|Spider Climb Grants ability to walk on walls and ceilings|0|0|
++620|2|2|Summon Natures Ally II Calls animal to fight for you|0|0|
++621|2|2|Summon Swarm Summons swarm of bats, rats, or spiders|0|0|
++622|2|2|Tree Shape You look exactly like a tree for 1 hour/lvl|0|0|
++623|2|2|Warp Wood Bends wood (shaft, handle, door, plank)|0|0|
++624|2|2|Wood ShapeRearranges wooden objects to suit you|0|0|
++625|2|3|Call Lightning Calls down lightning bolts (3d6 per bolt) from sky|0|0|
++626|2|3|Contagion Infects subject with chosen disease|0|0|
++627|2|3|Cure Moderate Wounds Cures 2d8 dmg +1/lvl (max +10)|0|0|
++628|2|3|Daylight 60-ft. radius of bright light|0|0|
++629|2|3|Diminish Plants Reduces size or blights growth of normal plants|0|0|
++630|2|3|Dominate Animal Subject animal obeys silent mental commands|0|0|
++631|2|3|Magic Fang, Greater One natural weapon of subject gets +1/four caster lvls on attack and dmg rolls (max +5)|0|0|
++632|2|3|Meld Into Stone You and your gear merge with stone|0|0|
++633|2|3|Neutralize Poison Immunizes subject against poison, detoxifies venom in or on subject|0|0|
++634|2|3|Plant Growth Grows vegetation, improves crops|0|0|
++635|2|3|Poison Touch deals 1d10 Con dmg, repeats in 1 min|0|0|
++636|2|3|Protection From Energy Absorb 12 points/lvl of dmg from one kind of energy|0|0|
++637|2|3|Quench Extinguishes nonmagical fires or one magic item|0|0|
++638|2|3|Remove Disease Cures all diseases affecting subject|0|0|
++639|2|3|Sleet Storm Hampers vision and movement|0|0|
++640|2|3|Snare Creates a magic booby trap|0|0|
++641|2|3|Speak With Plants You can talk to normal plants and plant creatures|0|0|
++642|2|3|Spike Growth Creatures in area take 1d4 dmg, may be slowed|0|0|
++643|2|3|Stone Shape Sculpts stone into any shape|0|0|
++644|2|3|Summon Natures Ally III Calls animal to fight for you|0|0|
++645|2|3|Water Breathing Subjects can breathe underwater|0|0|
++646|2|3|Wind Wall Deflects arrows, smaller creatures, and gases|0|0|
++647|2|4|Air Walk Subject treads on air as if solid (climb at 45-degree angle)|0|0|
++648|2|4|Antiplant Shell Keeps animated plants at bay|0|0|
++649|2|4|Blight Withers one plant or deals 1d6/lvl dmg to plant creature|0|0|
++650|2|4|Command Plants Sway the actions of one or more plant creatures|0|0|
++651|2|4|Control Water Raises or lowers bodies of water|0|0|
++652|2|4|Cure Serious Wounds Cures 3d8 dmg +1/lvl (max +15)|0|0|
++653|2|4|Dispel Magic Cancels magical spells and effects|0|0|
++654|2|4|Flame Strike Smite foes with divine fire (1d6/lvl dmg)|0|0|
++655|2|4|Freedom Of Movement Subject moves normally despite impediments|0|0|
++656|2|4|Giant Vermin Turns centipedes, scorpions, or spiders into giant vermin|0|0|
++657|2|4|Ice Storm Hail deals 5d6 dmg in cylinder 40 ft. across|0|0|
++658|2|4|Reincarnate Brings dead subject back in a random body|0|0|
++659|2|4|Repel Vermin Insects, spiders, and other vermin stay 10 ft. away|0|0|
++660|2|4|Rusting Grasp Your touch corrodes iron and alloys|0|0|
++661|2|4|Scrying Spies on subject from a distance|0|0|
++662|2|4|Spike Stones Creatures in area take 1d8 dmg, may be slowed|0|0|
++663|2|4|Summon Natures Ally IV Calls animal to fight for you|0|0|
++664|2|5|Animal Growth One animal/two lvls doubles in size|0|0|
++665|2|5|Atonement Removes burden of misdeeds from subject|0|0|
++666|2|5|Awaken Animal or tree gains human intellect|0|0|
++667|2|5|Baleful Polymorph Transforms subject into harmless animal|0|0|
++668|2|5|Call Lightning Storm As Call Lightning, but 5d6 dmg per bolt|0|0|
++669|2|5|Commune With Nature Learn about terrain for 1 mile/lvl|0|0|
++670|2|5|Control Winds Change wind direction and speed|0|0|
++671|2|5|Cure Critical Wounds Cures 4d8 dmg +1/lvl (max +20)|0|0|
++672|2|5|Death Ward Grants immunity to death spells and negative energy effects|0|0|
++673|2|5|Hallow Designates location as holy|0|0|
++674|2|5|Insect Plague Locust swarms attack creatures|0|0|
++675|2|5|Stoneskin Ignore 10 points of dmg per attack|0|0|
++676|2|5|Summon Natures Ally V Calls creature to fight|0|0|
++677|2|5|Transmute Mud To Rock Transforms two 10-ft. cubes per lvl|0|0|
++678|2|5|Transmute Rock To Mud Transforms two 10-ft. cubes per lvl|0|0|
++679|2|5|Tree Stride Step from one tree to another far away|0|0|
++680|2|5|Unhallow Designates location as unholy|0|0|
++681|2|5|Wall Of Fire Deals 2d4 fire dmg out to 10 ft. and 1d4 out to 20 ft. Passing through deals 2d6 dmg +1/lvl|0|0|
++682|2|5|Wall Of Thorns Thorns dmg anyone who tries to pass|0|0|
++683|2|6|Antilife Shell 10-ft. field hedges out living creatures|0|0|
++684|2|6|Bear's Endurance, Mass As Bear's Endurance, affects one subject/ lvl|0|0|
++685|2|6|Bull's Strength, Mass As Bull's Strength, affects one subject/lvl|0|0|
++686|2|6|Cat's Grace, Mass As Cat's Grace, affects one subject/lvl|0|0|
++687|2|6|Cure Light Wounds, Mass Cures 1d8 dmg +1/lvl for many creatures|0|0|
++688|2|6|Dispel Magic, Greater As Dispel Magic, but +20 on check|0|0|
++689|2|6|Find The Path Shows most direct way to a location|0|0|
++690|2|6|Fire Seeds Acorns and berries become grenades and bombs|0|0|
++691|2|6|Ironwood Magic wood is strong as steel|0|0|
++692|2|6|Liveoak Oak becomes treant guardian|0|0|
++693|2|6|Move Earth Digs trenches and builds hills|0|0|
++694|2|6|Owl's Wisdom, Mass As Owl's Wisdom, affects one subject/lvl|0|0|
++695|2|6|Repel Wood Pushes away wooden objects|0|0|
++696|2|6|Spellstaff Stores one spell in wooden quarterstaff|0|0|
++697|2|6|Stone Tell Talk to natural or worked stone|0|0|
++698|2|6|Summon Natures Ally VI Calls creature to fight|0|0|
++699|2|6|Transport Via Plants Move instantly from one plant to another of the same kind|0|0|
++700|2|6|Wall Of Stone Creates a stone wall that can be shaped|0|0|
++701|2|7|Animate Plants One or more trees animate and fight for you|0|0|
++702|2|7|Changestaff Your staff becomes a treant on command|0|0|
++703|2|7|Control Weather Changes weather in local area|0|0|
++704|2|7|Creeping Doom Swarms of centipedes attack at your command|0|0|
++705|2|7|Cure Moderate Wounds, Mass Cures 2d8 dmg +1/lvl for many creatures|0|0|
++706|2|7|Fire Storm Deals 1d6/lvl fire dmg|0|0|
++707|2|7|Heal Cures 10 points/lvl of dmg, all diseases and mental conditions|0|0|
++708|2|7|Scrying, Greater As Scrying, but faster and longer|0|0|
++709|2|7|Summon Natures Ally VII Calls creature to fight|0|0|
++710|2|7|Sunbeam Beam blinds and deals 4d6 dmg|0|0|
++711|2|7|Transmute Metal To Wood Metal within 40 ft. becomes wood|0|0|
++712|2|7|True Seeing Lets you see all things as they really are|0|0|
++713|2|7|Wind Walk You and your allies turn vaporous and travel fast|0|0|
++714|2|8|Animal Shapes One ally/lvl polymorphs into chosen animal|0|0|
++715|2|8|Control Plants Control actions of one or more plant creatures|0|0|
++716|2|8|Cure Serious Wounds, Mass Cures 3d8 dmg +1/lvl for many creatures|0|0|
++717|2|8|Earthquake Intense tremor shakes 80-ft.-radius|0|0|
++718|2|8|Finger Of Death Kills one subject|0|0|
++719|2|8|Repel Metal Or Stone Pushes away metal and stone|0|0|
++720|2|8|Reverse Gravity Objects and creatures fall upward|0|0|
++721|2|8|Summon Natures Ally VIII Calls creature to fight|0|0|
++722|2|8|Sunburst Blinds all within 10 ft., deals 6d6 dmg|0|0|
++723|2|8|Whirlwind Cyclone deals dmg and can pick up creatures|0|0|
++724|2|8|Word Of Recall Teleports you back to designated place|0|0|
++725|2|9|Antipathy Object or location affected by spell repels certain creatures|0|0|
++726|2|9|Cure Critical Wounds, Mass Cures 4d8 dmg +1/lvl for many creatures|0|0|
++727|2|9|Elemental Swarm Summons multiple elementals|0|0|
++728|2|9|Foresight "Sixth sense" warns of impending danger|0|0|
++729|2|9|Regenerate Subject's severed limbs grow back, cures 4d8 dmg +1/lvl (max +35)|0|0|
++730|2|9|Shambler Summons 1d4+2 shambling mounds to fight for you|0|0|
++731|2|9|Shapechange Transforms you into any creature, and change forms once per rnd|0|0|
++732|2|9|Storm Of Vengeance Storm rains acid, lightning, and hail|0|0|
++733|2|9|Summon Natures Ally IX Calls animal to fight for you|0|0|
++734|2|9|Sympathy Object or location attracts certain creatures|0|0|

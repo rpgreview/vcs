@@ -1,0 +1,50 @@
+#!/bin/sh
+###########################################
+
+#cat admp-lang.txt  | cut -f1 -d"-" | sed 's/[ "]//g' | sed 's/,//g' > /tmp/$$.$$
+cat admp-lang.txt  | cut -f1 -d"-" | sed 's/[ "]//g' > /tmp/$$.$$
+
+vi /tmp/$$.$$
+
+TV=1
+
+cat /tmp/$$.$$ |
+while (true)
+do
+	read i
+	if [ $? -ne 0 ]
+	then
+		break
+	fi
+	if [ -n "$i" ]
+	then
+		FI=`echo "$i" | cut -c1`
+		if [ "$FI" = "/" ]
+		then
+			echo "" >> /tmp/$$.1
+			echo "	$i" | sed 's/_/ /g' >> /tmp/$$.1
+		else
+			TK=`echo "$i" | tr '[a-z]' '[A-Z]'`
+			ST=`echo "$i" | tr -d '[a-z]'`
+	
+			echo "#define LANG_$TK		$TV" >> /tmp/$$.1
+			echo "	{LANG_$TK, |$TK|, |$ST|}," >> /tmp/$$.2
+	
+			TV=`expr $TV + 1`
+		fi
+	fi
+done
+
+cat - << _EOF >> /tmp/$$.1
+
+//**********************************************
+
+struct d20lang_def { char tkn_id; char *tkn_lstr, *tkn_sstr; }
+d20lang_def language[] = {
+_EOF
+
+cat /tmp/$$.1 /tmp/$$.2 | sed 's/|/"/g' > /tmp/al.txt
+
+echo "};" >> /tmp/al.txt
+
+rm -f /tmp/$$.*

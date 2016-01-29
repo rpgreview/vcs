@@ -1,0 +1,62 @@
+	Thoughts about a d20 'language' to describe items,spells etc
+
+// set_whom_to_check
+DEFendeR,ATtacKeR
+// stat_types
+STRength,DEXterity,CONstitution,INTelligence,WISdow,CHArisma
+// stat_type_modifiers
+STRengthMod,DEXterityMod,CONstitutionMod,INTelligenceMod,WISdowMod,CHArismaMod
+// save_types
+REFlex,WILL,FORT
+// things_to_'adjust'
+BaseAttackBonus,ArmorClass,HitPoints,SAVE,DAMage,INITiative,SKILl,SPellReSist,SaveFORtitude,SaveREFlex,SaveWISdom
+// duration
+RouND,RounDPerLevel,MiNPerLevel,HouRPerLevel,PlayerLVL,PERManent
+// type_of_adjustment
+ENHancemenT,MORalE,LUCK,HASTe,ARMoR,SHieLD,DEFLection,DoDGE,OTHeR,NATuraL
+// special_descriptors
+GOOD,EVIL,LAW,CHOaS,UNDeaD,MONSter,HitDice,SpellLVL
+// check_DC_types
+STrengthDC,DeXterityDC,COnstitutionDC,INtelligenceDC,WIsdomDC,CHarismaDC,SKillDC,CharLvlDC,cLassLevelDC,DC
+// spell/attack_types
+FIRE,SONiC,COLD,ACID,ELECtricity,PIERcing,BLUDgeoning,SLAShing,RANGed
+
+// per_lvl_calculations
+PerLeVel2,PerLeVel3,PerLeVel4
+// max_level_value
+MaXLeVel
+// if_hit/crit'ed
+HIT,CRITical
+RangedATtK,TouchATtK
+
+// special_actions
+SOAK,STABilise,DamREDuction,QUEue,MAX,RerollDamageEachRound,MiSsCHance
+// DamReduction_types
+NONE,MAGic Weapon,ANY,ADAMantine,BLUDgeoning,CHaOS,Cold IRoN,EPIC,EVIL,GOOD,LAWful,MAGiC,SILVer,SLAShing,PIERcing,RANGed
+// save_types
+NoDAMage,HALF,NoSAVe,NOSpellResistance,ReSAVe,SpellResistance
+
+// show_the_message
+MESsaGe
+// show_the_message_and_ask_Y/N
+MESsageBoolean
+// show_the_message_and_ask_for_a_value
+MESsageInteger
+
+// statement_conditions_etc
+IF,THEN,ELSE,AND,OR,.
+
+Number - 3,%,1d4+3,=
+
+Fireball = SLVL 3 . IF REF CLDC THEN DAM FIRE d6 PLVL MXLV 10
+Bull Str = STR +4
+Rage     = STR +4 AND CON +4 AND MOR WIS +2 AND AC -2 AND HP +2 PLVL AND RND 3 + CONM
+Poisoned
+  Weapon = DAM 2d6 . IF CRIT THEN IF FORT DC 15 THEN DAM 1d8 AND QUE RND 10 IF FORT DC 15 THEN DAM 1d8
+Trap     = IF REF DC 25 THEN FIRE DAM 2d6+1
+Ring of Minor Fire Resist = FIRE SOAK 10 RND
+Prot. from Arrows = IF RANG THEN DRED 10/RANG SOAK 10 PLVL MAX 100
+Evasion = IF SREF THEN NDAM ELSE HALF
+
+Functions:
+getStatBonus = if (stat > 0) (stat - 10) / 2 else (10 - stat) / 2

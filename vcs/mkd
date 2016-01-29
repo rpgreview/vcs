@@ -1,0 +1,24 @@
+LIB=../fltk-133/
+INC=../fltk-133/
+
+g++ -g -Wall -c pDBlibrary.cxx 2>&1 | grep -v deprecated
+g++ -g -c gridMap.cxx -I$INC 2>&1 | grep -v deprecated
+g++ -g -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char -c ADMPtreasure.cxx -I$INC 2>&1 | grep -v deprecated
+
+if [ "$OSTYPE" = "cygwin" ]
+then
+	g++ -g -c -DCYGWIN gridTile.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DCYGWIN -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char -c ADMPextraa.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DCYGWIN -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char -c ADMPextrab.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DCYGWIN -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char ADMPnew.cxx -o admpnew pDBlibrary.o ADMPextraa.o ADMPextrab.o ADMPtreasure.o gridTile.o gridMap.o -lfltk -L/usr/X11R6/lib -lX11 -lm -lfltk_images -lpng -ljpeg -lole32 -luuid -lcomctl32 -lwsock32
+else
+	g++ -g -c gridTile.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char -c ADMPextraa.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char -c ADMPextrab.cxx -I$INC 2>&1 | grep -v deprecated
+	g++ -g -DADMP_TEXT_SIZE=12 -DADMP_LABEL_SIZE=12 -fsigned-char ADMPnew.cxx -o admpnew pDBlibrary.o ADMPextraa.o ADMPextrab.o ADMPtreasure.o gridTile.o gridMap.o -I$INC -L$LIB -lfltk  -L/usr/X11R6/lib -lX11 -lm -lfltk_images -lpng -ljpeg -lXext -lXft -lfontconfig -lXinerama -ldl
+fi
+
+if [ $? -eq 0 ]
+then
+	rm *.o
+fi

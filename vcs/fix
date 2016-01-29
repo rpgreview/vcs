@@ -1,0 +1,15 @@
+#sed 's/labelsize([0-9][0-9]/labelsize(ADMP_LABEL_SIZE/' ADMPnew.cxx | sed 's/textsize([0-9][0-9]/textsize(ADMP_TEXT_SIZE/' | sed 's/w->show(argc, argv);/w->show(argc, argv); initialiseSystem(argc, argv);/' | sed 's/Fl_Double_Window\* w;$/Fl_Double_Window* w;\n#ifdef PDA\nFl::set_font((Fl_Font)0, "Verdana");\n#endif/' > $$
+sed 's/labelsize([0-9][0-9]/labelsize(ADMP_LABEL_SIZE/' ADMPnew.cxx | sed 's/textsize([0-9][0-9]/textsize(ADMP_TEXT_SIZE/' | sed 's/w->show(argc, argv);/w->show(argc, argv); initialiseSystem(argc, argv);/' | sed 's/Fl_Double_Window\* w;$/Fl_Double_Window* w;\n\nFl::set_font((Fl_Font)4, "helvetica");\n/' | sed 's/        include/#include/' > $$
+mv $$ ADMPnew.cxx
+
+echo "#ifdef VISUALC" > ADMPexternals.h
+echo "extern Fl_Double_Window *a_Exit;" >> ADMPexternals.h
+echo "extern Fl_Double_Window *a_QkMonsterAdd;" >> ADMPexternals.h
+echo "#else" >> ADMPexternals.h
+echo "extern Fl_Window *a_Exit;" >> ADMPexternals.h
+echo "#endif" >> ADMPexternals.h
+
+grep Fl_ ADMPnew.fl | grep -v "code[01234]" | grep -v callback | awk '{ printf "extern %s *%s;\n", $1, $2; }' | grep -v a_WeaponWindow | grep -v a_Exit | grep -v combatGridMap | grep -v externalGridMap > ADMPexternals.h
+
+echo "extern Fl_Double_Window *a_WeaponWindow;" >> ADMPexternals.h
+#echo "extern Fl_Double_Window *a_Exit;" >> ADMPexternals.h

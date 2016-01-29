@@ -1,0 +1,1740 @@
+name celestial ape
+hit_dice 4d8+11 (29 hp) 
+initiative +2 
+speed 30 ft. (6 squares), climb 30 ft. 
+armor_class 14 (–1 size, +2 Dex, +3 natural), touch 11, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+5) and bite +2 melee (1d6+2) 
+space 10
+reach 10
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 9 
+saves Fort +6, Ref +6, Will +2 
+abilities Str 21, Dex 15, Con 14, Int 3, Wis 12, Cha 7 
+skills Climb +14, Listen +6, Spot +6 
+feats Alertness, Toughness 
+environment Any Good-aligned plane 
+challenge_rating 3 
+name celestial baboon
+hit_dice 1d8+1 (5 hp) 
+initiative +2 
+speed 40 ft. (8 squares), climb 30 ft. 
+armor_class 13 (+2 Dex, +1 natural), touch 12, flat-footed 11 
+full_attack Bite +2 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +3, Ref +4, Will +1 
+abilities Str 15, Dex 14, Con 12, Int 3, Wis 12, Cha 4 
+skills Climb +10, Listen +5, Spot +5 
+feats Alertness 
+environment Any Good-aligned plane 
+challenge_rating 1/2 
+name celestial badger
+hit_dice 1d8+2 (6 hp) 
+initiative +3 
+speed 30 ft. (6 squares), burrow 10 ft. 
+armor_class 15 (+1 size, +3 Dex, +1 natural), touch 14, flat-footed 12 
+full_attack 2 claws +4 melee (1d2–1) and bite –1 melee (1d3–1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +4, Ref +5, Will +1 
+abilities Str 8, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Escape Artist +7, Listen +3, Spot +3 
+feats Track, Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/2 
+name celestial bat
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 5 ft (1 square), fly 40 ft. (good) 
+armor_class 16 (+4 size, +2 Dex), touch 16, flat-footed 14 
+full_attack +2 
+space 1
+reach 0
+special_qualities Blindsense 20 ft., low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +2 
+abilities Str 1, Dex 15, Con 10, Int 3, Wis 14, Cha 4 
+skills Hide +14, Listen +8*, Move Silently +6, Spot +8* 
+feats Alertness 
+environment Any Good-aligned plane 
+challenge_rating 1/10 
+name celestial bear, black
+hit_dice 3d8+6 (19 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 claws +6 melee (1d4+4) and bite +1 melee (1d6+2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +5, Ref +4, Will +2 
+abilities Str 19, Dex 13, Con 15, Int 3, Wis 12, Cha 6 
+skills Climb +4, Listen +4, Spot +4, Swim +8 
+feats Endurance, Run 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial bear, brown
+hit_dice 6d8+24 (51 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 15 (–1 size, +1 Dex, +5 natural), touch 10, flat-footed 14 
+full_attack 2 claws +11 melee (1d8+8) and bite +6 melee (2d6+4) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 11 
+saves Fort +9, Ref +6, Will +3 
+abilities Str 27, Dex 13, Con 19, Int 3, Wis 12, Cha 6 
+skills Listen +4, Spot +7, Swim +12 
+feats Endurance, Run, Track 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial bear, polar
+hit_dice 8d8+32 (68 hp) 
+initiative +1 
+speed 40 ft. (8 squares), swim 30 ft. 
+armor_class 15 (–1 size, +1 Dex, +5 natural), touch 10, flat-footed 14 
+full_attack 2 claws +13 melee (1d8+8) and bite +8 melee (2d6+4) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +10, Ref +7, Will +3 
+abilities Str 27, Dex 13, Con 19, Int 3, Wis 12, Cha 6 
+skills Hide –2*, Listen +5, Spot +7, Swim +16 
+feats Endurance, Run, Track 
+environment Any Good-aligned plane 
+challenge_rating 6 
+name celestial bison
+hit_dice 5d8+15 (37 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 13 (–1 size, +4 natural), touch 9, flat-footed 13 
+full_attack Gore +8 melee (1d8+9) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 10 
+saves Fort +7, Ref +4, Will +1 
+abilities Str 22, Dex 10, Con 16, Int 3, Wis 11, Cha 4 
+skills Listen +7, Spot +5 
+feats Alertness, Endurance 
+environment Any Good-aligned plane 
+challenge_rating 3 
+name celestial boar
+hit_dice 3d8+12 (25 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 16 (+6 natural), touch 10, flat-footed 16 
+full_attack Gore +4 melee (1d8+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +6, Ref +3, Will +2 
+abilities Str 15, Dex 10, Con 17, Int 3, Wis 13, Cha 4 
+skills Listen +7, Spot +5 
+feats Alertness, Toughness 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial camel
+hit_dice 3d8+6 (19 hp) 
+initiative +3 
+speed 50 ft. (10 squares) 
+armor_class 13 (–1 size, +3 Dex, +1 natural) touch 12, flat-footed 10 
+full_attack Bite +0 melee* (1d4+2*) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +5, Ref +6, Will +1 
+abilities Str 18, Dex 16, Con 14, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Alertness, Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial cat
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 30 ft. (6 squares) 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack 2 claws +4 melee (1d2–4) and bite –1 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 7 
+skills Balance +10, Climb +6, Hide +14*, Jump +10, Listen +3, Move Silently +6, Spot +3 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/4 
+name celestial cheetah
+hit_dice 3d8+6 (19 hp) 
+initiative +4 
+speed 50 ft. (10 squares) 
+armor_class 15 (+4 Dex, +1 natural), touch 14, flat-footed 11 
+full_attack Bite +6 melee (1d6+3) and 2 claws +1 melee (1d2+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, sprint, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +5, Ref +7, Will +2 
+abilities Str 16, Dex 19, Con 15, Int 3, Wis 12, Cha 6 
+skills Hide +6, Listen +4, Move Silently +6, Spot +4 
+feats Alertness, Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial crocodile, giant
+hit_dice 7d8+28 (59 hp) 
+initiative +1 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 16 (–2 size, +1 Dex, +7 natural), touch 9, flat-footed 15 
+full_attack Bite +11 melee (2d8+12) or tail slap +11 melee (1d12+12) 
+space 15
+reach 10
+special_qualities Hold breath, low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 12 
+saves Fort +9, Ref +6, Will +3 
+abilities Str 27, Dex 12, Con 19, Int 3, Wis 12, Cha 2 
+skills Hide +1*, Listen +5, Spot +5, Swim +16 
+feats Alertness, Endurance, Skill Focus (Hide) 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial crocodile
+hit_dice 3d8+9 (22 hp) 
+initiative +1 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 15 (+1 Dex, +4 natural), touch 11, flat-footed 14 
+full_attack Bite +6 melee (1d8+6) or tail slap +6 melee (1d12+6) 
+space 5
+reach 5
+special_qualities Hold breath, low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +6, Ref +4, Will +2 
+abilities Str 19, Dex 12, Con 17, Int 3, Wis 12, Cha 2 
+skills Hide +7*, Listen +4, Spot +4, Swim +12 
+feats Alertness, Skill Focus (Hide) 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial dog
+hit_dice 1d8+2 (6 hp) 
+initiative +3 
+speed 40 ft. (8 squares) 
+armor_class 15 (+1 size, +3 Dex, +1 natural), touch 14, flat-footed 12 
+full_attack Bite +2 melee (1d4+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +4, Ref +5, Will +1 
+abilities Str 13, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Jump +7, Listen +5, Spot +5, Survival +1* 
+feats Alertness, Track 
+environment Any Good-aligned plane 
+challenge_rating 1/3 
+name celestial dog, riding
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 40 ft. (8 squares) 
+armor_class 16 (+2 Dex, +4 natural), touch 12, flat-footed 14 
+full_attack Bite +3 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 15, Dex 15, Con 15, Int 3, Wis 12, Cha 6 
+skills Jump +8, Listen +5, Spot +5, Swim +3, Survival +1* 
+feats Alertness, Track 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial donkey
+hit_dice 2d8+2 (11 hp) 
+initiative +1 
+speed 30 ft. (6 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack Bite +1 melee (1d2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +4, Ref +4, Will +0 
+abilities Str 10, Dex 13, Con 12, Int 3, Wis 11, Cha 4 
+skills Balance +3, Listen +3, Spot +2 
+feats Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1/6 
+name celestial eagle, giant
+hit_dice 4d10+4 (26 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 80 ft. (average) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+4) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Low-light vision, evasion, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 9 
+saves Fort +5, Ref +7, Will +3 
+abilities Str 18, Dex 17, Con 12, Int 10, Wis 14, Cha 10 
+skills Knowledge (nature) +2, Listen +6, Sense Motive +4, Spot +15, Survival +3 
+feats Alertness, Flyby Attack 
+environment Any Good-aligned plane 
+challenge_rating 4 
+name celestial eagle
+hit_dice 1d8+1 (5 hp) 
+initiative +2 
+speed 10 ft. (2 squares), fly 80 ft. (average) 
+armor_class 14 (+1 size, +2 Dex, +1 natural), touch 13, flat-footed 12 
+full_attack 2 talons +3 melee (1d4) and bite –2 melee (1d4) 
+space 5
+reach 5
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +3, Ref +4, Will +2 
+abilities Str 10, Dex 15, Con 12, Int 3, Wis 14, Cha 6 
+skills Listen +2, Spot +14 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/2 
+name celestial elephant
+hit_dice 11d8+55 (104 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 15 (–2 size, +7 natural), touch 8, flat-footed 15 
+full_attack Slam +16 melee (2d6+10) and 2 stamps +11 melee (2d6+5); or gore +16 melee (2d8+15) 
+space 15
+reach 10
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 16 
+saves Fort +12, Ref +7, Will +6 
+abilities Str 30, Dex 10, Con 21, Int 3, Wis 13, Cha 7 
+skills Listen +12, Spot +10 
+feats Alertness, Endurance, Iron Will, Skill Focus (Listen) 
+environment Any Good-aligned plane 
+challenge_rating 9 
+name celestial giant bee
+hit_dice 3d8 (13 hp) 
+initiative +2 
+speed 20 ft. (4 squares), fly 80 ft. (good) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Sting +2 melee (1d4 plus poison) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +3, Ref +3, Will +2 
+abilities Str 11, Dex 14, Con 11, Int 3, Wis 12, Cha 9 
+skills Spot +5, Survival +1* 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial giant bombardier beetle
+hit_dice 2d8+4 (13 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (+6 natural), touch 10, flat-footed 16 
+full_attack Bite +2 melee (1d4+1) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +5, Ref +0, Will +0 
+abilities Str 13, Dex 10, Con 14, Int 3, Wis 10, Cha 9 
+skills — 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial giant fire beetle
+hit_dice 1d8 (4 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (+1 size, +5 natural), touch 11, flat-footed 16 
+full_attack Bite +1 melee (2d4) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +2, Ref +0, Will +0 
+abilities Str 10, Dex 11, Con 11, Int 3, Wis 10, Cha 7 
+skills — 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 1/3 
+name celestial giant praying mantis
+hit_dice 4d8+8 (26 hp) 
+initiative –1 
+speed 20 ft. (4 squares), fly 40 ft. (poor) 
+armor_class 14 (–1 size, –1 Dex, +6 natural), touch 8, flat-footed 14 
+full_attack Claws +6 melee (1d8+4) and bite +1 melee (1d6+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 9 
+saves Fort +6, Ref +0, Will +3 
+abilities Str 19, Dex 8, Con 15, Int 3, Wis 14, Cha 11 
+skills Hide –1*, Spot +6 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 4 
+name celestial giant stag beetle
+hit_dice 7d8+21 (52 hp) 
+initiative +0 
+speed 20 ft. (4 squares) 
+armor_class 19 (–1 size, +10 natural), touch 9, flat-footed 19 
+full_attack Bite +10 melee (4d6+9) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 12 
+saves Fort +8, Ref +2, Will +2 
+abilities Str 23, Dex 10, Con 17, Int 3, Wis 10, Cha 9 
+skills — 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial giant wasp
+hit_dice 5d8+10 (32 hp) 
+initiative +1 
+speed 20 ft. (4 squares), fly 60 ft. (good) 
+armor_class 14 (–1 size, +1 Dex, +4 natural), touch 10, flat-footed 13 
+full_attack Sting +6 melee (1d3+6 plus poison) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 10 
+saves Fort +6, Ref +2, Will +2 
+abilities Str 18, Dex 12, Con 14, Int 3, Wis 13, Cha 11 
+skills Spot +9, Survival +1* 
+feats — 
+environment Any Good-aligned plane 
+challenge_rating 4 
+name celestial girallon
+hit_dice 7d10+20 (58 hp) 
+initiative +3 
+speed 40 ft. (8 squares), climb 40 ft. 
+armor_class 16 (–1 size, +3 Dex, +4 natural), touch 12, flat-footed 15 
+full_attack 4 claws +12 melee (1d4+6) and bite +7 melee (1d8+3) 
+space 10
+reach 10
+special_qualities Darkvision 60 ft., low-light vision, scent, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 12 
+saves Fort +7, Ref +8, Will +5 
+abilities Str 22, Dex 17, Con 14, Int 3, Wis 12, Cha 7 
+skills Climb +14, Move Silently +8, Spot +6 
+feats Iron Will, Toughness (2) 
+environment Any Good-aligned plane 
+challenge_rating 7 
+name celestial griffon
+hit_dice 7d10+21 (59 hp) 
+initiative +2 
+speed 30 ft. (6 squares), fly 80 ft. (average) 
+armor_class 17 (–1 size, +2 Dex, +6 natural), touch 11, flat-footed 15 
+full_attack Bite +11 melee (2d6+4) and 2 claws +8 melee (1d4+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., low-light vision, scent, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 12 
+saves Fort +8, Ref +7, Will +5 
+abilities Str 18, Dex 15, Con 16, Int 5, Wis 13, Cha 8 
+skills Jump +8, Listen +6, Spot +10 
+feats Iron Will, Multiattack, Weapon Focus (bite) 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial hawk
+hit_dice 1d8 (4 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 60 ft. (average) 
+armor_class 17 (+2 size, +3 Dex, +2 natural), touch 15, flat-footed 14 
+full_attack Talons +5 melee (1d4–2) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +2, Ref +5, Will +2 
+abilities Str 6, Dex 17, Con 10, Int 3, Wis 14, Cha 6 
+skills Listen +2, Spot +14 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/3 
+name celestial hippogriff
+hit_dice 3d10+9 (25 hp) 
+initiative +2 
+speed 50 ft. (10 squares), fly 100 ft. (average) 
+armor_class 15 (–1 size, +2 Dex, +4 natural), touch 11, flat-footed 13 
+full_attack 2 claws +6 melee (1d4+4) and bite +1 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., low-light vision, scent, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +6, Ref +5, Will +2 
+abilities Str 18, Dex 15, Con 16, Int 3, Wis 13, Cha 8 
+skills Listen +4, Spot +8 
+feats Dodge, Wingover 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial hyena
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 50 ft. (10 squares) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Bite +3 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 14, Dex 15, Con 15, Int 3, Wis 13, Cha 6 
+skills Hide +3*, Listen +6, Spot +4 
+feats Alertness 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial leopard
+hit_dice 3d8+6 (19 hp) 
+initiative +4 
+speed 40 ft (8 squares), climb 20 ft. 
+armor_class 15 (+4 Dex, +1 natural), touch 14, flat-footed 11 
+full_attack Bite +6 melee (1d6+3) and 2 claws +1 melee (1d3+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +5, Ref +7, Will +2 
+abilities Str 16, Dex 19, Con 15, Int 3, Wis 12, Cha 6 
+skills Balance +12, Climb +11, Hide +8*, Jump +11, Listen +6, Move Silently +8, Spot +6 
+feats Alertness, Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial lion
+hit_dice 5d8+10 (32 hp) 
+initiative +3 
+speed 40 ft. (8 squares) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d4+5) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 10 
+saves Fort +6, Ref +7, Will +2 
+abilities Str 21, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Balance +7, Hide +3*, Listen +5, Move Silently +11, Spot +5 
+feats Alertness, Run 
+environment Any Good-aligned plane 
+challenge_rating 4 
+name celestial lizard
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 20 ft. (4 squares), climb 20 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d4–4) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 2 
+skills Balance +10, Climb +12, Hide +10, Listen +3, Spot +3 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/6 
+name celestial lizard, monitor
+hit_dice 3d8+9 (22 hp) 
+initiative +2 
+speed 30 ft. (6 squares), swim 30 ft. 
+armor_class 15 (+2 Dex, +3 natural), touch 12, flat-footed 13 
+full_attack Bite +5 melee (1d8+4) 
+space 5
+reach 5
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +8, Ref +5, Will +2 
+abilities Str 17, Dex 15, Con 17, Int 3, Wis 12, Cha 2 
+skills Climb +7, Hide +6*, Listen +4, Move Silently +6, Spot +4, Swim +11 
+feats Alertness, Great Fortitude 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial manta ray
+hit_dice 4d8 (18 hp) 
+initiative +0 
+speed Swim 30 ft. (6 squares) 
+armor_class 12 (–1 size, +3 natural), touch 9, flat-footed 12 
+full_attack Ram –1 melee* (1d6+1) 
+space 10
+reach 5
+special_qualities Low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 9 
+saves Fort +4, Ref +4, Will +2 
+abilities Str 15, Dex 11, Con 10, Int 3, Wis 12, Cha 2 
+skills Listen +7, Spot +6, Swim +10 
+feats Alertness, Endurance 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name celestial monkey
+hit_dice 1d8 (4 hp) 
+initiative +2 
+speed 30 ft. (6 squares), climb 30 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 5 
+skills Balance + 10, Climb +10, Hide +10, Listen +3, Spot +3 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/6 
+name celestial mule
+hit_dice 3d8+9 (22 hp) 
+initiative +1 
+speed 30 ft. (6 squares) 
+armor_class 13 (–1 size, +1 Dex, +3 natural), touch 10, flat-footed 12 
+full_attack 2 hooves +4 melee (1d4+3) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +6, Ref +4, Will +1 
+abilities Str 16, Dex 13, Con 17, Int 3, Wis 11, Cha 6 
+skills Listen +6, Spot +6 
+feats Alertness, Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial octopus, giant
+hit_dice 8d8+11 (47 hp) 
+initiative +2 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 18 (–1 size, +2 Dex, +7 natural), touch 11, flat-footed 16 
+full_attack 8 tentacles +10 melee (1d4+5) and bite +5 melee (1d8+2) 
+space 10
+reach 10
+special_qualities Ink cloud, jet, low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +7, Ref +8, Will +3 
+abilities Str 20, Dex 15, Con 13, Int 3, Wis 12, Cha 3 
+skills Escape Artist +12, Hide +12, Listen +4, Spot +6, Swim +13 
+feats Alertness, Skill Focus (Hide), Toughness 
+environment Any Good-aligned plane 
+challenge_rating 10 
+name celestial octopus
+hit_dice 2d8 (9 hp) 
+initiative +3 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 16 (+1 size, +3 Dex, +2 natural), touch 14, flat-footed 13 
+full_attack Arms +5 melee (0) and bite +0 melee (1d3) 
+space 5
+reach 5
+special_qualities Ink cloud, jet, low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +3, Ref +6, Will +1 
+abilities Str 12, Dex 17, Con 11, Int 3, Wis 12, Cha 3 
+skills Escape Artist +13, Hide +11, Listen +2, Spot +5, Swim +9 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial owl, giant
+hit_dice 4d10+4 (26 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 70 ft. (average) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+4) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Superior lowlight vision, damage reduction 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 9 
+saves Fort +5, Ref +7, Will +3 
+abilities Str 18, Dex 17, Con 12, Int 10, Wis 14, Cha 10 
+skills Knowledge (nature) +2, Listen +17, Move Silently +8*, Spot +10 
+feats Alertness, Wingover 
+environment Any Good-aligned plane 
+challenge_rating 4 
+name celestial owl
+hit_dice 1d8 (4 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 40 ft. (average) 
+armor_class 17 (+2 size, +3 Dex, +2 natural), touch 15, flat-footed 14 
+full_attack Talons +5 melee (1d4–3) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 6 
+saves Fort +2, Ref +5, Will +2 
+abilities Str 4, Dex 17, Con 10, Int 3, Wis 14, Cha 4 
+skills Listen +14, Move Silently +17, Spot +6* 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/4 
+name celestial pony
+hit_dice 2d8+2 (11 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 hooves –3 melee (1d3*) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +4, Ref +4, Will +0 
+abilities Str 13, Dex 13, Con 12, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1/4 
+name celestial pony, war
+hit_dice 2d8+4 (13 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 hooves +3 melee (1d3+2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +5, Ref +4, Will +0 
+abilities Str 15, Dex 13, Con 14, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1/2 
+name celestial porpoise
+hit_dice 2d8+2 (11 hp) 
+initiative +3 
+speed Swim 80 ft. (16 squares) 
+armor_class 15 (+3 Dex, +2 natural), touch 13, flat-footed 12 
+full_attack Slam +4 melee (2d4) 
+space 5
+reach 5
+special_qualities Blindsight 120 ft., hold breath, low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +4, Ref +6, Will +1 
+abilities Str 11, Dex 17, Con 13, Int 3, Wis 12, Cha 6 
+skills Listen +8*, Spot +7*, Swim +8 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/2 
+name celestial rat
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 15 ft. (3 squares), climb 15 ft., swim 15 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 2, Dex 15, Con 10, Int 3, Wis 12, Cha 2 
+skills Balance +10, Climb +12, Hide +14, Move Silently +10, Swim +10 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/8 
+name celestial raven
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 10 ft. (2 squares), fly 40 ft. (average) 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Claws +4 melee (1d2–5) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +2 
+abilities Str 1, Dex 15, Con 10, Int 3, Wis 14, Cha 6 
+skills Listen +3, Spot +5 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/6 
+name celestial rhinoceros
+hit_dice 8d8+40 (76 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (–1 size, +7 natural), touch 9, flat-footed 16 
+full_attack Gore +13 melee (2d6+12) 
+space 10
+reach 5
+special_qualities Low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +11, Ref +6, Will +3 
+abilities Str 26, Dex 10, Con 21, Int 3, Wis 13, Cha 2 
+skills Listen +14, Spot +3 
+feats Alertness, Endurance, Improved Natural Attack (gore) 
+environment Any Good-aligned plane 
+challenge_rating 6 
+name celestial roc
+hit_dice 18d8+126 (207 hp) 
+initiative +2 
+speed 20 ft. (4 squares), fly 80 ft. (average) 
+armor_class 17 (–4 size, +2 Dex, +9 natural), touch 8, flatfooted 15 
+full_attack 2 talons +21 melee (2d6+12) and bite +19 melee (2d8+6) 
+space 20
+reach 15
+special_qualities Low-light vision, damage reduction 10/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 23 
+saves Fort +18, Ref +13, Will +9 
+abilities Str 34, Dex 15, Con 24, Int 3, Wis 13, Cha 11 
+skills Hide –3, Listen +10, Spot +14 
+feats Alertness, Flyby Attack, Iron Will, Multiattack, Power Attack, Snatch, Wingover 
+environment Any Good-aligned plane 
+challenge_rating 11 
+name celestial sea cat
+hit_dice 6d10+18 (51 hp) 
+initiative +1 
+speed 10 ft. (2 squares), swim 40 ft. 
+armor_class 18 (–1 size, +1 Dex, +8 natural), touch 10, flat-footed 17 
+full_attack 2 claws +9 melee (1d6+4) and bite +4 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., hold breath, low-light vision, scent, damage resistance 5/magic, resistance to acid 5 cold 5 and electricity 5, spell resistance 11 
+saves Fort +8, Ref +6, Will +5 
+abilities Str 19, Dex 12, Con 17, Int 3, Wis 13, Cha 10 
+skills Listen +8, Spot +7, Swim +12 
+feats Alertness, Endurance, Iron Will 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial shark
+hit_dice 3d8+3 (16 hp) 7d8+7 (38 hp) 10d8+20 (65 hp) 
+initiative +2 +6 +6 
+speed Swim 60 ft. (12 squares) Swim 60 ft. (12 squares) Swim 60 ft. (12 squares) 
+armor_class 15 (+2 Dex, +3 natural), touch 12, flat-footed 13 15 (–1 size, +2 Dex, +4 natural), touch 11, flat-footed 13 15 (–2 size, +2 Dex, +5 natural), touch 10, flat-footed 13 
+full_attack Bite +4 melee (1d6+1) Bite +7 melee (1d8+4) Bite +10 melee (2d6+7) 
+space 5
+reach 5
+special_qualities Blindsense, keen scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 Blindsense, keen scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 12 Blindsense, keen scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 15 
+saves Fort +4, Ref +5, Will +2 Fort +8, Ref +7, Will +3 Fort +11, Ref +9, Will +4 
+abilities Str 13, Dex 15, Con 13, Int 3, Wis 12, Cha 2 Str 17, Dex 15, Con 13, Int 3, Wis 12, Cha 2 Str 21, Dex 15, Con 15, Int 3, Wis 12, Cha 2 
+skills Listen +6, Spot +6, Swim +9 Listen +8, Spot +7, Swim +11 Listen +10, Spot +10, Swim +13 
+feats Alertness, Weapon Finesse Alertness, Great Fortitude, Improved Initiative Alertness, Great Fortitude, Improved Initiative, Iron Will 
+environment Any Good-aligned plane Any Good-aligned plane Any Good-aligned plane 
+challenge_rating 1 3 6 
+name celestial squid, giant
+hit_dice 12d8+18 (72 hp) 
+initiative +3 
+speed Swim 80 ft. (16 squares) 
+armor_class 17 (–2 size, +3 Dex, +6 natural), touch 11, flat-footed 14 
+full_attack 10 tentacles +15 melee (1d6+8) and bite +10 melee (2d8+4) 
+space 15
+reach 15
+special_qualities Ink cloud, jet, low-light vision, damage reduction 10/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 17 
+saves Fort +9, Ref +11, Will +5 
+abilities Str 26, Dex 17, Con 13, Int 3, Wis 12, Cha 2 
+skills Listen +10, Spot +11, Swim +16 
+feats Alertness, Diehard, Endurance, Toughness (2) 
+environment Any Good-aligned plane 
+challenge_rating 11 
+name celestial squid
+hit_dice 3d8 (13 hp) 
+initiative +3 
+speed Swim 60 ft. (12 squares) 
+armor_class 16 (+3 Dex, +3 natural), touch 13, flat-footed 13 
+full_attack Arms +4 melee (0) and bite –1 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Ink cloud, jet, low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +3, Ref +6, Will +2 
+abilities Str 14, Dex 17, Con 11, Int 3, Wis 12, Cha 2 
+skills Listen +7, Spot +7, Swim +10 
+feats Alertness, Endurance 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial tiger
+hit_dice 6d8+18 (45 hp) 
+initiative +2 
+speed 40 ft. (8 squares) 
+armor_class 14 (–1 size, +2 Dex, +3 natural), touch 11, flat-footed 12 
+full_attack 2 claws +9 melee (1d8+6) and bite +4 melee (2d6+3) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 11 
+saves Fort +8, Ref +7, Will +3 
+abilities Str 23, Dex 15, Con 17, Int 3, Wis 12, Cha 6 
+skills Balance +6, Hide +3*, Listen +3, Move Silently +9, Spot +3, Swim +11 
+feats Alertness, Improved Natural Attack (bite), and Improved Natural Attack (claw) 
+environment Any Good-aligned plane 
+challenge_rating 5 
+name celestial toad
+hit_dice 1/4 d8 (1 hp) 
+initiative +1 
+speed 5 ft. (1 square) 
+armor_class 15 (+4 size, +1 Dex), touch 15, flat-footed 14 
+full_attack +2 
+space 1
+reach 0
+special_qualities Amphibious, low-light vision, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +3, Will +2 
+abilities Str 1, Dex 12, Con 11, Int 3, Wis 14, Cha 4 
+skills Hide +21, Listen +4, Spot +4 
+feats Alertness 
+environment Any Good-aligned plane 
+challenge_rating 1/10 
+name celestial weasel
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 20 ft. (4 squares), climb 20 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 5 
+skills Balance +10, Climb +10, Hide +11, Move Silently +8, Spot +3 
+feats Weapon Finesse 
+environment Any Good-aligned plane 
+challenge_rating 1/4 
+name celestial wolf
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 50 ft. (10 squares) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Bite +3 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 13, Dex 15, Con 15, Int 3, Wis 12, Cha 6 
+skills Hide +2, Listen +3, Move Silently +3, Spot +3, Survival +1* 
+feats Track, Weapon Focus (bite) 
+environment Any Good-aligned plane 
+challenge_rating 1 
+name celestial wolverine
+hit_dice 3d8+15 (28 hp) 
+initiative +2 
+speed 30 ft. (6 squares), burrow 10 ft., climb 10 ft. 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack 2 claws +4 melee (1d4+2) and bite –1 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to acid 5 cold 5 and electricity 5, spell resistance 8 
+saves Fort +7, Ref +5, Will +2 
+abilities Str 14, Dex 15, Con 19, Int 3, Wis 12, Cha 10 
+skills Climb +10, Listen +6, Spot +6 
+feats Alertness, Toughness, Track 
+environment Any Good-aligned plane 
+challenge_rating 2 
+name fiendish ape
+hit_dice 4d8+11 (29 hp) 
+initiative +2 
+speed 30 ft. (6 squares), climb 30 ft. 
+armor_class 14 (–1 size, +2 Dex, +3 natural), touch 11, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+5) and bite +2 melee (1d6+2) 
+space 10
+reach 10
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 9 
+saves Fort +6, Ref +6, Will +2 
+abilities Str 21, Dex 15, Con 14, Int 3, Wis 12, Cha 7 
+skills Climb +14, Listen +6, Spot +6 
+feats Alertness, Toughness 
+environment Any Evil-aligned plane 
+challenge_rating 3 
+name fiendish baboon
+hit_dice 1d8+1 (5 hp) 
+initiative +2 
+speed 40 ft. (8 squares), climb 30 ft. 
+armor_class 13 (+2 Dex, +1 natural), touch 12, flat-footed 11 
+full_attack Bite +2 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +3, Ref +4, Will +1 
+abilities Str 15, Dex 14, Con 12, Int 3, Wis 12, Cha 4 
+skills Climb +10, Listen +5, Spot +5 
+feats Alertness 
+environment Any Evil-aligned plane 
+challenge_rating 1/2 
+name fiendish badger
+hit_dice 1d8+2 (6 hp) 
+initiative +3 
+speed 30 ft. (6 squares), burrow 10 ft. 
+armor_class 15 (+1 size, +3 Dex, +1 natural), touch 14, flat-footed 12 
+full_attack 2 claws +4 melee (1d2–1) and bite –1 melee (1d3–1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +4, Ref +5, Will +1 
+abilities Str 8, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Escape Artist +7, Listen +3, Spot +3 
+feats Track, Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/2 
+name fiendish bat
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 5 ft (1 square), fly 40 ft. (good) 
+armor_class 16 (+4 size, +2 Dex), touch 16, flat-footed 14 
+full_attack +2 
+space 1
+reach 0
+special_qualities Blindsense 20 ft., low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +2 
+abilities Str 1, Dex 15, Con 10, Int 3, Wis 14, Cha 4 
+skills Hide +14, Listen +8*, Move Silently +6, Spot +8* 
+feats Alertness 
+environment Any Evil-aligned plane 
+challenge_rating 1/10 
+name fiendish bear, black
+hit_dice 3d8+6 (19 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 claws +6 melee (1d4+4) and bite +1 melee (1d6+2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +5, Ref +4, Will +2 
+abilities Str 19, Dex 13, Con 15, Int 3, Wis 12, Cha 6 
+skills Climb +4, Listen +4, Spot +4, Swim +8 
+feats Endurance, Run 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish bear, brown
+hit_dice 6d8+24 (51 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 15 (–1 size, +1 Dex, +5 natural), touch 10, flat-footed 14 
+full_attack 2 claws +11 melee (1d8+8) and bite +6 melee (2d6+4) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 11 
+saves Fort +9, Ref +6, Will +3 
+abilities Str 27, Dex 13, Con 19, Int 3, Wis 12, Cha 6 
+skills Listen +4, Spot +7, Swim +12 
+feats Endurance, Run, Track 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish bear, polar
+hit_dice 8d8+32 (68 hp) 
+initiative +1 
+speed 40 ft. (8 squares), swim 30 ft. 
+armor_class 15 (–1 size, +1 Dex, +5 natural), touch 10, flat-footed 14 
+full_attack 2 claws +13 melee (1d8+8) and bite +8 melee (2d6+4) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +10, Ref +7, Will +3 
+abilities Str 27, Dex 13, Con 19, Int 3, Wis 12, Cha 6 
+skills Hide –2*, Listen +5, Spot +7, Swim +16 
+feats Endurance, Run, Track 
+environment Any Evil-aligned plane 
+challenge_rating 6 
+name fiendish bison
+hit_dice 5d8+15 (37 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 13 (–1 size, +4 natural), touch 9, flat-footed 13 
+full_attack Gore +8 melee (1d8+9) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 10 
+saves Fort +7, Ref +4, Will +1 
+abilities Str 22, Dex 10, Con 16, Int 3, Wis 11, Cha 4 
+skills Listen +7, Spot +5 
+feats Alertness, Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 3 
+name fiendish boar
+hit_dice 3d8+12 (25 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 16 (+6 natural), touch 10, flat-footed 16 
+full_attack Gore +4 melee (1d8+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +6, Ref +3, Will +2 
+abilities Str 15, Dex 10, Con 17, Int 3, Wis 13, Cha 4 
+skills Listen +7, Spot +5 
+feats Alertness, Toughness 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish camel
+hit_dice 3d8+6 (19 hp) 
+initiative +3 
+speed 50 ft. (10 squares) 
+armor_class 13 (–1 size, +3 Dex, +1 natural) touch 12, flat-footed 10 
+full_attack Bite +0 melee* (1d4+2*) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +5, Ref +6, Will +1 
+abilities Str 18, Dex 16, Con 14, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Alertness, Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish cat
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 30 ft. (6 squares) 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack 2 claws +4 melee (1d2–4) and bite –1 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 7 
+skills Balance +10, Climb +6, Hide +14*, Jump +10, Listen +3, Move Silently +6, Spot +3 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/4 
+name fiendish cheetah
+hit_dice 3d8+6 (19 hp) 
+initiative +4 
+speed 50 ft. (10 squares) 
+armor_class 15 (+4 Dex, +1 natural), touch 14, flat-footed 11 
+full_attack Bite +6 melee (1d6+3) and 2 claws +1 melee (1d2+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, sprint, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +5, Ref +7, Will +2 
+abilities Str 16, Dex 19, Con 15, Int 3, Wis 12, Cha 6 
+skills Hide +6, Listen +4, Move Silently +6, Spot +4 
+feats Alertness, Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish crocodile, giant
+hit_dice 7d8+28 (59 hp) 
+initiative +1 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 16 (–2 size, +1 Dex, +7 natural), touch 9, flat-footed 15 
+full_attack Bite +11 melee (2d8+12) or tail slap +11 melee (1d12+12) 
+space 15
+reach 10
+special_qualities Hold breath, low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 12 
+saves Fort +9, Ref +6, Will +3 
+abilities Str 27, Dex 12, Con 19, Int 3, Wis 12, Cha 2 
+skills Hide +1*, Listen +5, Spot +5, Swim +16 
+feats Alertness, Endurance, Skill Focus (Hide) 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish crocodile
+hit_dice 3d8+9 (22 hp) 
+initiative +1 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 15 (+1 Dex, +4 natural), touch 11, flat-footed 14 
+full_attack Bite +6 melee (1d8+6) or tail slap +6 melee (1d12+6) 
+space 5
+reach 5
+special_qualities Hold breath, low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +6, Ref +4, Will +2 
+abilities Str 19, Dex 12, Con 17, Int 3, Wis 12, Cha 2 
+skills Hide +7*, Listen +4, Spot +4, Swim +12 
+feats Alertness, Skill Focus (Hide) 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish dog
+hit_dice 1d8+2 (6 hp) 
+initiative +3 
+speed 40 ft. (8 squares) 
+armor_class 15 (+1 size, +3 Dex, +1 natural), touch 14, flat-footed 12 
+full_attack Bite +2 melee (1d4+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +4, Ref +5, Will +1 
+abilities Str 13, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Jump +7, Listen +5, Spot +5, Survival +1* 
+feats Alertness, Track 
+environment Any Evil-aligned plane 
+challenge_rating 1/3 
+name fiendish dog, riding
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 40 ft. (8 squares) 
+armor_class 16 (+2 Dex, +4 natural), touch 12, flat-footed 14 
+full_attack Bite +3 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 15, Dex 15, Con 15, Int 3, Wis 12, Cha 6 
+skills Jump +8, Listen +5, Spot +5, Swim +3, Survival +1* 
+feats Alertness, Track 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish donkey
+hit_dice 2d8+2 (11 hp) 
+initiative +1 
+speed 30 ft. (6 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack Bite +1 melee (1d2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +4, Ref +4, Will +0 
+abilities Str 10, Dex 13, Con 12, Int 3, Wis 11, Cha 4 
+skills Balance +3, Listen +3, Spot +2 
+feats Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1/6 
+name fiendish eagle, giant
+hit_dice 4d10+4 (26 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 80 ft. (average) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+4) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Low-light vision, evasion, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 9 
+saves Fort +5, Ref +7, Will +3 
+abilities Str 18, Dex 17, Con 12, Int 10, Wis 14, Cha 10 
+skills Knowledge (nature) +2, Listen +6, Sense Motive +4, Spot +15, Survival +3 
+feats Alertness, Flyby Attack 
+environment Any Evil-aligned plane 
+challenge_rating 4 
+name fiendish eagle
+hit_dice 1d8+1 (5 hp) 
+initiative +2 
+speed 10 ft. (2 squares), fly 80 ft. (average) 
+armor_class 14 (+1 size, +2 Dex, +1 natural), touch 13, flat-footed 12 
+full_attack 2 talons +3 melee (1d4) and bite –2 melee (1d4) 
+space 5
+reach 5
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +3, Ref +4, Will +2 
+abilities Str 10, Dex 15, Con 12, Int 3, Wis 14, Cha 6 
+skills Listen +2, Spot +14 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/2 
+name fiendish elephant
+hit_dice 11d8+55 (104 hp) 
+initiative +0 
+speed 40 ft. (8 squares) 
+armor_class 15 (–2 size, +7 natural), touch 8, flat-footed 15 
+full_attack Slam +16 melee (2d6+10) and 2 stamps +11 melee (2d6+5); or gore +16 melee (2d8+15) 
+space 15
+reach 10
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 16 
+saves Fort +12, Ref +7, Will +6 
+abilities Str 30, Dex 10, Con 21, Int 3, Wis 13, Cha 7 
+skills Listen +12, Spot +10 
+feats Alertness, Endurance, Iron Will, Skill Focus (Listen) 
+environment Any Evil-aligned plane 
+challenge_rating 9 
+name fiendish giant bee
+hit_dice 3d8 (13 hp) 
+initiative +2 
+speed 20 ft. (4 squares), fly 80 ft. (good) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Sting +2 melee (1d4 plus poison) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +3, Ref +3, Will +2 
+abilities Str 11, Dex 14, Con 11, Int 3, Wis 12, Cha 9 
+skills Spot +5, Survival +1* 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish giant bombardier beetle
+hit_dice 2d8+4 (13 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (+6 natural), touch 10, flat-footed 16 
+full_attack Bite +2 melee (1d4+1) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +5, Ref +0, Will +0 
+abilities Str 13, Dex 10, Con 14, Int 3, Wis 10, Cha 9 
+skills — 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish giant fire beetle
+hit_dice 1d8 (4 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (+1 size, +5 natural), touch 11, flat-footed 16 
+full_attack Bite +1 melee (2d4) 
+space 5
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +2, Ref +0, Will +0 
+abilities Str 10, Dex 11, Con 11, Int 3, Wis 10, Cha 7 
+skills — 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 1/3 
+name fiendish giant praying mantis
+hit_dice 4d8+8 (26 hp) 
+initiative –1 
+speed 20 ft. (4 squares), fly 40 ft. (poor) 
+armor_class 14 (–1 size, –1 Dex, +6 natural), touch 8, flat-footed 14 
+full_attack Claws +6 melee (1d8+4) and bite +1 melee (1d6+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 9 
+saves Fort +6, Ref +0, Will +3 
+abilities Str 19, Dex 8, Con 15, Int 3, Wis 14, Cha 11 
+skills Hide –1*, Spot +6 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 4 
+name fiendish giant stag beetle
+hit_dice 7d8+21 (52 hp) 
+initiative +0 
+speed 20 ft. (4 squares) 
+armor_class 19 (–1 size, +10 natural), touch 9, flat-footed 19 
+full_attack Bite +10 melee (4d6+9) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 12 
+saves Fort +8, Ref +2, Will +2 
+abilities Str 23, Dex 10, Con 17, Int 3, Wis 10, Cha 9 
+skills — 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish giant wasp
+hit_dice 5d8+10 (32 hp) 
+initiative +1 
+speed 20 ft. (4 squares), fly 60 ft. (good) 
+armor_class 14 (–1 size, +1 Dex, +4 natural), touch 10, flat-footed 13 
+full_attack Sting +6 melee (1d3+6 plus poison) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., vermin traits, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 10 
+saves Fort +6, Ref +2, Will +2 
+abilities Str 18, Dex 12, Con 14, Int 3, Wis 13, Cha 11 
+skills Spot +9, Survival +1* 
+feats — 
+environment Any Evil-aligned plane 
+challenge_rating 4 
+name fiendish girallon
+hit_dice 7d10+20 (58 hp) 
+initiative +3 
+speed 40 ft. (8 squares), climb 40 ft. 
+armor_class 16 (–1 size, +3 Dex, +4 natural), touch 12, flat-footed 15 
+full_attack 4 claws +12 melee (1d4+6) and bite +7 melee (1d8+3) 
+space 10
+reach 10
+special_qualities Darkvision 60 ft., low-light vision, scent, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 12 
+saves Fort +7, Ref +8, Will +5 
+abilities Str 22, Dex 17, Con 14, Int 3, Wis 12, Cha 7 
+skills Climb +14, Move Silently +8, Spot +6 
+feats Iron Will, Toughness (2) 
+environment Any Evil-aligned plane 
+challenge_rating 7 
+name fiendish griffon
+hit_dice 7d10+21 (59 hp) 
+initiative +2 
+speed 30 ft. (6 squares), fly 80 ft. (average) 
+armor_class 17 (–1 size, +2 Dex, +6 natural), touch 11, flat-footed 15 
+full_attack Bite +11 melee (2d6+4) and 2 claws +8 melee (1d4+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., low-light vision, scent, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 12 
+saves Fort +8, Ref +7, Will +5 
+abilities Str 18, Dex 15, Con 16, Int 5, Wis 13, Cha 8 
+skills Jump +8, Listen +6, Spot +10 
+feats Iron Will, Multiattack, Weapon Focus (bite) 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish hawk
+hit_dice 1d8 (4 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 60 ft. (average) 
+armor_class 17 (+2 size, +3 Dex, +2 natural), touch 15, flat-footed 14 
+full_attack Talons +5 melee (1d4–2) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +2, Ref +5, Will +2 
+abilities Str 6, Dex 17, Con 10, Int 3, Wis 14, Cha 6 
+skills Listen +2, Spot +14 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/3 
+name fiendish hippogriff
+hit_dice 3d10+9 (25 hp) 
+initiative +2 
+speed 50 ft. (10 squares), fly 100 ft. (average) 
+armor_class 15 (–1 size, +2 Dex, +4 natural), touch 11, flat-footed 13 
+full_attack 2 claws +6 melee (1d4+4) and bite +1 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., low-light vision, scent, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +6, Ref +5, Will +2 
+abilities Str 18, Dex 15, Con 16, Int 3, Wis 13, Cha 8 
+skills Listen +4, Spot +8 
+feats Dodge, Wingover 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish hyena
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 50 ft. (10 squares) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Bite +3 melee (1d6+3) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 14, Dex 15, Con 15, Int 3, Wis 13, Cha 6 
+skills Hide +3*, Listen +6, Spot +4 
+feats Alertness 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish leopard
+hit_dice 3d8+6 (19 hp) 
+initiative +4 
+speed 40 ft (8 squares), climb 20 ft. 
+armor_class 15 (+4 Dex, +1 natural), touch 14, flat-footed 11 
+full_attack Bite +6 melee (1d6+3) and 2 claws +1 melee (1d3+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +5, Ref +7, Will +2 
+abilities Str 16, Dex 19, Con 15, Int 3, Wis 12, Cha 6 
+skills Balance +12, Climb +11, Hide +8*, Jump +11, Listen +6, Move Silently +8, Spot +6 
+feats Alertness, Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish lion
+hit_dice 5d8+10 (32 hp) 
+initiative +3 
+speed 40 ft. (8 squares) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d4+5) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 10 
+saves Fort +6, Ref +7, Will +2 
+abilities Str 21, Dex 17, Con 15, Int 3, Wis 12, Cha 6 
+skills Balance +7, Hide +3*, Listen +5, Move Silently +11, Spot +5 
+feats Alertness, Run 
+environment Any Evil-aligned plane 
+challenge_rating 4 
+name fiendish lizard
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 20 ft. (4 squares), climb 20 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d4–4) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 2 
+skills Balance +10, Climb +12, Hide +10, Listen +3, Spot +3 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/6 
+name fiendish lizard, monitor
+hit_dice 3d8+9 (22 hp) 
+initiative +2 
+speed 30 ft. (6 squares), swim 30 ft. 
+armor_class 15 (+2 Dex, +3 natural), touch 12, flat-footed 13 
+full_attack Bite +5 melee (1d8+4) 
+space 5
+reach 5
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +8, Ref +5, Will +2 
+abilities Str 17, Dex 15, Con 17, Int 3, Wis 12, Cha 2 
+skills Climb +7, Hide +6*, Listen +4, Move Silently +6, Spot +4, Swim +11 
+feats Alertness, Great Fortitude 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish manta ray
+hit_dice 4d8 (18 hp) 
+initiative +0 
+speed Swim 30 ft. (6 squares) 
+armor_class 12 (–1 size, +3 natural), touch 9, flat-footed 12 
+full_attack Ram –1 melee* (1d6+1) 
+space 10
+reach 5
+special_qualities Low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 9 
+saves Fort +4, Ref +4, Will +2 
+abilities Str 15, Dex 11, Con 10, Int 3, Wis 12, Cha 2 
+skills Listen +7, Spot +6, Swim +10 
+feats Alertness, Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 2 
+name fiendish monkey
+hit_dice 1d8 (4 hp) 
+initiative +2 
+speed 30 ft. (6 squares), climb 30 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 5 
+skills Balance + 10, Climb +10, Hide +10, Listen +3, Spot +3 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/6 
+name fiendish mule
+hit_dice 3d8+9 (22 hp) 
+initiative +1 
+speed 30 ft. (6 squares) 
+armor_class 13 (–1 size, +1 Dex, +3 natural), touch 10, flat-footed 12 
+full_attack 2 hooves +4 melee (1d4+3) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +6, Ref +4, Will +1 
+abilities Str 16, Dex 13, Con 17, Int 3, Wis 11, Cha 6 
+skills Listen +6, Spot +6 
+feats Alertness, Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish octopus, giant
+hit_dice 8d8+11 (47 hp) 
+initiative +2 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 18 (–1 size, +2 Dex, +7 natural), touch 11, flat-footed 16 
+full_attack 8 tentacles +10 melee (1d4+5) and bite +5 melee (1d8+2) 
+space 10
+reach 10
+special_qualities Ink cloud, jet, low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +7, Ref +8, Will +3 
+abilities Str 20, Dex 15, Con 13, Int 3, Wis 12, Cha 3 
+skills Escape Artist +12, Hide +12, Listen +4, Spot +6, Swim +13 
+feats Alertness, Skill Focus (Hide), Toughness 
+environment Any Evil-aligned plane 
+challenge_rating 10 
+name fiendish octopus
+hit_dice 2d8 (9 hp) 
+initiative +3 
+speed 20 ft. (4 squares), swim 30 ft. 
+armor_class 16 (+1 size, +3 Dex, +2 natural), touch 14, flat-footed 13 
+full_attack Arms +5 melee (0) and bite +0 melee (1d3) 
+space 5
+reach 5
+special_qualities Ink cloud, jet, low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +3, Ref +6, Will +1 
+abilities Str 12, Dex 17, Con 11, Int 3, Wis 12, Cha 3 
+skills Escape Artist +13, Hide +11, Listen +2, Spot +5, Swim +9 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish owl, giant
+hit_dice 4d10+4 (26 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 70 ft. (average) 
+armor_class 15 (–1 size, +3 Dex, +3 natural), touch 12, flat-footed 12 
+full_attack 2 claws +7 melee (1d6+4) and bite +2 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Superior lowlight vision, damage reduction 5/magic, resistance to cold 5 and fire 5, spell resistance 9 
+saves Fort +5, Ref +7, Will +3 
+abilities Str 18, Dex 17, Con 12, Int 10, Wis 14, Cha 10 
+skills Knowledge (nature) +2, Listen +17, Move Silently +8*, Spot +10 
+feats Alertness, Wingover 
+environment Any Evil-aligned plane 
+challenge_rating 4 
+name fiendish owl
+hit_dice 1d8 (4 hp) 
+initiative +3 
+speed 10 ft. (2 squares), fly 40 ft. (average) 
+armor_class 17 (+2 size, +3 Dex, +2 natural), touch 15, flat-footed 14 
+full_attack Talons +5 melee (1d4–3) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 6 
+saves Fort +2, Ref +5, Will +2 
+abilities Str 4, Dex 17, Con 10, Int 3, Wis 14, Cha 4 
+skills Listen +14, Move Silently +17, Spot +6* 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/4 
+name fiendish pony
+hit_dice 2d8+2 (11 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 hooves –3 melee (1d3*) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +4, Ref +4, Will +0 
+abilities Str 13, Dex 13, Con 12, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1/4 
+name fiendish pony, war
+hit_dice 2d8+4 (13 hp) 
+initiative +1 
+speed 40 ft. (8 squares) 
+armor_class 13 (+1 Dex, +2 natural), touch 11, flat-footed 12 
+full_attack 2 hooves +3 melee (1d3+2) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +5, Ref +4, Will +0 
+abilities Str 15, Dex 13, Con 14, Int 3, Wis 11, Cha 4 
+skills Listen +5, Spot +5 
+feats Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1/2 
+name fiendish porpoise
+hit_dice 2d8+2 (11 hp) 
+initiative +3 
+speed Swim 80 ft. (16 squares) 
+armor_class 15 (+3 Dex, +2 natural), touch 13, flat-footed 12 
+full_attack Slam +4 melee (2d4) 
+space 5
+reach 5
+special_qualities Blindsight 120 ft., hold breath, low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +4, Ref +6, Will +1 
+abilities Str 11, Dex 17, Con 13, Int 3, Wis 12, Cha 6 
+skills Listen +8*, Spot +7*, Swim +8 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/2 
+name fiendish rat
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 15 ft. (3 squares), climb 15 ft., swim 15 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 2, Dex 15, Con 10, Int 3, Wis 12, Cha 2 
+skills Balance +10, Climb +12, Hide +14, Move Silently +10, Swim +10 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/8 
+name fiendish raven
+hit_dice 1/4 d8 (1 hp) 
+initiative +2 
+speed 10 ft. (2 squares), fly 40 ft. (average) 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Claws +4 melee (1d2–5) 
+space 2
+reach 2
+special_qualities Low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +2 
+abilities Str 1, Dex 15, Con 10, Int 3, Wis 14, Cha 6 
+skills Listen +3, Spot +5 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/6 
+name fiendish rhinoceros
+hit_dice 8d8+40 (76 hp) 
+initiative +0 
+speed 30 ft. (6 squares) 
+armor_class 16 (–1 size, +7 natural), touch 9, flat-footed 16 
+full_attack Gore +13 melee (2d6+12) 
+space 10
+reach 5
+special_qualities Low-light vision, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 13 
+saves Fort +11, Ref +6, Will +3 
+abilities Str 26, Dex 10, Con 21, Int 3, Wis 13, Cha 2 
+skills Listen +14, Spot +3 
+feats Alertness, Endurance, Improved Natural Attack (gore) 
+environment Any Evil-aligned plane 
+challenge_rating 6 
+name fiendish roc
+hit_dice 18d8+126 (207 hp) 
+initiative +2 
+speed 20 ft. (4 squares), fly 80 ft. (average) 
+armor_class 17 (–4 size, +2 Dex, +9 natural), touch 8, flatfooted 15 
+full_attack 2 talons +21 melee (2d6+12) and bite +19 melee (2d8+6) 
+space 20
+reach 15
+special_qualities Low-light vision, damage reduction 10/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 23 
+saves Fort +18, Ref +13, Will +9 
+abilities Str 34, Dex 15, Con 24, Int 3, Wis 13, Cha 11 
+skills Hide –3, Listen +10, Spot +14 
+feats Alertness, Flyby Attack, Iron Will, Multiattack, Power Attack, Snatch, Wingover 
+environment Any Evil-aligned plane 
+challenge_rating 11 
+name fiendish sea cat
+hit_dice 6d10+18 (51 hp) 
+initiative +1 
+speed 10 ft. (2 squares), swim 40 ft. 
+armor_class 18 (–1 size, +1 Dex, +8 natural), touch 10, flat-footed 17 
+full_attack 2 claws +9 melee (1d6+4) and bite +4 melee (1d8+2) 
+space 10
+reach 5
+special_qualities Darkvision 60 ft., hold breath, low-light vision, scent, damage resistance 5/magic, resistance to cold 5 and fire 5, spell resistance 11 
+saves Fort +8, Ref +6, Will +5 
+abilities Str 19, Dex 12, Con 17, Int 3, Wis 13, Cha 10 
+skills Listen +8, Spot +7, Swim +12 
+feats Alertness, Endurance, Iron Will 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish shark
+hit_dice 3d8+3 (16 hp) 7d8+7 (38 hp) 10d8+20 (65 hp) 
+initiative +2 +6 +6 
+speed Swim 60 ft. (12 squares) Swim 60 ft. (12 squares) Swim 60 ft. (12 squares) 
+armor_class 15 (+2 Dex, +3 natural), touch 12, flat-footed 13 15 (–1 size, +2 Dex, +4 natural), touch 11, flat-footed 13 15 (–2 size, +2 Dex, +5 natural), touch 10, flat-footed 13 
+full_attack Bite +4 melee (1d6+1) and Bite +7 melee (1d8+4) and Bite +10 melee (2d6+7) 
+space 5
+reach 5
+special_qualities Blindsense, keen scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 Blindsense, keen scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 12 Blindsense, keen scent, damage reduction 5/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 15 
+saves Fort +4, Ref +5, Will +2 Fort +8, Ref +7, Will +3 Fort +11, Ref +9, Will +4 
+abilities Str 13, Dex 15, Con 13, Int 3, Wis 12, Cha 2 Str 17, Dex 15, Con 13, Int 3, Wis 12, Cha 2 Str 21, Dex 15, Con 15, Int 3, Wis 12, Cha 2 
+skills Listen +6, Spot +6, Swim +9 Listen +8, Spot +7, Swim +11 Listen +10, Spot +10, Swim +13 
+feats Alertness, Weapon Finesse Alertness, Great Fortitude, Improved Initiative Alertness, Great Fortitude, Improved Initiative, Iron Will 
+environment Any Evil-aligned plane Any Evil-aligned plane Any Evil-aligned plane 
+challenge_rating 1 3 6 
+name fiendish squid, giant
+hit_dice 12d8+18 (72 hp) 
+initiative +3 
+speed Swim 80 ft. (16 squares) 
+armor_class 17 (–2 size, +3 Dex, +6 natural), touch 11, flat-footed 14 
+full_attack 10 tentacles +15 melee (1d6+8) and bite +10 melee (2d8+4) 
+space 15
+reach 15
+special_qualities Ink cloud, jet, low-light vision, damage reduction 10/magic, darkvision 60ft, resistance to acid 10 cold 10 and electricity 10, spell resistance 17 
+saves Fort +9, Ref +11, Will +5 
+abilities Str 26, Dex 17, Con 13, Int 3, Wis 12, Cha 2 
+skills Listen +10, Spot +11, Swim +16 
+feats Alertness, Diehard, Endurance, Toughness (2) 
+environment Any Evil-aligned plane 
+challenge_rating 11 
+name fiendish squid
+hit_dice 3d8 (13 hp) 
+initiative +3 
+speed Swim 60 ft. (12 squares) 
+armor_class 16 (+3 Dex, +3 natural), touch 13, flat-footed 13 
+full_attack Arms +4 melee (0) and bite –1 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Ink cloud, jet, low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +3, Ref +6, Will +2 
+abilities Str 14, Dex 17, Con 11, Int 3, Wis 12, Cha 2 
+skills Listen +7, Spot +7, Swim +10 
+feats Alertness, Endurance 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish tiger
+hit_dice 6d8+18 (45 hp) 
+initiative +2 
+speed 40 ft. (8 squares) 
+armor_class 14 (–1 size, +2 Dex, +3 natural), touch 11, flat-footed 12 
+full_attack 2 claws +9 melee (1d8+6) and bite +4 melee (2d6+3) 
+space 10
+reach 5
+special_qualities Low-light vision, scent, damage reduction 5/magic, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 11 
+saves Fort +8, Ref +7, Will +3 
+abilities Str 23, Dex 15, Con 17, Int 3, Wis 12, Cha 6 
+skills Balance +6, Hide +3*, Listen +3, Move Silently +9, Spot +3, Swim +11 
+feats Alertness, Improved Natural Attack (bite), and Improved Natural Attack (claw) 
+environment Any Evil-aligned plane 
+challenge_rating 5 
+name fiendish toad
+hit_dice 1/4 d8 (1 hp) 
+initiative +1 
+speed 5 ft. (1 square) 
+armor_class 15 (+4 size, +1 Dex), touch 15, flat-footed 14 
+full_attack +2 
+space 1
+reach 0
+special_qualities Amphibious, low-light vision, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +3, Will +2 
+abilities Str 1, Dex 12, Con 11, Int 3, Wis 14, Cha 4 
+skills Hide +21, Listen +4, Spot +4 
+feats Alertness 
+environment Any Evil-aligned plane 
+challenge_rating 1/10 
+name fiendish weasel
+hit_dice 1/2 d8 (2 hp) 
+initiative +2 
+speed 20 ft. (4 squares), climb 20 ft. 
+armor_class 14 (+2 size, +2 Dex), touch 14, flat-footed 12 
+full_attack Bite +4 melee (1d3–4) 
+space 2
+reach 2
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 5 
+saves Fort +2, Ref +4, Will +1 
+abilities Str 3, Dex 15, Con 10, Int 3, Wis 12, Cha 5 
+skills Balance +10, Climb +10, Hide +11, Move Silently +8, Spot +3 
+feats Weapon Finesse 
+environment Any Evil-aligned plane 
+challenge_rating 1/4 
+name fiendish wolf
+hit_dice 2d8+4 (13 hp) 
+initiative +2 
+speed 50 ft. (10 squares) 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack Bite +3 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 7 
+saves Fort +5, Ref +5, Will +1 
+abilities Str 13, Dex 15, Con 15, Int 3, Wis 12, Cha 6 
+skills Hide +2, Listen +3, Move Silently +3, Spot +3, Survival +1* 
+feats Track, Weapon Focus (bite) 
+environment Any Evil-aligned plane 
+challenge_rating 1 
+name fiendish wolverine
+hit_dice 3d8+15 (28 hp) 
+initiative +2 
+speed 30 ft. (6 squares), burrow 10 ft., climb 10 ft. 
+armor_class 14 (+2 Dex, +2 natural), touch 12, flat-footed 12 
+full_attack 2 claws +4 melee (1d4+2) and bite –1 melee (1d6+1) 
+space 5
+reach 5
+special_qualities Low-light vision, scent, darkvision 60ft, resistance to cold 5 and fire 5, spell resistance 8 
+saves Fort +7, Ref +5, Will +2 
+abilities Str 14, Dex 15, Con 19, Int 3, Wis 12, Cha 10 
+skills Climb +10, Listen +6, Spot +6 
+feats Alertness, Toughness, Track 
+environment Any Evil-aligned plane 
+challenge_rating 2 

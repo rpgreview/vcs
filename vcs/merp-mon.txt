@@ -1,0 +1,77 @@
+﻿Bear, Black|5|L|20|124|RL|30|N|105/LGr 70/LCl
+Bear, Cave|12|L|25|190|RL|30|N|150/LGr 105/LCl
+Bear, cub|1||20|34|RL|20|N|55/Gr
+Boar|3|L|30|110|SL|40|N|55/Ho
+Dog, sm|1|S|30|30|No|20|N|40/Bi
+Dog, med|2|M|30|50|No|25|N|50/Bi
+Dog, large|3|L|30|70|No|25|N|70/Bi
+Horse, sm|2|M|30|90|No|30|N|30/Ra
+Horse, large|3|L|30|110|No|30|N|45/Ra
+Snake|8|L|20|100|No|60|N|70/MBi 30/MCr|||poison with A crit or better
+White Wolf|8|M|25|155|No|70|N|90/LBi 80/LCl|||cunning and ferocious
+Wolf|3|M|15|95|No|30|N|65LBi
+Wolf|6|M|20|104|SL|40|N|95/LBi 55/mCl|||hunt in packs, smell
+Eagles, Great|30|H|40|250|RL|60|N|110/Pi||||vision, smart
+Ents|35|H|30|400|Pl|35|N|170/Fa
+Animist|3||5|45|SL|20|Y|54/we|32/bw|32|25|4 spells, magic
+Animist|6||10|63|SL|25|Y|72/we|45/bw|52|38|8 spells, magic
+Animist|12||15|143|RL|25|Y|132/we|98/bw|80|55|15 spells, magic
+Bandit|1||5|21|No|15|Y|30/we|15/bw|5|23
+Bandit|3||5|49|SL|20|Y|54/we|45/bw|25|38
+Bandit|5||15|62|SL|25|Y|69/we|58/bw|38|54|+5 shield
+Bandit Leader|4||10|65|RL|30|Y|75/we|63/bw|32|45|+5 shield, +10 weapon
+Bandit Leader|6||10|85|RL|30|Y|81/we|68/bw|41|48|+5 shield, +10 weapon
+Bandit Leader|8||20|95|RL|40|Y|155/we|85/bw|59|57|+10 shield, +10 weapon
+Fighter|7||20|124|RL|30|Y|105/we|86/bw|76|62|+10 shield & weapon
+Human|2||10|46|No|10|N|42/we|31/bw|22|22|
+Hillman|4||15|88|RL|10|Y|56/we|69/bw|27|38|
+Mage|3||20|42|No|35|N|25/we|20/bw|36|43|4 spells, magic
+Mage|6||20|59|No|45|N|35/we|25/bw|49|48|8 spells, magic
+Mage|9||20|72|No|55|N|45/we|35/bw|67|65|12 spells, magic
+Hobbit|3||25|48|No|20|N|22/ss|38/sb|21|45|
+Travelers|2||15|52|No|10|N|44/we|32/bw|32|29|
+Travelers|4||15|62|No|10|N|64/we|53/bw|44|36|
+Ghouls|4||10|62|SL|20|N|68/cl||||5% disease
+Golem|15|L|10|190|Pl|40|N|110/we||||
+Huorns|20|L|0|350|Ch|20|N|75/Fi
+Kraken, sm|15|M|20|150|No|50|N|75/Gr||||multiple ATs
+Kraken, med|25|L|15|230|SL|40|N|125/Gr||||multiple ATs
+Kraken, large|35|H|15|350|RL|40|N|150/Gr||||multiple ATs
+Mearas|10|L|40|200|No|40|N|75/Fi
+Mewlips|4||15|60|No|35|N|55/we
+Mumakil|7|H|20|300|RL|25|N|85/Ra
+Olog-hai|15||30|150|Pl|45|N|160/we
+Balrog|60||40|400|Pl|60|N|240/we||||15th level fear
+Cave Drake|15|H|15|250|Pl|50|N|90/LBi 50/HCl
+Cave Worm|10|L|5|160|RL|20|N|90/HGr 110/HHo 
+Crebain|2|S|40|10|No|50|N|25/Bi||||+50 Perception, spies
+Demon Wolf|10|L|20|200|SL|45|N|80/LBi
+Dragon|35|K|15|400|Pl|60|N|150/HCl 100/Hbi|||spells, magic, smart
+Fell Beast|20|H|30|210|Ch|35|N|95/HCl 90LGr
+Giant, lesser|14|L|5|250|RL|20|N|90/LBa 75/cl
+Giant, large|20|H|5|320|RL|30|N|130/LBa 110/cl
+Ghost, lesser|6||15|98|No|20|N|97/cl||||no bleeding/stun
+Ghost, greater|15||20|160|No|50|N|110/we||||no bleeding/stun
+Orc|1||20|35|RL|25|Y|45/we|30/bw|12|8|(sun)light penalty, endurance, vision
+Orc|3||20|60|RL|30|Y|63/we|40/bw|18|12|(sun)light penalty, endurance, vision
+Orc|5||20|85|Ch|35|Y|89/we|77/bw|45|11|(sun)light penalty, endurance, vision
+Orc|7||20|97|Ch|45|Y|99/we|85/bw|53|23|(sun)light penalty, endurance, vision
+Sauron, agents|7||25|65|No|30|N|90/we|80/bw|68|55|suicide capsule, poisons
+Sauron, assassins|8||30|80|RL|50|N|110/we|95/bw|70|62|poisons, spying/acting : 80,
+Slime|6||-10|110|No|10|N|54/cl||||AT sticks for A Heat crit
+Skeletons, great|5||20|100|RL|35|Y|78/we||||ignores bleeding, slash => crush crts
+Skeleton, lord|8||20|135|Ch|40|Y|98/we||||8th level fear, 10'R
+Spiders, great|5|M|15|50|Ch|20|N|60/Pi||||5th level poison if A crit or better
+Troll, Cave|12|L|15|175|RL|30|N|106/cl|108/ro|31|6|sunlight kills, no fear, vision, stupid
+Troll, Hill|10|L|10|150|RL|25|N|95/cl|98/ro|||sunlight kills, no fear, vision, stupid
+Troll, Forest|8|L|10|100|RL|20|N|70/cl|76/ro|||sunlight kills, no fear, vision, stupid
+Troll, Stone|6|L|10|120|RL|15|N|82/cl|86/ro|||sunlight kills, no fear, vision, stupid
+Troll, young|4||10|72|RL|20|N|56/cl|57/ro|17|2|sunlight kills, no fear, vision, stupid
+Uruk Hai|7||10|88|Ch|20|Y|94/we|76/bw|58|30|smart, endurance, vision
+Vampire|15|H|40|150|No|65|N|100/cl
+Warg|5|L|35|125|No|50|N|70/LBi||||smell||
+Warg|8|L|40|150|No|55|N|90/LBi||||smell
+Werewolf|10|H|40|250|RL|65|N|120/Bi||||5th level fear
+Wights, minor|10||15|100|No|40|N|95/we||||fear 15’R, paralysis on touch. use large creature crit table, *2 damage with magical weapons, dont bleed, hearing, sense life, flee sunlight, no Stun
+Wights, lesser|15||15|125|No|40|N|115/we||||fear 30’R, paralysis/sleep on touch. use large creature crit table, *2 damage with magical weapons, dont bleed, hearing, sense life, flee sunlight, no Stun
+Wights, major|20||15|170|No|40|N|170/we||||fear 60’R, paralysis/sleep on touch. use large creature crit table, *2 damage with magical weapons, dont bleed, hearing, sense life, flee sunlight, no Stun
