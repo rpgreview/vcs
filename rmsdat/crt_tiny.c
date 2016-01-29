@@ -1,0 +1,117 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include "ADMPmerp.h"
+
+crit_tab2 crit[95] = {
+{1,5, 'A', {0,0,0,0,0,0,0,0}, "Dubious strike. +0 hits.", ""},
+{6,10, 'A', {0,0,0,0,0,0,0,0}, "Zip.", ""},
+{11,15, 'A', {0,0,0,0,0,0,0,0}, "Looking bad. +0 hits.", ""},
+{16,20, 'A', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{21,35, 'A', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{36,45, 'A', {2,0,0,0,0,0,0,0}, "Cruel blow. +2 hits.", ""},
+{46,50, 'A', {4,0,0,0,0,0,0,0}, "Poor follow through. You lose a claw.", "AK AP-5:2"},
+{51,55, 'A', {4,0,0,0,0,0,0,0}, "Leaping chest strike yields +3 hits.", ""},
+{56,60, 'A', {1,0,1,0,0,0,0,0}, "Light thigh wound.",""},
+{61,65, 'A', {2,0,2,0,0,0,0,0}, "Mild forearm wound.",""},
+{66,66, 'A', {4,0,2,1,0,1,0,0}, "Leg strike. Unable to parry next rnd.",""},
+{67,70, 'A', {3,0,1,0,1,0,0,0}, "Shoulder strike. Must parry next rnd.",""},
+{71,75, 'A', {0,0,0,0,0,0,0,0}, "Lower leg strike.", "LA HT+1 EL HT+4 BL+2"},
+{76,80, 'A', {3,0,1,1,0,0,0,0}, "Weak, but precise strike to arm.",""},
+{81,85, 'A', {4,0,2,1,0,0,0,0}, "Strike to face.",""},
+{86,90, 'A', {6,0,0,2,0,0,0,0}, "Sudden, well-placed blow.",""},
+{91,95, 'A', {0,0,0,0,0,0,0,0}, "Leaping head strike.","HA HT+3 ST+1 EL AP+30 ST+2"},
+{96,99, 'A', {0,0,0,9,0,0,0,0}, "Insulting strike to nose.","HA ST+2 EL ST+9 BL+3"},
+{100,350, 'A', {0,0,0,3,0,3,0,0}, "Strike to eyes.", "HA ST+2 EL AP+75 ST+3"},
+{1,5, 'B', {0,0,0,0,0,0,0,0}, "Not enough. +0 hits.", ""},
+{6,10, 'B', {0,0,0,0,0,0,0,0}, "No bonus. +0 hits.", ""},
+{11,15, 'B', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{16,20, 'B', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{21,35, 'B', {2,0,0,0,0,0,0,0}, "+2 hits.", ""},
+{36,45, 'B', {3,0,0,0,0,0,0,0}, "+3 hits.", ""},
+{46,50, 'B', {3,0,0,0,0,0,0,0}, "+3 hits.", ""},
+{51,55, 'B', {3,0,1,0,0,0,0,0}, "Light wound.",""},
+{56,60, 'B', {6,0,0,0,0,0,0,0}, "Thigh strike",""},
+{61,65, 'B', {3,0,2,0,0,0,0,0}, "Raking forearm strike leaves nasty scar.",""},
+{66,66, 'B', {5,20,0,2,0,0,0,0}, "Calf strike, tears muscle",""},
+{67,70, 'B', {4,0,1,1,0,0,0,0}, "Upper chest strike.",""},
+{71,75, 'B', {0,0,2,0,0,0,0,0}, "Strike to lower leg.","LA HT+3 EL HT+6 BL+2"},
+{76,80, 'B', {5,15,2,0,0,0,0,0}, "Strong, but imprecise arm strike.",""},
+{81,85, 'B', {0,0,0,0,0,0,0,0}, "Flying face strike.","PL HT+2 EL ST+3 BL+3"},
+{86,90, 'B', {5,0,2,3,0,0,0,0}, "Slash neck.",""},
+{91,95, 'B', {5,0,2,2,0,1,0,0}, "Wrist strike. Unable to parry next rnd.",""},
+{96,99, 'B', {0,0,3,3,0,3,0,0}, "Head strike, blinded by bleeding","AP+40:3"},
+{100,350, 'B', {3,50,0,6,0,6,0,0}, "Slash throat, knocked down.",""},
+{1,5, 'C', {0,0,0,0,0,0,0,0}, "Real weak. +0 hits.", ""},
+{6,10, 'C', {0,0,0,0,0,0,0,0}, "Nothing extra.", ""},
+{11,15, 'C', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{16,20, 'C', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{21,35, 'C', {2,0,0,0,0,0,0,0}, "+2 hits.", ""},
+{36,45, 'C', {2,0,1,0,0,0,0,0}, "Light wound.",""},
+{46,50, 'C', {4,0,0,0,0,0,0,0}, "+4 hits.", ""},
+{51,55, 'C', {4,0,2,0,0,0,0,0}, "Mild chest wound.",""},
+{56,60, 'C', {4,0,2,1,0,0,0,0}, "Mild thigh wound",""},
+{61,65, 'C', {3,0,2,0,2,0,0,0}, "Forearm strike.",""},
+{66,66, 'C', {4,0,0,1,0,0,0,0}, "Bizarre wrist strike disarms foe.", "AK AP-10:1"},
+{67,70, 'C', {5,0,2,1,0,0,0,0}, "Strike to shoulder.", "AP+10:2"},
+{71,75, 'C', {0,20,2,2,0,0,0,0}, "Calf strike. Slash muscle.",""},
+{76,80, 'C', {5,25,2,2,0,0,0,0}, "Forearm strike. Muscle/tendon slashed.",""},
+{81,85, 'C', {0,0,0,0,0,0,0,0}, "Head strike.","HA HT+3 ST+1 EL BL+3 AP+40"},
+{86,90, 'C', {6,0,0,2,0,2,0,0}, "Shoulder strike spins foe.",""},
+{91,95, 'C', {3,20,2,2,0,2,0,0}, "Neck strike.",""},
+{96,99, 'C', {0,75,1,3,0,3,0,0}, "Slash Achilles tendon, knocked down",""},
+{100,350, 'C', {0,0,0,0,0,0,0,0}, "Hit head. Foe hits himself. Roll E Krush",""},
+{1,5, 'D', {0,0,0,0,0,0,0,0}, "HA!", ""},
+{6,10, 'D', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{11,15, 'D', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{16,20, 'D', {2,0,0,0,0,0,0,0}, "+2 hits.", ""},
+{21,35, 'D', {3,0,0,0,0,0,0,0}, "+3 hits.", ""},
+{36,45, 'D', {0,0,0,0,0,0,0,0}, "Leg strike.","IN LA HT+5 BL+1"},
+{46,50, 'D', {3,0,1,0,0,0,0,0}, "Mild puncture.",""},
+{51,55, 'D', {0,0,0,0,0,0,0,0}, "Slash lower chest.", "IN PL | CH HT+3 BL+3"},
+{56,60, 'D', {6,0,2,1,0,0,0,0}, "Thigh strike",""},
+{61,65, 'D', {5,0,2,0,2,0,0,0}, "Forearm wound.", "AK AP-10:1"},
+{66,66, 'D', {0,0,0,0,0,0,0,0}, "Astounding head strike.", "HA HT+4 EL HT+7"},
+{67,70, 'D', {6,0,2,1,0,1,0,0}, "Upper arm strike.",""},
+{71,75, 'D', {0,0,0,0,0,0,0,0}, "Lower leg strike.","LA HT+3 ST+1 EL ST+2"},
+{76,80, 'D', {5,25,2,3,0,0,0,0}, "Arm strike. Muscle/tendon torn.",""},
+{81,85, 'D', {3,0,0,0,0,0,0,0}, "Acrobatic face strike.", "PL HT+5 EL BL+3 ST+3 AP+40"},
+{86,90, 'D', {5,0,0,1,0,0,0,0}, "Strike to weapon arm, disarmed",""},
+{91,95, 'D', {0,50,0,2,0,2,0,0}, "Attack tears muscle in thumb,disarmed",""},
+{96,99, 'D', {0,0,0,0,0,0,0,0}, "Strike to eyes.", "HA AP+95 EL AP+100"},
+{100,350, 'D', {10,95,2,6,0,6,0,0}, "Strike to eyes, blind.",""},
+{1,5, 'E', {1,0,0,0,0,0,0,0}, "+1 hit.", ""},
+{6,10, 'E', {2,0,0,0,0,0,0,0}, "+2 hits.", ""},
+{11,15, 'E', {2,0,0,0,0,0,0,0}, "+2 hits.", ""},
+{16,20, 'E', {2,0,1,0,0,0,0,0}, "Cutting strike.",""},
+{21,35, 'E', {0,0,1,0,0,0,0,0}, "Minor calf wound.",""},
+{36,45, 'E', {3,0,1,0,0,0,0,0}, "Leg hit.",""},
+{46,50, 'E', {5,0,1,0,1,0,0,0}, "Lower back strike.",""},
+{51,55, 'E', {6,0,2,0,1,0,0,0}, "Chest strike.",""},
+{56,60, 'E', {7,0,3,1,0,0,0,0}, "Thigh wound.",""},
+{61,65, 'E', {0,0,3,1,0,0,0,0}, "Strike to forearm. Gain init for 2 rnds.",""},
+{66,66, 'E', {0,95,0,24,0,0,0,0}, "Strike eyes destroys 1 eye & blinds other",""},
+{67,70, 'E', {0,20,0,1,0,1,0,0}, "Inspired shoulder strike tears muscle.",""},
+{71,75, 'E', {5,0,4,3,0,0,0,0}, "Vicious leg wound.",""},
+{76,80, 'E', {0,0,3,2,0,2,0,0}, "Sly arm strike gives foe a troublesome wound.",""},
+{81,85, 'E', {0,0,0,0,0,0,0,0}, "Head strike.", "HA HT4 ST1 EL BL3 ST9 AP25"},
+{86,90, 'E', {4,40,3,2,0,1,0,0}, "Upper thigh wound, muscle torn.",""},
+{91,95, 'E', {9,0,0,0,0,0,0,360}, "Dazzling leap, knocked down. Disarmed/uncon",""},
+{96,99, 'E', {0,0,0,0,0,0,9,9}, "Head strike,knocked down, massive concussion",""},
+{100,350, 'E', {20,0,0,0,0,0,6,6}, "Unbelievable neck strike. Dies in 6",""},
+};
+
+main()
+{
+int file;
+int i,j,sz;
+char *rdata;
+
+
+  if ((file = open("tab_CT.dat", O_CREAT | O_RDWR | O_TRUNC| O_BINARY)) == -1)
+  {
+     exit(0);
+  }
+  write(file, &crit[0].st, sizeof(crit));
+  close(file);
+}

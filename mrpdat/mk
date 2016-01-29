@@ -1,0 +1,10 @@
+for i in `ls *.c`
+do
+	c=`echo $i | cut -f1 -d"."`
+	gcc $i -o $c -I..
+	./$c
+
+	rm $c $c.exe
+done
+
+chmod 644 *.dat
