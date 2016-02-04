@@ -1,0 +1,11 @@
+, male elf Clr8:  CR 8; Size M (4 ft., 11 in. tall); HD 8d8-40; hp 12; Init +3 (+3 Dex); Spd 30 ft.; AC 13 (+3 Dex); Attack +8/+3 (+6 Base, +2 Str) melee, or +9/+4 (+6 Base, +3 Dex) ranged; SV Fort +1, Ref +5, Will +9; AL CN; Str 14 (+2), Dex 16 (+3), Con 1 (-5), Int 8 (-1), Wis 16 (+3), Cha 11 (+0).
+
+Languages Spoken:  Common, Elven.
+
+
+Skills and feats:  Craft (Painting) +4 (+5 Rank, -1 Int); Heal +9 (+6 Rank, +3 Wis); Hide +3 (+3 Dex); Listen +5 (+3 Wis, +2 Racial); Move Silently +3 (+3 Dex); Search +1 (-1 Int, +2 Racial); Spot +5 (+3 Wis, +2 Racial); Brew Potion; Combat Reflexes; Dodge.
+
+Possessions:  9,400 gp  in gear.
+
+Cleric Domains:  Healing; Sun.
+Cleric Spells Per Day:  6/5+1/4+1/4+1/2+1.

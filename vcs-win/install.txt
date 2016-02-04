@@ -1,0 +1,8 @@
+
+To install ADMP, create a separate directory to install the program. As it has a 30 character limit on file names, it would be best to use:
+	 "C:\ADMP" or "C:\Program Files\ADMP" if you're using Windows.
+	 $HOME/admp or /usr/local/admp if you're using Linux/Unix.
+
+Extract the version into that directory using either winZip or tar depending on your Operating System.
+
+Run the "admpnew" program from that directory.

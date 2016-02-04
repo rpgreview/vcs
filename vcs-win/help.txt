@@ -1,0 +1,150 @@
+Welcome to VCS, a DM Combat Program. This is a combat program for AD&D v3.x/v5.x plus MERP & RMS.
+It is not a character generator or a campaign program ... just combat. 
+
+This program will not do everything, most are too complicated for that but I've tried to go for the 80/20 Rule ... 
+80% of the rules for 20% of the effort.  So, I'm lazy ... sue me ;)
+
+By: Torquil Gault copyright 2005+, Portions copyright Wizards of the Coast (see the Open Gaming Licence)
+
+This program is under constant development, please check the todo.txt file for changes.
+
+
+Ok, how to use this dread .. err .. wonderful program .... ;)
+
+- Go to the System tab and set all the flags, file names etc as required.
+  If you change the "Dice System" it is best to do a "Save All" and then restart the program. The program currently has data
+  for AD&D v3.x/v5.x plus MERP & RMS.
+  Set the map size in the System tab as required and press the New button if you've changed the size.
+- Add all the players in the Edit/Add tab.
+- In the Combat draw the map. Set the "Map Mode" (middle LHS) to one of the drawing modes, select a color and away you go.
+  Take care which color slot you select as some are 'solid' and others not ... check the tip that appears.
+  I find that if I'm doing tunnels or the like, using a Shape/Circle 5' works very nicely.
+  If you draw with the wrong 'color' then you can swap them for another by first taking note of the from/to color number 
+  which is at the end of the 'tip' the go to the System tab and down the bottom you can swap the colors over.
+- There is an undo function in the "Sp. Action" menu on the top right of the map.
+- Set the "Map Mode" (middle LHS) to combat.
+- For each combat/encounter area:
+  - add the monsters for that area in the Edit/Add tab. There are about 850 standard monsters already setup ready for you to
+    use. Use the "Qk Monster Search" area to find and select them. Dont forget to assign an icon to them before adding them.
+    If they are a non-standard monster, use either the "Qk Monster Add" or select "New Monster" and fill in all the details.
+  - in the Combat tab select "Add NEW monsters here in a Group" in the popup menu (by right clicking on the
+    location to add these monsters). Type in the room/group name and select "Add them as Disabled" as then they
+    will not appear in any of the main lists throughout the program.
+    You can add up to 70 groups/rooms. If you're doing more than that then select "Move all NEW monsters here" once you've
+    reach the limit.
+  - move each monster to their location.
+
+To do a combat:
+- move the players & monsters to their locations. Either drag the icons or use the popup menu. Note that you must grab an icon
+  by the top left to drag/move it.
+- If you've added them in as a group you can use the Group tab area to "Disable all except these" for the selected group. This
+  will disable all the monsters except this group which will be enabled.
+- in the Initiatives tab select "New Combat" and add the players initiatives rolls to their numbers. Then "Accept Initiatives"
+  to setup the Init Lists.
+- go to the Combat tab.
+- if you have a second monitor attached, press the "Show XM" button and drag the player window to the other monitor. Maximize it.
+- on the DM screen, zoom in/out both windows as required and select "Centre BOTH Maps here" from the popup menu.
+- you'll see the initiative sequence on the left. As each one does their action they'll change color. You can select the one
+  doing the current action by right-clicking on them either on the map or on the initiative sequence list.
+- once you've completed all the actions for that round, press the "End of Round" button.
+
+- when the combat has finished, calculate the XP in the "Qk Heal/XP/Enable" tab, then select either the "Clear Adjustments ..."
+  or "Reset all for a new Combat" depending on the situation.
+- to do mass player healings; in the "Qk Heal/XP/Enable" tab there's the Quick Heal area. Just refresh the list, type in the healing
+  against each player and accept it.
+
+Other procedural steps:
+- after each 'day', you should select the "Reset all for a new Day" in the System tab. This will clear all the alerts, adjustments,
+  heal them by level HP's etc. It pretty much clears/resets everything ready for a new day of adventuring
+- in the "Qk Heal/XP/Enable" tab in the middle there is a list of special actions you can do
+
+To do a Mass Combat
+- when you add the army units, make sure you set the "#In Group" field before you add them. This number will then appear on the bottom RHS
+  of the icon.
+- just right-click anywhere on the combat grid and select "Do Mass Combat". Select who's attacking whom, "Calculate" and then adjust
+  the defenders details based on how many have died. If you have hurt 'units' then I just set the current HP's to what's left and next
+  time around remove it from that first.
+	NB: the "# Died" adjusts the '#In Group' value by that amount but the 'HP:Curr' will set it to that.
+
+Notes/quirks:
+	- if you put the mouse pointer onto a player/monster on the map, in the "Combat/Map Messages" it will show you their details.
+	- if you left click on two points on the map, in the "Combat/Map Messages" it will show you the distance between those points.
+
+	- when you Zoom in/out it sometimes messes up the map scroll bars so you'll need to just find your map position again.
+
+	- if you draw with the wrong 'color' then you can swap them for another by first taking note of the from/to color number 
+	  which is at the end of the 'tip' the go to the System tab and down the bottom you can swap the colors over.
+
+	- if you want to mess with your players heads, put random object icons (pentagrams etc) around your map and watch them scurry for cover :)
+
+   - if you want to copy objects to say make a tree forest, select the Map Mode "Copy Object", select the one to copy and then where-ever
+     you click, a copy will appear. Changes to one will effect all.
+
+	***********************
+	*** Menu/Tab Layout ***
+	***********************
+
+Combat - this is the main map area. Here you can draw a map, move players and monsters around and do the actual combat.
+
+Initiatives
+	New Combat/Initiatives - do this when you're starting a brand new combat. Add the players rolls to the values shown.
+	Show new Monsters - if you've added more monsters or enabled some, then selecting this will show them. You'll need to 'Accept' next.
+	Accept Initiative - accept the initiative rolls as listed. If someone delays their action, then change their value and 'Accept' them.
+
+	All changes will be reflected in the Initiative List on the combat tab.
+
+Groups - do group actions like assigning members to a group. Enabling all in a group etc.
+
+Edit/Add - the main area for adding or changing players/monsters. You can add something by:
+		- selecting the appropriate "New .." in the lists if you're doing a one off monster
+		- select "Qk Monster Add" adding a number of the same monster. It will only ask for the necessary details. Don't forget to 
+		  assign an icon to it. Useful if you're adding them from a purchased module.
+		- there are over 840 monsters from the SRD and the like preloaded in the "Qk Monster Search" area. Type in the first few characters
+		  of its name, select how many you want and assign an icon to be used then "Add them". There are also prerolled NPC characters in here
+		  like Cleric 8th level and the like.
+
+Other
+	Auto Damage - here you can do automatic damage like ones that are done from Melfs Acid Arrow and the like.
+	Mass Skill Check - seaching a room or seeing if the players spotted your ambush. Do a secret roll using either a rerolled d20 (from the Edit
+		  tab) or use a random d20.
+	Log File - if you've enabled the logging option in the System tab, you'll see all the details here.
+	Qk Icon - forgotten to assign icons to all those giants, then select and assign an icon here.
+	Mass Copy - this allows you to copy all or some of the details from one monster to another.
+	Qk Spells - generate random spell lists.
+	Monster Heal - do mass healings on monsters.
+
+System - This is where you set program options, file names for saving/loading players, maps & monsters etc
+   If you want to convert to using d100 systems, then select them from the Dice System field and change the Initiative System as required.
+   Note: if you do this you'll need to "Save All" and restart the program as it modifies all the screens
+
+Notes - write your campaign notes in here. It will be saved when you do a "Save All" in the System tab.
+
+Dice Roller - roll random dice silently.
+
+Status - show the status of all active ie. not disabled players and monsters.
+
+Spell Adjustments
+   Advanced - this is where you add adjustments of any kind. Use a predefined one or add a new one. Such things as Prayer, Bless,
+	   Bears Endurance and the like, basically anything that effects BAB, Saves, HP, Damage etc can be configured here. Select who it effects,
+   	duration and the parts to the adjustment ie. +3 BAB Morale, +2 Damage Enhancement.
+   Quick - just put the value of the adjustments in the appropriate column for that player. Useful if they have time to pre-buff before combat.
+	
+
+SRD Text - if you've extracted a HTML SRD to the 'srd' directory then it will show in there. These are good ones to use are:
+	http://www.systemreferencedocuments.org/35/stephenh.zip
+	http://www.darkshire.net/~jhkim/rpg/srd/srd_revised_html/v35SRD_html.zip
+
+	If you extract the SRD, it will look thro the 'spell' directory and build up a list for you to use in the Combat section.
+   So when you do an action you can quick search and review the spell details.
+
+Qk Heal/XP/Enable
+	Quick Heal - after a combat there's lots of healing, so it's easy to do it here. It shows their real HP's ie. no adjustments.
+	XP Calc - calculate how much XP the players have gotten from defeating the active monsters ie. those enabled.
+	Special Actions - do such actions like clear, reset player & monsters.
+	Enable/Disable - mass enable or disable monsters.
+
+Alerts/Name/Treasure/NPC
+	Alerts - setup DM alerts that appear in the End of Round messages. Such things as when extra monsters appear or the like.
+	Rnd Treasure - generate random treasure or specific items.
+	Generate Rnd names - generate random names.
+	NPC creation - generate a NPC and then add them as a monster.

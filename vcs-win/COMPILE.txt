@@ -1,0 +1,11 @@
+
+				VCS - Linux/Unix Compilation
+				============================
+
+So, if you want to compile VCS from scratch, grab FLTK 1.x from http://www/fltk.org
+
+Make the changes as per fltk-changes.txt and then make it.
+
+To compile VCS, review the "mk" file and then run it using "./mk"
+
+See, easy :)

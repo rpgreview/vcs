@@ -1,0 +1,11 @@
+	To-do
+add in ad&d v5 stuff
+LOS - creep along walls ?
+how to do secret doors ?
+where to get the other monsters not in SRD ?
+object on wall, shows as empty square on player map if they can't see it
+what about a descriptive language (admp-lang.txt admp-lang.h) to do spells/feats/items etc
+player spell slot decrementing
+icons - press a letter to scroll to that area
+
+	Done

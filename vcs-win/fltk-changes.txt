@@ -1,0 +1,21 @@
+
+If you want to stop FLTK from resizing widgets with the mouse
+	download the latest v1.1.x from http://www.fltk.org
+	extract it
+	edit Fl_Widget.cxx and replace damage_resize with the code below
+	compile & install FLTK
+
+int Fl_Widget::damage_resize(int X, int Y, int W, int H) {
+  if (x() == X && y() == Y && w() == W && h() == H) return 0;
+  if ((Fl::event() == FL_DRAG || Fl::event() == FL_RELEASE) && Fl::event_button() == FL_PUSH) {
+   redraw();
+  } else {
+   resize(X, Y, W, H);
+   redraw();
+  }
+  return 1;
+}
+
+And this allows us to set the scrollbar value: in FL/Fl_Scrollbar.H
+  Add this into the "public:" definition so that we can set the scrollbar value
+		void value(double v) { set_value(v); }

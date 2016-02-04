@@ -1,0 +1,81 @@
+Grid/Table widget:
+	set cell background color
+	place a button/icon in a cell
+	set row/column headers
+	
+	events - drag a cell, left & right click a cell
+
+System:
+	enable external map monitor
+	map options - grid size - resize/new
+
+	player marching order (rotate 90/180/270) on map 10x5 grid (size select 5-50 feet)
+	player/monster icon color
+
+	color slot selector
+
+DM Info:
+	default sleep/watch order 8pm-7am * 3 slots
+
+Groups:
+	Id, Name, Flags, Whom[]
+	Activate/Deactivate etc
+
+gridPoint: (3 bytes)
+	char i_currColor:4;			// current background color - 16 slots
+	char i_prevColor:4;			// previous background color - 16 slots
+	char f_wasViewed:1;			// has it been viewed
+	char f_isHidden:1;			// has the DM marked it as hidden from player view
+	char i_objectType:2;			// is it an object like a trap/note. 0=none/wall, 1=player, 2=monster, 3=object
+	char i_mapLayer:2;			// map layers ie. things like tunnels that go under another. 0 = L1, 1 = L2, 2 = both
+	char i_idIdx:2;				// to have 3 * 256 allowable ID's as we cant go over a byte size
+	unsigned char i_id;			// the ID of the object/player/monster (256)
+
+Map File/DB:
+	color slot data
+	monster data
+	group data
+	grid data (only put those that have colors/monsters etc)
+
+Main Options:
+	Zoom in/out ... DM & external map
+	Mode - draw/combat
+	Color - White/Black etc
+	Shapes - Circle, Square, 10x40 and so on
+	Shape Fill - outline/fill
+	Shape Rotate - 90/180/270
+	Object - trap, note etc
+	Auto updates on external map
+	Only show visible/viewed areas
+	Background color fill (?) ie. all to green but assume white is empty
+	View distance 30-120,unlimited feet
+	Undo
+	Center external Map - centers the external map to the center of this one
+
+	End of Round
+	Help
+
+Other:
+	show grid location (X/Y)
+
+Player Map:
+	only show/create a grid big enough to show a screen full
+
+Main Screen Layout:
+	***Menu*****Message Area******
+	*Opts*-----------------------*
+	******-----------------------*
+	*Init*--------Grid-----------*
+	*----*--------Map------------*
+	*List*-----------------------*
+	******-----------------------*
+
+Thoughts:
+	how to follow around corners/angles
+	how to determine which bits are 'viewed'
+
+Mapping:
+	a quick way ... draw lines that are 10', when complete expand and draw the walls in
+
+Database:
+	SQLite ":memory:" db ... populate from disk & save every rnd to disk

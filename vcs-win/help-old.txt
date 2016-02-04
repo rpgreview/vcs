@@ -1,0 +1,125 @@
+Welcome to ADMP, a AD&D DM Program. This is a combat program for AD&D v3.5. 
+It is not a character generator or a campaign program ... just combat.
+
+By: Torquil Gault copyright 2005+, Portions copyright Wizards of the Coast (see the Open Gaming Licence)
+	This program will be updated on this site:
+		http://www.geocities.com/SiliconValley/Peaks/7843/
+
+The program has several 'areas' ... these are:
+
+Combat - where you'll perform all the actions associated with combat - melee, spells, healing etc
+
+Initiatives - add player/monster initiatives, sort them etc
+
+Edit - edit or add players and monsters. There is a quick monster section at the bottom where you can add (or edit) standard monsters from the SRD. So adding 3 Ogres & a dragon should be simple.
+
+Other - do any 'other' stuff like:
+	Status - show the overall status of all players & monsters. REFRESH the screen each time
+	Alerts - add/edit alerts which are messages that are displayed for the DM. Things like, in 6 rounds tell me that the Dragon arrives.
+	Adjustments - things that 'adjust' actions like spells (Bless/Prayer) etc. You can also define 'standard' ones to use. To use these ones, just select it from the Predefined List,
+		make any changes required and press the "Accept" button. If you want save it as a standard one, press the "Save as System" button instead.
+		NB: for a spell like Prayer, you have to add two adjustments as it effects players and monsters differently.
+	Special Actions - do things like reset the players back to full 'strength', clear the monsters etc
+	XP Calc - based on the current (enabled) monsters, how much XP have the players earnt. If you include ALL monsters, it will use those that have been disabled in the Dis/Enable tab.
+	Disable/Enable - this will allow you to disable or enable for combat groups of monsters. You can use this to add/define all the monsters but only show/use a few.
+	Dice Roller - this will roll dice for you. It also keeps a running total so rolling that 12d6 Fireball is quite easy ;)
+	Auto-Damage - this will allow you to do such things as 3d4 damage for 4 rounds. In the 'damage' field you can do either a dice roll (ie. 2d4+1) or a value. You or the player can preroll them as long as you separate them with a space. 
+		If you are adding this in the middle of a round, you should ensure that "Done this Round" is ticked otherwise it will do the damage this round.
+		It will then use each roll/value for the appropriate round. Please note that this ignores any Damage Adjustment values.
+	Name Generator - generate some random names
+	Rnd Treasure - currently this is disabled
+	Mass Skill Check - have a selection of players do a skill check
+
+System - set/change system settings, save or load the player/monster data etc. System flags (or options) are:
+		Debug - this enables debug in the program. not worth turning on unless you're making changes to it
+		Roll All Rolls - it will roll every roll it can, attacks/damages etc
+		Roll All INIT Rolls - it will roll everyone's Initiative rolls
+		Write Log File - it will write to 'logfile.txt' the results of any actions done
+		Roll INIT's Every Round - it will re-roll everyone's initiative rolls each round
+		Remove Uncon Monsters from Init Seq - when a monster goes unconcious it'll remove them from the initiative list. You can still attack/heal them
+
+Notes - add notes about the sessions so that you dont forget anything important. It will automatically load the notes but you'll need to "Save" it before you exit.
+
+Dice Roller - roll random dice rolls and show a running total
+
+Status - show the status of all the currently 'enabled' players & monsters
+
+SRD - if you extract a HTML version of the SRD into the 'srd' subdirectory, it will display it for you to use.
+			*******************************************************************************************
+
+Ok, the important bits .. how to use this dang thing ...
+
+Firstly, add/edit all the players/monsters involved in the combat.
+
+In the Initiatives tab, 
+	select "New Round/Initiatives" to display them all
+	set the players initiatives. The initial value is their bonus so add this to their roll.
+	select "ACCEPT Initiatives"
+
+You will now see a new list in the "Action Initiator Sequence" list of the Combat tab. In the list you will notice several numbers after their name. These are:
+	their health percentance
+	any special details, S=Stunned, U=Unconcious, I=Inactive, D=Dead
+	X:Y where X = their number of attacks, Y = done attacks/actions
+As players do their action(s), the line in the list will go BLUE.
+
+If you need to add in a monster during a combat, you will need to do the following:
+	add the monster(s) in the Edit tab
+	then in Initiatives tab:
+		select "Show new monsters/Refresh".
+		set the initiative(s)
+		select "ACCEPT Initiatives"
+	If someone re-focuses or changes their Initiative, do those last 3 steps to update the Initiative sequence
+
+Now start the combat - For each player action
+	Select who will be performing an action, from the "Action Initiator" list. Please note that this is just a list and you can select who's doing an action in any order you like.
+		You may see some extra characters after their HP percentage, these stand for Stunned/Inactive/Unconcious/Dead
+	Select the action action they are performing from "Action Type" list.
+
+	The Action tab below will then display all the relevant info for that action.
+		(eg. a melee attack will display all the weapons they have available and all the 'people' that they can attack)
+
+		Any 'Adjustments' that you've entered that effect either of these players will be placed into the various 'Mods' fields.
+		Next, select who's defending against this attack and which weapon they are using.
+		Select any combat modifications applicable to this attack (flanking etc) from the "Combat Mods" list.
+ 		Make any changes to the roll etc that you require and then press the "CALC" button to see the results of the attack.
+ 
+		This will determine the success of the attack and display the results.
+		
+		Enter in the results of the attack (damage, stun etc) in the appropriate fields.
+		Then press "ACCEPT THIS ATTACK" button.
+			You will notice next to the weapon descriptions are 2 numbers, these are the number of attacks they have with this weapon and how many have been done this round. If you've not done an "Opp. Action" these will be adjusted.
+
+		Once you've completed all the attacks for that 'player', press the "ALL ATTACKS DONE" button.
+
+		NB: you DON'T have to do an action for a 'player'. You will be informed that you've skipped someone but that's all.
+
+Spells are complicated as there are many 'types' of attacks that can be done.
+	First, select the type of spell being cast from "Action Type" list.
+		For example, a Magic Missile would be a Damage spell with "Spell Modifiers" "NO Save" selected, but a Fireball would be a "REF Save" with a "Spell Modifier" of "Save = 50%".
+	Select whom will be effected by the spell from the "Whom it Effects" list & enter the spell's DC. 
+	If you have a player who has Spell Resistance, you should get them to roll it FIRST and include them if they fail otherwise exclude them. If it's a monster with SR, if it succeeds then you'll see it removed from the 
+	"Whom it effects" list when you press "CALC".
+	Press "CALC" button to see the results of the spell. 
+
+	You will then see the list of 'people' who saved change unless it is a "NO Save" spell when you should just select that option after selecting whom will be effected.
+
+	All the players should roll their saves and you should de-select those that roll successfully.
+	Enter the results of the spell into the appropriate fields. If you put in a dice roll ie. 2d4+3 into the Damage field, it will roll for each effect person.
+	Then "ACCEPT THIS SPELL" to apply those results.
+
+	Once you've completed all the spell attacks for that 'player', press the "ALL SPELLS DONE" button.
+
+	NB: if you are doing a spell like Magic Missile with missiles against different 'targets' then, unless you don't want to have the same damage for each missile, you will need to do separate spell 'attacks' on each target unless you put a dice roll into the Damage field.
+		The same will need to be done if you have a thief with the Evasion feat and spells like Fireballs.
+
+Actions like healing or stabilizing have no calculation, so select whom will be healed etc from the "Whom it Effects" list 
+	Enter the results of the 'action' into the appropriate fields.
+	Press the "Accept Action" to apply the results.
+
+	Skill checks - selecting this action will just show you the skill total they have and a list of d20 rolls they have provided. If you accept the 'action' it will remove one of the d20 rolls. This is how you can do secret rolls using d20 rolls they have previously provided.
+
+When you ACCEPT an action, their line in the "Action Initiative Sequence" will go BLUE to signify that they have done an action. It will also tell you which initiative you're up to.
+
+NB: once you have pressed an ACCEPT button, it will apply the results straight away to those effected. The CANCEL button will NOT undo those results !!!
+
+*** You should always do that "Save All" step before you exit the program **
